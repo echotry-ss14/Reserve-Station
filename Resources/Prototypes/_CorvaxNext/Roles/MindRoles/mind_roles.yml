@@ -1,16 +1,5 @@
 - type: entity
   parent: BaseMindRoleAntag
-  id: MindRoleApi
-  name: API Role
-  components:
-  - type: MindRole
-    roleType: SoloAntagonist
-    antagPrototype: Api
-  - type: ApiRole
-  - type: ThiefBeaconAccess
-
-- type: entity
-  parent: BaseMindRoleAntag
   id: MindRoleVoxRaiders
   name: Vox Raider Role
   components:

@@ -8,6 +8,6 @@
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    #- MeteorSwarmScheduler #Goob
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation

@@ -6520,13 +6520,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,14.5
       parent: 2165
-- proto: BookFaks
-  entities:
-  - uid: 955
-    components:
-    - type: Transform
-      pos: 2.8882773,6.4675875
-      parent: 4
 - proto: BookFeather
   entities:
   - uid: 1020
@@ -9182,13 +9175,6 @@ entities:
         - 0
         - 0
         - 0
-- proto: CrateServiceLoreBooks
-  entities:
-  - uid: 947
-    components:
-    - type: Transform
-      pos: -7.5,-9.5
-      parent: 4
 - proto: CurtainsBlack
   entities:
   - uid: 694
@@ -11019,7 +11005,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 6.5,10.5
       parent: 4
-- proto: GasPressurePumpOn
+- proto: GasPressurePump
   entities:
   - uid: 729
     components:
@@ -11036,7 +11022,7 @@ entities:
       parent: 2165
     - type: AtmosPipeColor
       color: '#0000FFFF'
-- proto: GasPressurePumpOnMax
+- proto: GasPressurePump
   entities:
   - uid: 716
     components:

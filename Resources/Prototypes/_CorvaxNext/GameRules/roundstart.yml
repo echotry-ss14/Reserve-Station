@@ -8,8 +8,9 @@
     objectivePrototypes: [ VoxRaidersSurviveObjective ]
   - type: RandomMetadata
     nameSegments:
-    - operationPrefix
-    - operationSuffix
+    - NamesOperationPrefix
+    - NamesOperationSuffix
+    nameFormat: name-format-nuclear-operation #Reserve fix
   - type: RuleGrids
   - type: AntagLoadProfileRule
     speciesOverride: Vox
