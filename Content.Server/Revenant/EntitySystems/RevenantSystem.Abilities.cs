@@ -158,7 +158,6 @@ public sealed partial class RevenantSystem
     [ValidatePrototypeId<StatusEffectPrototype>]
     private const string FlashedId = "Flashed"; // End Imp Changes
 
-
     private void InitializeAbilities()
     {
         SubscribeLocalEvent<RevenantComponent, UserActivateInWorldEvent>(OnInteract);

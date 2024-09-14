@@ -300,7 +300,7 @@ public sealed partial class RevenantComponent : Component
     public float AnimateSprintSpeed = DefaultAnimateSprintSpeed;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public bool AnimateCanBoltGuns = false;
+    public bool AnimateCanBoltGuns = true;
     #endregion
     // End Imp Changes
 
