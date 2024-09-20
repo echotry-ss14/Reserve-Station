@@ -83,3 +83,17 @@
   - type: Reactive
     groups:
       Acidic: [Touch]
+  #reserve revenant buff start
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: DamageOnAttacked
+    damage:
+      types:
+        Cold: 10
+  - type: Electrified #idk this seems lame
+    shockTime: 4
+    requirePower: false
+    #reserve revenant buff end
+
