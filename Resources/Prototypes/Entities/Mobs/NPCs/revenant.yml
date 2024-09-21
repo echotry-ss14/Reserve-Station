@@ -93,9 +93,9 @@
       types:
         Cold: 10
     ignoreResistances: true
-  - type: Electrified #idk this seems lame
-    shockTime: 4
-    shockDamage: 0
+  - type: Electrified #idk this seems lame but it works fine
+    shockTime: 8 #4 seconds of stun
+    shockDamage: 2
     requirePower: false
+    ignoreInsulation: true
     #reserve revenant buff end
-
