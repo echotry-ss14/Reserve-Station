@@ -92,8 +92,10 @@
     damage:
       types:
         Cold: 10
+    ignoreResistances: true
   - type: Electrified #idk this seems lame
     shockTime: 4
+    shockDamage: 0
     requirePower: false
     #reserve revenant buff end
 
