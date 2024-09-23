@@ -93,6 +93,11 @@
       types:
         Cold: 10
     ignoreResistances: true
+  - type: DamageContacts
+    damage:
+      types:
+        Cold: 5 #may be painful if spammed
+    ignoreResistances: true
   - type: Electrified #idk this seems lame but it works fine
     shockTime: 8 #4 seconds of stun
     shockDamage: 2
