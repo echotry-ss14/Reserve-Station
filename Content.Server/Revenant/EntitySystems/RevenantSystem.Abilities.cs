@@ -260,7 +260,7 @@ public sealed partial class RevenantSystem
             {
                 //hardcoded damage specifiers til i die.
                 var dspec = new DamageSpecifier();
-                dspec.DamageDict.Add("Structural", 60);
+                dspec.DamageDict.Add("Structural", 55); //ss220 Revenant buff //that isn't buff, but.. Uhh, balance?
                 _damage.TryChangeDamage(ent, dspec, origin: uid);
             }
 
