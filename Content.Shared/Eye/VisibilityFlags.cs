@@ -19,12 +19,11 @@ namespace Content.Shared.Eye
     {
         None = 0,
         Normal = 1 << 0,
-        Ghost  = 1 << 1,
+        Ghost = 1 << 1,
         Subfloor = 1 << 2,
-        Abductor  = 1 << 3, // Shitmed Change - Starlight Abductors
-        Ethereal = 1 << 4,
-        AGhost = 1 << 5, // WD EDIT
-        EldritchInfluence = 1 << 6, // Goobstation
-        CosmicCultMonument = 1 << 7, // DeltaV - DeltaV - Cosmic Cult
+        Abductor = 1 << 3, // Shitmed Change - Starlight Abductors
+        CosmicCultMonument = 1 << 4, // DeltaV - DeltaV - Cosmic Cult
+        EldritchInfluence = 1 << 5, // Goobstation
+        AGhost = 1 << 6, // WD EDIT
     }
 }
