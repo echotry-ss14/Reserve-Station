@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken at https://github.com/ParadiseSS13/Paradise/commit/9312f1fb7dcdf1c195e255a528f31092613fb60d. Modified by Ko4erga (discord)",
+  "copyright": "Taken at https://github.com/ParadiseSS13/Paradise/commit/9312f1fb7dcdf1c195e255a528f31092613fb60d",
   "size": {
     "x": 32,
     "y": 32
@@ -14,16 +14,10 @@
       "name": "bolted_unlit"
     },
     {
-      "name": "bolted_open_unlit"
-    },
-    {
       "name": "closed"
     },
     {
       "name": "closed_unlit"
-    },
-    {
-      "name": "open_unlit"
     },
     {
       "name": "closing",
@@ -67,7 +61,12 @@
       ]
     },
     {
-      "name": "open"
+      "name": "open",
+      "delays": [
+        [
+          1
+        ]
+      ]
     },
     {
       "name": "opening",
@@ -112,10 +111,12 @@
       ]
     },
     {
-      "name": "panel_open"
-    },
-    {
-      "name": "panel_closed"
+      "name": "panel_open",
+      "delays": [
+        [
+          1
+        ]
+      ]
     },
     {
       "name": "panel_opening",
@@ -195,9 +196,6 @@
           0.4
         ]
       ]
-    },
-    {
-      "name": "emergency_open_unlit"
     }
   ]
 }
