@@ -107,7 +107,7 @@
     scalingCost: 6
   - type: HereticRule
   - type: GameRule
-    minPlayers: 200
+    minPlayers: 20
   - type: AntagObjectives
     objectives:
     - HereticKnowledgeObjective
@@ -119,7 +119,7 @@
     definitions:
     - prefRoles: [ Heretic ]
       max: 1
-      playerRatio: 200
+      playerRatio: 15
       blacklist:
         components:
         - AntagImmune
