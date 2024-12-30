@@ -1,55 +1,55 @@
 - type: dataset
   id: RevenantType
   values:
-    - эссенция
-    - призрак
-    - фантом
-    - полтергейст
-    - ревенант
-    - душа
-    - спектр
-    - дух
+  - essence
+  - ghost
+  - phantom
+  - poltergeist
+  - revenant
+  - soul
+  - spectre
+  - spirit
 
 - type: dataset
   id: RevenantAdjective
   values:
-    - абиссальный
-    - бездненный
-    - жестокий
-    - тёмный
-    - бесконечный
-    - вечный
-    - огненный
-    - ненавистный
-    - уродливый
-    - забавный
-    - безразличный
-    - зловещий
-    - мирный
-    - пылающий
-    - молчаливый
-    - злобный
-    - яростный
-    - насильственный
+  - abysmal
+  - abyssal
+  - brutal
+  - dark
+  - endless
+  - eternal
+  - fiery
+  - hateful
+  - hideous
+  - hilarious
+  - indifferent
+  - malevolent
+  - peaceful
+  - searing
+  - silent
+  - spiteful
+  - vicious
+  - violent
 
 - type: dataset
   id: RevenantTheme
   values:
-    - агония
-    - гнев
-    - смерть
-    - отчаяние
-    - безысходность
-    - разрушение
-    - болезнь
-    - горе
-    - ненависть
-    - адский огонь
-    - смех
-    - страдание
-    - разорение
-    - соль
-    - крики
-    - скорбь
-    - мучение
-    - месть
+  - agony
+  - anger
+  - death
+  - despair
+  - desperation
+  - destruction
+  - disease
+  - grief
+  - hate
+  - hellfire
+  - laughter
+  - misery
+  - ruin
+  - salt
+  - screams
+  - sorrow
+  - suffering
+  - vengeance
