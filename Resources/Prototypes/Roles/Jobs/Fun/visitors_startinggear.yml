@@ -752,7 +752,7 @@
     pocket1: CombatMedipen
     pocket2: Brutepack
   inhand:
-  - HandheldCrewMonitor
+  - SyringeTranexamicAcid
   - Gauze
 
 - type: startingGear

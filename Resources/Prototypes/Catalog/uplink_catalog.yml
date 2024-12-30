@@ -49,21 +49,6 @@
   - UplinkWeaponry
 
 - type: listing
-  id: UplinkEnergySwordDoubleUplink
-  name: Двойной энергетический меч
-  description: Смертоносное оружие с двумя энерголезвиями. Идеально для ближнего боя. Используйте осторожно!
-  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
-  discountCategory: veryRareDiscounts
-  discountDownTo:
-    Telecrystal: 15
-  productEntity: EnergySwordDouble
-  cost:
-    Telecrystal: 30
-  categories:
-    - UplinkWeaponry
-
-
-- type: listing
   id: UplinkEsword
   name: uplink-esword-name
   description: uplink-esword-desc

@@ -138,14 +138,14 @@ public sealed partial class ChangelingSystem : EntitySystem
         if (TryComp<ChangelingComponent>(target, out var targetComp))
         {
             bonusChemicals += targetComp.MaxChemicals / 2;
-            bonusEvolutionPoints += 2;
+            bonusEvolutionPoints += 10;
             comp.MaxBiomass += targetComp.MaxBiomass / 2;
         }
         else
         {
             popup = Loc.GetString("changeling-absorb-end-self");
             bonusChemicals += 10;
-            bonusEvolutionPoints += 1;
+            bonusEvolutionPoints += 2;
         }
         TryStealDNA(uid, target, comp, true);
         comp.TotalAbsorbedEntities++;

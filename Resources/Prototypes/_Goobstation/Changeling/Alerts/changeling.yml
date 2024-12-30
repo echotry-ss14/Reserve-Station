@@ -7,14 +7,14 @@
   name: alerts-changeling-chemicals-name
   description: alerts-changeling-chemicals-desc
 
-#- type: alert
-#  id: ChangelingBiomass
-#  icons:
-#  - sprite: /Textures/_Goobstation/Changeling/changeling_biomass.rsi
-#    state: 0
-#  alertViewEntity: AlertChangelingBiomassSpriteView
-#  name: alerts-changeling-biomass-name
-#  description: alerts-changeling-biomass-desc
+- type: alert
+  id: ChangelingBiomass
+  icons:
+  - sprite: /Textures/_Goobstation/Changeling/changeling_biomass.rsi
+    state: 0
+  alertViewEntity: AlertChangelingBiomassSpriteView
+  name: alerts-changeling-biomass-name
+  description: alerts-changeling-biomass-desc
 
 - type: entity
   id: AlertChangelingChemicalsSpriteView
