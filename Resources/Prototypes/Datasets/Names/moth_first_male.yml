@@ -1,50 +1,50 @@
 - type: dataset
   id: names_moth_first_male
   values:
-  - Agrius # Agrius
-  - Atlas # Attacus atlas
-  - Attacus # Attacus
-  - Caesar # Attacus caesar
-  - Hercules # Coscinocera hercules
-  - Rannoch # Itame brunneata, "Rannoch Looper"
-  - Socrates # Acosmeryx socrates
-  - Solus # Saturniidae solus
+    - Агриус # Agrius
+    - Атлас # Attacus atlas
+    - Аттакус # Attacus
+    - Цезарь # Attacus caesar
+    - Геркулес # Coscinocera hercules
+    - Раннох # Itame brunneata, "Раннох Лупер"
+    - Сократ # Acosmeryx socrates
+    - Солус # Saturniidae solus
 
-  # Other languages
-  - Ash # Hebrew עש "moth"
-  - Azar # Persian "fire"
-  - Kaiser # German "emperor" descendant of the Latin caesar
-  - Rex # Latin "king"
-  - Rajas # Sanskrit "darkness" or "dust"
-  - Skoros # Greek "clothes moth"
+    # Другие языки
+    - Аш # Еврейский עש "мотылёк"
+    - Азар # Персидский "огонь"
+    - Кайзер # Немецкий "император", потомок латинского caesar
+    - Рекс # Латинский "царь"
+    - Раджас # Санскрит "темнота" или "пыль"
+    - Скорос # Греческий "моль одежды"
 
-  # Myth and legend
-  - Bladud # legendary king of the Britons who crafted wings and died in his attempt at flight
-  - Daedalus # father of Icarus
-  - Erebus # Greek primordial deity of darkness
-  - Icarus # the classic
-  - Jatayu # Hindu figure, similar to Icarus
-  - Koho # Japanese reading of 夸父（こほ）
-  - Kuafu # Chinese giant 夸父, similar to Icarus
-  - Lucifer # more commonly-known fall-from-heaven figure
-  - Merlin # Arthurian wizard
-  - Phaethon # another Greek figure, similar to Icarus
-  - Wolford # rendering of Bladud from the Welsh blaidd "wolf" + iudd "lord"
+    # Мифы и легенды
+    - Бладуд # Легендарный король бриттов, который создал крылья и погиб в попытке полета
+    - Дедал # Отец Икара
+    - Эребус # Греческое первобытное божество тьмы
+    - Икар # Классическая фигура
+    - Джатайю # Индийская фигура, аналог Икара
+    - Кохо # Японское чтение 夸父（こほ）
+    - Куафу # Китайский гигант 夸父, аналог Икара
+    - Люцифер # Более известная фигура падения с небес
+    - Мерлин # Артуровский волшебник
+    - Фаэтон # Еще одна греческая фигура, аналогичная Икару
+    - Вулфорд # Преобразование Бладуда с валлийского blaidd "волк" + iudd "повелитель"
 
-  # Fun names
-  - Ace
-  - Altair
-  - Dusty
-  - Gambit
-  - Hawk
-  - Mothew
-  - Timothy
+    # Забавные имена
+    - Эйс
+    - Альтаир
+    - Пыльный
+    - Гамбит
+    - Ястреб
+    - Мотев
+    - Тимоти
 
-  # Common names, filler
-  - Asher
-  - Isaac
-  - Roman
-  - Samuel
-  - Sebastian
-  - Silas
-  - Simon
+    # Обычные имена, для заполонения
+    - Ашер
+    - Айзек
+    - Роман
+    - Самуэль
+    - Себастьян
+    - Силас
+    - Симон
