@@ -1,37 +1,37 @@
 - type: dataset
   id: names_moth_last
   values:
-    - Черная ведьма # Ascalapha odorata
-    - Голова смерти # относится к любому из 3-х Acherontia
-    - Император # Saturniinae
-    - Обгоревшее крыло # Plagodis dolabraria
-    - Темнора # Temnora
-    - Уста # Usta
-    - Белая ведьма # Thysania agrippina
-    - Зима # Operophtera brumata
+  - Blackwitch # Ascalapha odorata
+  - Deathshead # refers to any of the 3 Acherontia
+  - Emperor # Saturniinae
+  - Scorchedwing # Plagodis dolabraria
+  - Temnora # Temnora
+  - Usta # Usta
+  - Whitewitch # Thysania agrippina
+  - Winter # Operophtera brumata
 
-    # Другие языки
-    - Эпиолос # Древнегреческое "моль"
-    - Мёллер # вероятно, любой потомок древнескандинавского mǫlr, скорее всего, более датское, чем что-либо другое. Диграф "oe" для ø.
-    - Ночной мотылёк # дословный псевдоперевод с немецкого Nachtfalter
+  # Other languages
+  - Epiolos # Ancient Greek "moth"
+  - Moeller # conceivably any Old Norse descendant of mǫlr but probably more Danish than anything. "oe" digraph for ø.
+  - Nightflitter # literal pseudo-translation of German Nachtfalter
 
-    # Мифы и легенды
-    - Герольд # верование, что моли, летающие ночью, сигнализируют о получении письма
-    - Леандр # Греческая фигура, связанная с Герой, и схожее по звучанию с Oleander hawk-moth
-    - Мотылёк-человек # делится между мифической отсылкой и возможной фамилией, подобной Goodman, Hoffman, Newman, Coleman и т.д.
+  # Myth and legend
+  - Herald # belief of moths flying at night signalling the reception of a letter
+  - Leander # Greek figure associated with Hero, and similar sounding to Oleander hawk-moth
+  - Mothman # split between being a myth reference and actual possible surname given the actual Goodman, Hoffman, Newman, Coleman, etc.
 
-    # Забавные имена
-    - Вселенский всадник
-    - Вечерняя заря
-    - Светлячок
-    - Огненная кисточка
-    - Плащ огня
-    - Ткач света
-    - Лунный танцор
-    - Ночная мечта
-    - Ночные глаза
-    - Совиная угроза
-    - Язык шелка
-    - Искра на ветру
-    - Небесный наблюдатель
-    - Искатель звёзд
+  # Fun names
+  - Cometrider
+  - Eventide
+  - Firefly
+  - Firebrush
+  - Flamecoat
+  - Lightweaver
+  - Moondancer
+  - Nightwish
+  - Nighteyes
+  - Owlbane
+  - Silktongue
+  - Sparkdrawn
+  - Stargazer
+  - Starseeker
