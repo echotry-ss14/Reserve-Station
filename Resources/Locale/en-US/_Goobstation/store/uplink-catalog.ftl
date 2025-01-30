@@ -131,5 +131,5 @@ uplink-helmet-swat-desc = Прочный шлем, обеспечивающий 
 
 # Misc
 
-uplink-dimension-pot-name = Dimension Pot
-uplink-dimension-pot-desc = A portal to your own pocket dimension disguised in the form of a potted plant, for when stashing one item isn't quite enough.
+uplink-dimension-pot-name = Размерный горшок
+uplink-dimension-pot-desc = Портал в ваше собственное карманное измерение, замаскированный под комнатное растение, когда одного предмета в тайнике недостаточно.
