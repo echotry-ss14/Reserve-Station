@@ -550,6 +550,11 @@
   - type: Body
     prototype: Mothroach
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 5
+    # Reserve-End
   - type: TypingIndicator
     proto: moth
   - type: Destructible
@@ -857,6 +862,11 @@
   - type: Body
     prototype: AnimalRuminant
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 5
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:
@@ -937,6 +947,11 @@
   - type: Body
     prototype: AnimalHemocyanin
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 5
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:
@@ -1029,6 +1044,11 @@
   - type: Body
     prototype: AnimalRuminant
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 5
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:
@@ -1252,6 +1272,11 @@
   - type: CombatMode
   # Shitmed Change Start
   - type: SurgeryTarget
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 5
+    # Reserve-End
   - type: Targeting
   - type: HumanoidAppearance
     species: Monkey
@@ -1616,6 +1641,11 @@
   - type: Body
     prototype: Mouse
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 5
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:
@@ -2354,6 +2384,11 @@
   - type: Body
     prototype: AnimalHemocyanin
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 10
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:

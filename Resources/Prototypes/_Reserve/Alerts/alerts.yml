@@ -1,0 +1,5 @@
+- type: alert
+  id: AnesthetizedAlert
+  icons: [ /Textures/Interface/Alerts/Abilities/silenced.png ]
+  name: alerts-nopain-name
+  description: alerts-nopain-desc

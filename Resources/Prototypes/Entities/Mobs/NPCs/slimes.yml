@@ -93,6 +93,11 @@
     prototype: Slimes
     requiredLegs: 1
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 10
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:

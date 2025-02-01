@@ -61,6 +61,11 @@
     prototype: Rat
     requiredLegs: 1 # TODO: More than 1 leg
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 15
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:
@@ -252,6 +257,11 @@
     prototype: Rat
     requiredLegs: 1 # TODO: More than 1 leg
   - type: SurgeryTarget # Shitmed
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 2.5
+    # Reserve-End
   - type: UserInterface # Shitmed
     interfaces:
       enum.SurgeryUIKey.Key:

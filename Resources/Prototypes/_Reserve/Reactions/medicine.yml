@@ -1,0 +1,11 @@
+- type: reaction
+  id: Propofol
+  reactants:
+    Dexalin:
+      amount: 1
+    Hydroxide:
+      amount: 1
+    Carbon:
+      amount: 1
+  products:
+    Propofol: 3

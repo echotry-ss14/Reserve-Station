@@ -118,6 +118,7 @@
       - !type:WashCreamPieReaction
   - type: StatusEffects
     allowed:
+    - Anesthetized # Reserve
     - Stun
     - KnockedDown
     - SlowedDown
@@ -226,6 +227,11 @@
   - type: LayingDown # WD EDIT
   - type: Targeting # Shitmed Change
   - type: SurgeryTarget # Shitmed Change
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 15
+    # Reserve-End
   - type: CanEscapeInventory # GoobStation - Escape being picked up by players
 
 - type: entity

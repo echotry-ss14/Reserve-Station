@@ -1,0 +1,40 @@
+- type: reagent
+  id: Propofol
+  name: reagent-name-propofol 
+  group: Medicine
+  desc: reagent-desc-propofol 
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: medicine
+  color: "#f5f5f5"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.25
+      effects:
+      - !type:GenericStatusEffect
+        key: Anesthetized
+        component: NoPain
+        time: 15
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: ScrambledAccent
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.3
+        sprintSpeedModifier: 0.3
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        key: Drowsiness
+        component: Drowsiness
+        time: 2.5
+        type: Add
+        refresh: false
+    Narcotic:
+      metabolismRate: 0.25
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 2.5
+        refresh: false

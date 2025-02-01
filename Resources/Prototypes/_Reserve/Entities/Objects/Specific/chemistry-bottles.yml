@@ -1,0 +1,14 @@
+- type: entity
+  id: PropofolChemistryBottle
+  suffix: propofol
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-propofol
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Propofol
+          Quantity: 30

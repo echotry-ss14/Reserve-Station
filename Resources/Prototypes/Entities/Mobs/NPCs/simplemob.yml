@@ -20,6 +20,7 @@
     baseSprintSpeed : 4
   - type: StatusEffects
     allowed:
+    - Anesthetized # Reserve
     - SlowedDown
     - Stutter
     - Electrocution
@@ -98,6 +99,7 @@
     - Stun
     - KnockedDown
     - SlowedDown
+    - Anesthetized # Reserve
     - Stutter
     - Electrocution
     - ForcedSleep

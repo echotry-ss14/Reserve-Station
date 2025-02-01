@@ -47,6 +47,11 @@
         Brute: -0.14
   - type: Targeting
   - type: SurgeryTarget
+    # Reserve-Start
+    painDamage:
+      types:
+        Asphyxiation: 15
+    # Reserve-End
   - type: Bloodstream
     bloodReagent: AlienBlood
 

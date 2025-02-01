@@ -196,6 +196,15 @@
           min: 1
         reagent: ChloralHydrate
         amount: -10
+        # Reserve-Start
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Propofol
+          min: 0.01
+        reagent: Propofol
+        amount: -10
+        # Reserve-End
       - !type:GenericStatusEffect
         key: Stun
         time: 3

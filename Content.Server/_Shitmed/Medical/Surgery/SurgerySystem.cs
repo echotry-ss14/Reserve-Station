@@ -10,6 +10,8 @@ using Content.Shared._Shitmed.Medical.Surgery;
 using Content.Shared._Shitmed.Medical.Surgery.Conditions;
 using Content.Shared._Shitmed.Medical.Surgery.Effects.Step;
 using Content.Shared._Shitmed.Medical.Surgery.Tools;
+using Content.Shared.Popups;
+using Content.Shared.FixedPoint;
 using Robust.Server.GameObjects;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
@@ -30,7 +32,6 @@ public sealed class SurgerySystem : SharedSurgerySystem
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
     [Dependency] private readonly RottingSystem _rot = default!;
     [Dependency] private readonly BlindableSystem _blindableSystem = default!;
-
     public override void Initialize()
     {
         base.Initialize();
@@ -153,10 +154,18 @@ public sealed class SurgerySystem : SharedSurgerySystem
 
     private void OnStepScreamComplete(Entity<SurgeryStepEmoteEffectComponent> ent, ref SurgeryStepEvent args)
     {
-        if (HasComp<ForcedSleepingComponent>(args.Body))
+        if (HasComp<ForcedSleepingComponent>(args.Body) || HasComp<NoPainComponent>(args.Body)) // Reserve 
             return;
 
         _chat.TryEmoteWithChat(args.Body, ent.Comp.Emote);
+        // Reserve-Start 
+        _popup.PopupEntity(Loc.GetString("surgery-unrelenting-pain"), args.Body, args.Body, PopupType.MediumCaution);
+
+        if(TryComp<SurgeryTargetComponent>(args.Body, out var surgeryTarget))
+        {
+            _damageable.TryChangeDamage(args.Body, surgeryTarget.PainDamage);
+        } 
+        // Reserve-End
     }
     private void OnStepSpawnComplete(Entity<SurgeryStepSpawnEffectComponent> ent, ref SurgeryStepEvent args) =>
         SpawnAtPosition(ent.Comp.Entity, Transform(args.Body).Coordinates);

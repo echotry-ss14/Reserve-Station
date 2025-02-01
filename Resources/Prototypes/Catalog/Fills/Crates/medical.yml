@@ -61,6 +61,10 @@
   components:
   - type: StorageFill
     contents:
+      # Reserve-Start
+      - id: PropofolChemistryBottle
+        amount: 2
+      # Reserve-End
       - id: Scalpel
       - id: Retractor
       - id: Cautery
