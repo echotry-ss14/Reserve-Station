@@ -19,11 +19,13 @@ namespace Content.Client.Access.UI
         [Dependency] private readonly ILogManager _logManager = default!;
         private readonly ISawmill _logMill = default!;
 
+        private static ProtoId<AccessGroupPrototype> ExtendedAccessGroupId = "ExtendedAccess"; // Reserve-IDConsoleActions
+
         private readonly IdCardConsoleBoundUserInterface _owner;
 
         private AccessLevelControl _accessButtons = new();
         private readonly List<string> _jobPrototypeIds = new();
-        private readonly AccessGroupPrototype _extendedAccessIds; // Reserve-IDConsoleActions
+        private readonly AccessGroupPrototype? _extendedAccessGroup; // Reserve-IDConsoleActions
 
         private string? _lastFullName;
         private string? _lastJobTitle;
@@ -70,13 +72,14 @@ namespace Content.Client.Access.UI
             }
 
             // Reserve-IDConsoleActions-Start
-            if (_prototypeManager.TryIndex<AccessGroupPrototype>("ExtendedAccess", out var extendedAccess))
+            if (_prototypeManager.TryIndex<AccessGroupPrototype>(ExtendedAccessGroupId, out var extendedAccess))
             {
-                _extendedAccessIds = extendedAccess;
+                _extendedAccessGroup = extendedAccess;
             }
             else
             {
-                _extendedAccessIds = new();
+                _logMill.Error($"Unable to find AccessGroup prototype with ID '{ExtendedAccessGroupId}'");
+                ActionGiveExtendedAccessButton.Disabled = true;
             }
             // Reserve-IDConsoleActions-End
 
@@ -91,7 +94,7 @@ namespace Content.Client.Access.UI
 
             // Reserve-IDConsoleActions-Start
             ActionGiveFullAccessButton.OnPressed += _ => ActionGiveAllAccess();
-            ActionGiveExtendedAccessButton.OnPressed += _ => ActionGiveExtendedAccess();
+            ActionGiveExtendedAccessButton.OnPressed += _ => AddAccessGroup(_extendedAccessGroup);
             // Reserve-IDConsoleActions-End
         }
 
@@ -234,11 +237,17 @@ namespace Content.Client.Access.UI
             SubmitData();
         }
 
-        private void ActionGiveExtendedAccess()
+        private void AddAccessGroup(AccessGroupPrototype? group)
         {
+            if (group == null)
+            {
+                _logMill.Error($"Attempted to add null access group");
+                return;
+            }
+
             foreach (var pair in _accessButtons.ButtonsList)
             {
-                if (_extendedAccessIds.Tags.Contains(pair.Key))
+                if (group.Tags.Contains(pair.Key))
                 {
                     if (!pair.Value.Disabled && pair.Value.Pressed == false)
                     {
