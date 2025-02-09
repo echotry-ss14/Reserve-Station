@@ -83,7 +83,7 @@ namespace Content.Client.Access.UI
             else
             {
                 _logMill.Error($"Unable to find AccessGroup prototype with ID '{ExtendedAccessGroupId}'");
-                ActionGiveExtendedAccessButton.Disabled = true;
+                //ActionGiveExtendedAccessButton.Disabled = true;
             }
 
             if (_prototypeManager.TryIndex(GeneralAccessGroupId, out var generalAccess))
@@ -93,7 +93,7 @@ namespace Content.Client.Access.UI
             else
             {
                 _logMill.Error($"Unable to find AccessGroup prototype with ID '{GeneralAccessGroupId}'");
-                ActionGiveGeneralAccessButton.Disabled = true;
+                //ActionGiveGeneralAccessButton.Disabled = true;
             }
             // Reserve-IDConsoleActions-End
 
@@ -216,6 +216,14 @@ namespace Content.Client.Access.UI
             JobTitleSaveButton.Disabled = !interfaceEnabled || !jobTitleDirty;
 
             JobPresetOptionButton.Disabled = !interfaceEnabled;
+
+            // Reserve-IDConsoleActions-Start
+            ActionGiveFullAccessButton.Disabled = !interfaceEnabled;
+            ActionGiveGeneralAccessButton.Disabled = !interfaceEnabled;
+            ActionGiveExtendedAccessButton.Disabled = !interfaceEnabled;
+            ActionClearAccessButton.Disabled = !interfaceEnabled;
+            ActionSetJobAccessButton.Disabled = !interfaceEnabled;
+            // Reserve-IDConsoleActions-End
 
             _accessButtons.UpdateState(state.TargetIdAccessList?.ToList() ??
                                        new List<ProtoId<AccessLevelPrototype>>(),
