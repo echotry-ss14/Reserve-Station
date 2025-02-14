@@ -1,7 +1,7 @@
 <Document>
   #Революционеры
 
-  <Бокс>
+  <Box>
     [color=#999999][italic]«Viva la revolución!!!»[/italic][/color]
   </Box>
   <Box>
@@ -20,7 +20,7 @@
   ## Главы революции и конвертация
   [bold][color=#5e9cff]Главные Революционеры[/color][/bold] выбираются в начале смены и начинают с [color=cyan]вспышкой[/color], [color=cyan]ключом шифрования синдиката[/color] и парой [color=cyan]солнцезащитных очков[/color].
 
-  <Бокс>
+  <Box>
     <GuideEntityEmbed Entity="Flash"/>
     <GuideEntityEmbed Entity="ClothingEyesGlassesSunglasses"/>
     <GuideEntityEmbed Entity="EncryptionKeySyndie"/>
@@ -43,7 +43,7 @@
 
   Предположим, что все [color=#cb0000]Охрана[/color] и [color=#1b67a5]Командование[/color] уже имплантированы щитами разума.
 
-  <Бокс>
+  <Box>
     <GuideEntityEmbed Entity="MindShieldImplanter"/>
   </Box>
 
@@ -55,7 +55,7 @@
 
   Если ваша способность превращения была отключена [color=cyan]имплантом mindshield[/color], вам просто нужно удалить имплант mindshield, чтобы включить способность обратно.
 
-  <Бокс>
+  <Box>
     <GuideEntityEmbed Entity="Implanter"/>
     <GuideEntityEmbed Entity="MedicalTechFab"/>
     <GuideEntityEmbed Entity="Flash"/>
