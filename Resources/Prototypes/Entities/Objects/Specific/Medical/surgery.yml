@@ -40,6 +40,12 @@
     endSound:
       path: /Audio/_Shitmed/Medical/Surgery/cautery2.ogg
   - type: Cautery
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - Cautery
+  # Reserve-End, surgeon
 
 # Drill
 
@@ -70,6 +76,12 @@
     startSound:
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
   - type: Drill
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - Drill
+  # Reserve-End, Surgeon
 
 # Scalpel
 
@@ -110,6 +122,13 @@
     endSound:
       path: /Audio/_Shitmed/Medical/Surgery/scalpel2.ogg
   - type: Scalpel
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - Scalpel
+  # Reserve-End, surgeon
+
 
 - type: entity
   name: shiv
@@ -158,8 +177,14 @@
     sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
     storedRotation: 90
     heldPrefix: laser
-  - type: Scalpel # Shitmed
+  - type: Scalpel
     speed: 1.5
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - ScalpelLaser
+  # Reserve-End, surgeon
   # TODO: prevent bleeding from incisions
 
 # Retractor
@@ -183,6 +208,12 @@
     endSound:
       path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
   - type: Retractor
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - Retractor
+  # Reserve-End, surgeon
 
 # Hemostat
 
@@ -206,8 +237,14 @@
     endSound:
       path: /Audio/_Shitmed/Medical/Surgery/hemostat1.ogg
   - type: Hemostat
-  - type: Tweezers # Shitmed
-  - type: Tending # Shitmed
+  - type: Tweezers
+  - type: Tending
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - Hemostat
+  # Reserve-End, surgeon
 
 # Bone setter - Shitmed Change
 - type: entity
@@ -314,6 +351,12 @@
   - type: SurgeryTool
     startSound:
       path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - SawElectric
+  # Reserve-End, surgeon
 
 - type: entity
   name: advanced circular saw
@@ -395,6 +438,12 @@
           params:
             variation: 0.125
             volume: -5
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - EnergyCautery
+  # Reserve-End, surgeon
 
 - type: entity
   name: energy scalpel
@@ -453,6 +502,10 @@
           params:
             variation: 0.125
             volume: -5
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - EnergyScalpel
 
 - type: entity
   name: mechanical pinches
@@ -515,6 +568,12 @@
           params:
             variation: 0.125
             volume: -5
+  # Reserve-Start, surgeon
+  - type: Tag
+    tags:
+    - SurgeryTool
+    - AdvancedRetractor
+  # Reserve-End, surgeon
 
 - type: entity
   name: medical multitool

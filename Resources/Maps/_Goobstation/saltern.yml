@@ -1448,11 +1448,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 235
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -1478,6 +1486,10 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -1493,9 +1505,17 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -1523,6 +1543,10 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -1530,6 +1554,10 @@ entities:
           - 0
           - 0
           - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -27524,6 +27552,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
   - uid: 7058
     components:
     - type: Transform
@@ -27621,7 +27653,7 @@ entities:
             - -0.25,0.48
           mask:
           - Impassable
-          - TableLayer
+          - MidImpassable
           - LowImpassable
           layer:
           - BulletImpassable
@@ -27677,6 +27709,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -29227,6 +29263,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateEmptySpawner
   entities:
   - uid: 3135
@@ -29395,6 +29435,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -32896,13 +32940,6 @@ entities:
     - type: Transform
       pos: -15.830059,-39.34384
       parent: 31
-- proto: DungeonMasterCircuitBoard
-  entities:
-  - uid: 11944
-    components:
-    - type: Transform
-      pos: -21.351568,42.7541
-      parent: 31
 - proto: ElectricGuitarInstrument
   entities:
   - uid: 9275
@@ -34842,21 +34879,19 @@ entities:
     - type: Transform
       pos: 27.598589,-5.5317454
       parent: 31
-- proto: FloraRockSolid01
+- proto: FloraRockSolid
   entities:
   - uid: 8569
     components:
     - type: Transform
       pos: 0.88375235,-33.48718
       parent: 31
-- proto: FloraRockSolid02
-  entities:
   - uid: 10815
     components:
     - type: Transform
       pos: 4.1304145,-33.0152
       parent: 31
-- proto: FloraTreeLarge05
+- proto: FloraTreeLarge
   entities:
   - uid: 7374
     components:
@@ -35118,6 +35153,13 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 31.5,-5.5
+      parent: 31
+- proto: GameMasterCircuitBoard
+  entities:
+  - uid: 11944
+    components:
+    - type: Transform
+      pos: -21.351568,42.7541
       parent: 31
 - proto: GasAnalyzer
   entities:
@@ -53932,12 +53974,6 @@ entities:
     - type: Transform
       pos: 14.5,-13.5
       parent: 31
-  - uid: 7350
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 18.5,-18.5
-      parent: 31
   - uid: 7586
     components:
     - type: Transform
@@ -54271,6 +54307,20 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 60.5,-10.5
+      parent: 31
+- proto: PoweredlightBlue
+  entities:
+  - uid: 7350
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 18.5,-18.5
+      parent: 31
+  - uid: 11963
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 20.5,-16.5
       parent: 31
 - proto: PoweredlightExterior
   entities:
@@ -60304,6 +60354,13 @@ entities:
     components:
     - type: Transform
       pos: 31.5,-1.5
+      parent: 31
+- proto: SpawnPointSurgeon
+  entities:
+  - uid: 11962
+    components:
+    - type: Transform
+      pos: 18.5,-16.5
       parent: 31
 - proto: SpawnPointTechnicalAssistant
   entities:
@@ -72494,6 +72551,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0

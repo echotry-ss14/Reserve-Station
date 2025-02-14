@@ -103,6 +103,7 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
+  - Surgeon # Reserve, surgeon
 
 - type: department
   id: Security
