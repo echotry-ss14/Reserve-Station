@@ -14,7 +14,7 @@
 
 - type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]
-  id: ClothingEyesGlassesMesonCommand
+  id: ClothingEyesGogglesMesonCommand
   name: meson command goggles
   description: Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types. Provides flash protection.
   components:
@@ -47,8 +47,8 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: ClothingEyesHudDiagnosticCommand
-  name: diagnostic command glasse
+  id: ClothingEyesGlassesDiagnosticCommand
+  name: diagnostic command glasses
   description: A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Provides flash protection.
   components:
   - type: Sprite
