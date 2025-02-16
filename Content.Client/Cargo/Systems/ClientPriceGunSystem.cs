@@ -18,4 +18,11 @@ public sealed class ClientPriceGunSystem : SharedPriceGunSystem
         // It feels worse if the cooldown is predicted but the popup isn't! So only do the cooldown reset on the server.
         return true;
     }
+
+    // Reserve-AppraisalHUD-Start
+    protected override bool GetPriceOrBounty(EntityUid target, EntityUid user)
+    {
+        return true;
+    }
+    // Reserve-AppraisalHUD-End
 }

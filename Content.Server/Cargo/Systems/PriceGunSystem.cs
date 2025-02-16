@@ -31,4 +31,22 @@ public sealed class PriceGunSystem : SharedPriceGunSystem
         _useDelay.TryResetDelay((priceGunUid, useDelay));
         return true;
     }
+
+    // Reserve-AppraisalHUD-Start
+    protected override bool GetPriceOrBounty(EntityUid target, EntityUid user)
+    {
+        // Check if we're scanning a bounty crate
+        if (_bountySystem.IsBountyComplete(target, out _))
+        {
+            _popupSystem.PopupEntity(Loc.GetString("price-gun-bounty-complete"), user, user);
+        }
+        else // Otherwise appraise the price
+        {
+            var price = _pricingSystem.GetPrice(target);
+            _popupSystem.PopupEntity(Loc.GetString("price-gun-pricing-result", ("object", Identity.Entity(target, EntityManager)), ("price", $"{price:F2}")), user, user);
+        }
+
+        return true;
+    }
+    // Reserve-AppraisalHUD-End
 }
