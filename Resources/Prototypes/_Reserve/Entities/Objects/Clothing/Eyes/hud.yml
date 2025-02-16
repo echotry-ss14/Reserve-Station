@@ -1,0 +1,61 @@
+- type: entity
+  parent: [ClothingEyesBase, ShowMedicalIcons, BaseCommandContraband]
+  id: ClothingEyesGlassesMedicalCommand
+  name: medical command glasses
+  description: A heads-up display that scans the humanoids in view and provides accurate data about their health status. Provides flash protection.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Hud/command.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Hud/command.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+
+- type: entity
+  parent: [ClothingEyesBase, BaseCommandContraband]
+  id: ClothingEyesGlassesMesonCommand
+  name: meson command goggles
+  description: Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types. Provides flash protection.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/meson.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/meson.rsi
+  - type: EyeProtection
+  - type: FlashImmunity
+#  - type: IdentityBlocker
+#    coverage: EYES
+
+- type: entity
+  parent: [ClothingEyesBase, BaseCommandContraband]
+  id: ClothingEyesGlassesAppraisalCommand
+  name: appraisal command glasses
+  description: Glasses with ability to appraise objects and verify bounties like regular appraisal tool. Provides flash protection.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/meson.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/meson.rsi
+  - type: EyeProtection
+  - type: FlashImmunity
+  - type: AppraisalEquipment
+  - type: PriceGun
+  - type: UseDelay
+    delay: 3
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesHudDiagnosticCommand
+  name: diagnostic command glasse
+  description: A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Provides flash protection.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Hud/diag.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Hud/diag.rsi
+  - type: ShowHealthBars
+    damageContainers:
+    - Inorganic
+    - Silicon
+
