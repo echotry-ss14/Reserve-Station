@@ -44,7 +44,6 @@
     ears: ClothingHeadsetAltCargo # Goobstation
     eyes: ClothingEyesGlassesAppraisalCommand # Reserve-CommandHUD
     belt: BoxFolderClipboard
-    pocket1: AppraisalTool
   storage:
     back:
     - Flash

@@ -206,7 +206,6 @@
     eyes: ClothingEyesGlassesAppraisalCommand # Reserve-CommandHUD
     outerClothing: ClothingOuterWinterQM
     pocket1: WeaponDisabler
-    pocket2: AppraisalTool
 
 - type: startingGear
   id: VisitorQMAlt

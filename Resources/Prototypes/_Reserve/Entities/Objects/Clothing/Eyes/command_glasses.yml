@@ -2,7 +2,7 @@
   parent: [ClothingEyesBase, ShowMedicalIcons, BaseCommandContraband]
   id: ClothingEyesGlassesMedicalCommand
   name: medical command glasses
-  description: A heads-up display that scans the humanoids in view and provides accurate data about their health status. Provides flash protection.
+  description: Glasses that scans the humanoids in view and provides accurate data about their health status. Provides flash protection.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/command.rsi
@@ -16,7 +16,7 @@
   parent: [ClothingEyesBase, BaseCommandContraband]
   id: ClothingEyesGogglesMesonCommand
   name: meson command goggles
-  description: Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types. Provides flash protection.
+  description: ??? that provides protection from eye damage of all types, including flash protection. # TODO: Proper description when sprites will be made
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/meson.rsi
@@ -49,7 +49,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesDiagnosticCommand
   name: diagnostic command glasses
-  description: A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Provides flash protection.
+  description: Glasses that capable of analyzing the integrity and status of robotics and exosuits. Provides flash protection.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/diag.rsi
