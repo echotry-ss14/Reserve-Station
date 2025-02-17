@@ -37,9 +37,7 @@
     sprite: Clothing/Eyes/Glasses/meson.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/meson.rsi
-  - type: ClothingGrantComponent
-    component:
-    - type: AppraisalHud
+  - type: AppraisalHud
   - type: EyeProtection
   - type: FlashImmunity
   - type: UseDelay

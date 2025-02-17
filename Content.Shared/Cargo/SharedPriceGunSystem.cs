@@ -1,5 +1,6 @@
 using Content.Server.Cargo.Components;
 using Content.Shared.Cargo.Components;
+using Content.Shared.Clothing;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Verbs;
@@ -14,8 +15,10 @@ public abstract class SharedPriceGunSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
+        SubscribeLocalEvent<AppraisalHudComponent, ClothingGotEquippedEvent>(OnEquipped);
+        SubscribeLocalEvent<AppraisalHudComponent, ClothingGotUnequippedEvent>(OnUnequipped);
         SubscribeLocalEvent<PriceGunComponent, GetVerbsEvent<UtilityVerb>>(OnUtilityVerb);
-        SubscribeLocalEvent<AppraisalHudComponent, GetVerbsEvent<InnateVerb>>(OnInnateVerb); // Reserve-AppraisalHUD
+        SubscribeLocalEvent<WearingAppraisalHudComponent, GetVerbsEvent<InnateVerb>>(OnInnateVerb); // Reserve-AppraisalHUD
         SubscribeLocalEvent<PriceGunComponent, AfterInteractEvent>(OnAfterInteract);
     }
 
@@ -38,7 +41,7 @@ public abstract class SharedPriceGunSystem : EntitySystem
     }
 
     // Reserve-AppraisalHUD-Start
-    private void OnInnateVerb(EntityUid uid, AppraisalHudComponent component, GetVerbsEvent<InnateVerb> args)
+    private void OnInnateVerb(EntityUid uid, WearingAppraisalHudComponent component, GetVerbsEvent<InnateVerb> args)
     {
         if (!args.CanAccess || !args.CanInteract)
             return;
@@ -47,13 +50,30 @@ public abstract class SharedPriceGunSystem : EntitySystem
         {
             Act = () =>
             {
-                GetPriceOrBounty(args.Target, args.User);
+                GetPriceOrBounty(component.Hud, args.Target, args.User, true);
             },
             Text = Loc.GetString("price-gun-verb-text"),
             Message = Loc.GetString("price-gun-verb-message", ("object", Identity.Entity(args.Target, EntityManager)))
         };
 
         args.Verbs.Add(verb);
+    }
+
+    private void OnEquipped(EntityUid uid, AppraisalHudComponent component, ref ClothingGotEquippedEvent args)
+    {
+        component.IsActive = true;
+
+        var wearingComp = EnsureComp<WearingAppraisalHudComponent>(args.Wearer);
+        wearingComp.Hud = uid;
+    }
+
+    private void OnUnequipped(EntityUid uid, AppraisalHudComponent component, ref ClothingGotUnequippedEvent args)
+    {
+        if (!component.IsActive)
+            return;
+
+        RemComp<WearingAppraisalHudComponent>(args.Wearer);
+        component.IsActive = false;
     }
     // Reserve-AppraisalHUD-End
 
@@ -73,19 +93,5 @@ public abstract class SharedPriceGunSystem : EntitySystem
     ///     This is abstract for prediction. When the bounty system / cargo systems that are necessary are moved to shared,
     ///     combine all the server, client, and shared stuff into one non abstract file.
     /// </remarks>
-    protected abstract bool GetPriceOrBounty(EntityUid priceGunUid, EntityUid target, EntityUid user);
-
-
-    // Reserve-AppraisalHUD-Start
-    /// <summary>
-    ///     Find the price or confirm if the item is a bounty. Will give a popup of the result to the passed user.
-    ///     This overload doesn't have priceGunUid and so, doesn't have any cooldown checks.
-    /// </summary>
-    /// <returns></returns>
-    /// <remarks>
-    ///     This is abstract for prediction. When the bounty system / cargo systems that are necessary are moved to shared,
-    ///     combine all the server, client, and shared stuff into one non abstract file.
-    /// </remarks>
-    protected abstract bool GetPriceOrBounty(EntityUid target, EntityUid user);
-    // Reserve-AppraisalHUD-End
+    protected abstract bool GetPriceOrBounty(EntityUid priceGunUid, EntityUid target, EntityUid user, bool cooldownPopup = false); // Reserve-CooldownPopup
 }

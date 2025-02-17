@@ -6,4 +6,5 @@ namespace Content.Server.Cargo.Components;
 [RegisterComponent]
 public sealed partial class AppraisalHudComponent : Component
 {
+    public bool IsActive = false;
 }
