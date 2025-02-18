@@ -11,3 +11,15 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: NanotrasenRepresentative
+
+- type: entity
+  parent: IDCardStandard
+  id: SurgeonIDCard
+  name: surgeon ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idsurgeon
+  - type: PresetIdCard
+    job: Surgeon

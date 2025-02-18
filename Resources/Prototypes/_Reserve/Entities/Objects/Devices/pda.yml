@@ -23,3 +23,22 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: BaseMedicalPDA
+  id: SurgeonPDA
+  name: surgeon PDA
+  description: Shiny and sterile.
+  components:
+  - type: Pda
+    id: SurgeonIDCard
+    state: pda-surgeon
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#447987"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-surgeon
+  - type: GuideHelp
+    guides:
+    - Medical Doctor
