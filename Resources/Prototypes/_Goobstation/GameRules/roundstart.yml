@@ -200,7 +200,7 @@
   components:
   # Reserve-HonkOps-MinPlayers-Start
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 50
   # Reserve-HonkOps-MinPlayers-End
   - type: RandomMetadata # this generates the random operation name cuz it's cool.
     nameSegments:
