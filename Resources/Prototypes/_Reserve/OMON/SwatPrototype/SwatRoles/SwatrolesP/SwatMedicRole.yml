@@ -31,5 +31,9 @@
       prototypes: [ SwatMedicGear ]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstPoliceSwatLeader
+      - NamesFirstPoliceSwat
       - NamesLastPSWCallsign
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
+      - TrackingImplanter

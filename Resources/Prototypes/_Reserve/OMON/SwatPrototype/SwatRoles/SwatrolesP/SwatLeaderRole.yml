@@ -33,3 +33,8 @@
       nameSegments:
       - NamesFirstPoliceSwatLeader
       - NamesLastPSWCallsign
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
+      - TrackingImplanter
+
