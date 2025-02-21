@@ -19,7 +19,7 @@ namespace Content.Client.RoundEnd
         {
             _entityManager = entityManager;
 
-            MinSize = new Vector2(520, 580);
+            MinSize = SetSize = new Vector2(520, 580);
 
             Title = Loc.GetString("round-end-summary-window-title");
 
@@ -51,8 +51,7 @@ namespace Content.Client.RoundEnd
             var roundEndSummaryContainerScrollbox = new ScrollContainer
             {
                 VerticalExpand = true,
-                Margin = new Thickness(10),
-                HScrollEnabled = false,
+                Margin = new Thickness(10)
             };
             var roundEndSummaryContainer = new BoxContainer
             {

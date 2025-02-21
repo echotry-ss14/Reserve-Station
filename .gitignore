@@ -306,5 +306,3 @@ Resources/MapImages
 
 # Direnv stuff
 .direnv/
-
-config.json

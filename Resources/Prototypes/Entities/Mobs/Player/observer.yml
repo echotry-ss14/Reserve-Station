@@ -65,7 +65,6 @@
     - BypassInteractionRangeChecks
   - type: Speech #Goobstation - Dead chat verbs
     speechVerb: Dead
-  - type: GhostColor
 
 # proto for player ghosts specifically
 - type: entity
