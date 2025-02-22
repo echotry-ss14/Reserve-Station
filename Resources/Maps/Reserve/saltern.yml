@@ -4951,7 +4951,7 @@ entities:
       pos: -36.5,-2.5
       parent: 31
     - type: Door
-      secondsUntilStateChange: -4350.226
+      secondsUntilStateChange: -4480.808
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5439,7 +5439,7 @@ entities:
       pos: -5.5,9.5
       parent: 31
     - type: Door
-      secondsUntilStateChange: -6765.881
+      secondsUntilStateChange: -6896.463
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -29024,9 +29024,13 @@ entities:
     components:
     - type: MetaData
       desc: НЯ! (два раза)
+      name: NazrinNya
     - type: Transform
-      pos: -37.54355,18.028902
+      pos: -37.54059,19.530237
       parent: 31
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: ClothingHeadHatFedoraBrown
   entities:
   - uid: 7484
@@ -33824,6 +33828,9 @@ entities:
       parent: 31
   - uid: 13053
     components:
+    - type: MetaData
+      desc: Блок для транспортировки заключенных в камеру.
+      name: блок транспортировки заключенных
     - type: Transform
       pos: -8.5,10.5
       parent: 31
@@ -35172,7 +35179,7 @@ entities:
       pos: -18.5,17.5
       parent: 31
     - type: Door
-      secondsUntilStateChange: -2958.927
+      secondsUntilStateChange: -3089.509
       state: Closing
     - type: Firelock
       emergencyCloseCooldown: 6663.0933389
@@ -58527,8 +58534,11 @@ entities:
       desc: Милый и пушистый плюшевый программист. Развлекайтесь, бз!
       name: AwareFoxy
     - type: Transform
-      pos: -36.91855,18.122652
+      pos: -36.91559,18.280237
       parent: 31
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: PlushieNar
   entities:
   - uid: 11111
@@ -58560,7 +58570,7 @@ entities:
       desc: Очаровательная мягкая игрушка, напоминающая администратора любого цвета. Глядя на неё можно упороться... главное не улететь на банановые острова!
       name: радужный ребус
     - type: Transform
-      pos: -36.9498,18.638277
+      pos: -36.899963,18.748987
       parent: 31
     - type: Physics
       angularDamping: 0
@@ -79835,6 +79845,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: -13.5,9.5
       parent: 31
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        13050:
+        - DoorStatus: DoorBolt
   - uid: 13049
     components:
     - type: Transform
@@ -79846,6 +79862,12 @@ entities:
     - type: Transform
       pos: -13.5,9.5
       parent: 31
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        13048:
+        - DoorStatus: DoorBolt
 - proto: Window
   entities:
   - uid: 264
@@ -80518,7 +80540,7 @@ entities:
       pos: -22.5,-24.5
       parent: 31
     - type: Door
-      secondsUntilStateChange: -9173.772
+      secondsUntilStateChange: -9304.3545
       state: Opening
 - proto: WoodenBench
   entities:
