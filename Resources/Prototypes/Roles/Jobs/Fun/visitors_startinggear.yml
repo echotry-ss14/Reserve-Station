@@ -45,7 +45,7 @@
     belt: ClothingBeltChiefEngineerFilled
     back: ClothingBackpackDuffelEngineering
     ears: ClothingHeadsetAltEngineering # Goobstation
-    eyes: ClothingEyesGogglesMesonCommand # Reserve-CommandHUD
+    eyes: ClothingEyesGlassesWeldingCommand # Reserve-CommandHUD
     outerClothing: ClothingOuterVestHazard
     pocket1: WeaponDisabler
 
@@ -60,7 +60,7 @@
     belt: ClothingBeltChiefEngineerFilled
     back: ClothingBackpackSatchelEngineering
     ears: ClothingHeadsetAltEngineering # Goobstation
-    eyes: ClothingEyesGogglesMesonCommand # Reserve-CommandHUD
+    eyes: ClothingEyesGlassesWeldingCommand # Reserve-CommandHUD
     outerClothing: ClothingOuterWinterCE
     pocket1: WeaponDisabler
 

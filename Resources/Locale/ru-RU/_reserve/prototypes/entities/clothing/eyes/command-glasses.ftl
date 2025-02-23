@@ -7,5 +7,5 @@ ent-ClothingEyesGlassesAppraisalCommand = оценочные очки коман
 ent-ClothingEyesGlassesDiagnosticCommand = диагностические очки командования
     .desc = Очки, способные анализировать целостность и состояние роботов и экзокостюмов. Защищают от вспышек
 
-ent-ClothingEyesGogglesMesonCommand = инженерные очки командования
-    .desc = ???, обеспечивающие надёжную защиту глаз от всех видов повреждений, в том числе от вспышек.
+ent-ClothingEyesGlassesWeldingCommand = инженерные очки командования
+    .desc = Очки, обеспечивающие защиту глаз во время сварочных работ. Также защищают от вспышек.

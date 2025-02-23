@@ -40,7 +40,7 @@
   id: ChiefEngineerGear
   equipment:
     id: CEPDA
-    eyes: ClothingEyesGogglesMesonCommand # Reserve-CommandHUD
+    eyes: ClothingEyesGlassesWeldingCommand # Reserve-CommandHUD
     ears: ClothingHeadsetAltEngineering # Goobstation
     belt: ClothingBeltUtilityEngineering
   storage:
