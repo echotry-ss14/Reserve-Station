@@ -31,7 +31,7 @@ public abstract class SharedPriceGunSystem : EntitySystem
         {
             Act = () =>
             {
-                GetPriceOrBounty(uid, args.Target, args.User);
+                GetPriceOrBounty((uid, component), args.Target, args.User);
             },
             Text = Loc.GetString("price-gun-verb-text"),
             Message = Loc.GetString("price-gun-verb-message", ("object", Identity.Entity(args.Target, EntityManager)))
@@ -43,14 +43,14 @@ public abstract class SharedPriceGunSystem : EntitySystem
     // Reserve-AppraisalHUD-Start
     private void OnInnateVerb(EntityUid uid, WearingAppraisalHudComponent component, GetVerbsEvent<InnateVerb> args)
     {
-        if (!args.CanAccess || !args.CanInteract)
+        if (!args.CanAccess || !args.CanInteract || !TryComp<PriceGunComponent>(component.Hud, out var priceGun))
             return;
 
         var verb = new InnateVerb()
         {
             Act = () =>
             {
-                GetPriceOrBounty(component.Hud, args.Target, args.User, true);
+                GetPriceOrBounty((component.Hud, priceGun), args.Target, args.User, true);
             },
             Text = Loc.GetString("price-gun-verb-text"),
             Message = Loc.GetString("price-gun-verb-message", ("object", Identity.Entity(args.Target, EntityManager)))
@@ -93,5 +93,5 @@ public abstract class SharedPriceGunSystem : EntitySystem
     ///     This is abstract for prediction. When the bounty system / cargo systems that are necessary are moved to shared,
     ///     combine all the server, client, and shared stuff into one non abstract file.
     /// </remarks>
-    protected abstract bool GetPriceOrBounty(EntityUid priceGunUid, EntityUid target, EntityUid user, bool cooldownPopup = false); // Reserve-CooldownPopup
+    protected abstract bool GetPriceOrBounty(Entity<PriceGunComponent> entity, EntityUid target, EntityUid user, bool cooldownPopup = false); // Reserve-CooldownPopup
 }

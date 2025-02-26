@@ -38,6 +38,7 @@
   - type: AppraisalHud
   - type: EyeProtection
   - type: FlashImmunity
+  - type: PriceGun
   - type: UseDelay
     delay: 3
 
