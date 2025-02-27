@@ -20,13 +20,6 @@
         conditions:
         - !type:ReagentThreshold
           max: 11 # Limit self-replication to prevent infinite accumulation
-      - !type:AdjustReagent
-        conditions:
-        - !type:ReagentThreshold
-          max: 1
-        reagent: Triclor
-        amount: -0.5
-      - !type:ChemVomit
       - !type:ModifyBloodLevel
         amount: -5
       - !type:ModifyBleedAmount
