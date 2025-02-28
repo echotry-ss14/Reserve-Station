@@ -2,16 +2,18 @@
   id: Triclor
   impact: Medium
   reactants:
-    Ammonia:
-      amount: 1
+    Phenol:
+      amount: 2
     SodiumHydroxide:
-      amount: 1
+      amount: 2
     Ipecac:
-      amount: 1
+      amount: 4
     Chlorine:
-      amount: 3
+      amount: 2
+    Impedrizine:
+      amount: 2
   products:
-    Triclor: 3
+    Triclor: 1
 
 - type: reaction
   id: Cyanide

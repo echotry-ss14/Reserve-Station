@@ -5,10 +5,14 @@
   desc: reagent-desc-triclor
   physicalDesc: reagent-physical-desc-pungent
   flavor: terrible
-  color: "#5ca05c"
+  color: "#174f17"
   metabolisms:
     Poison:
-      effects:
+      effects: # considering vomiting and re-add the metabolism rate works out to ~2.5/s
+      - !type:HealthChange # ~20/20 damage per 15u, inconsistent
+        damage:
+          types:
+            Blunt: 4
       - !type:HealthChange
         conditions:
         - !type:OrganType
@@ -16,18 +20,31 @@
           shouldHave: false
         damage:
           types:
-            Poison: 2
+            Poison: 4
+      - !type:AdjustReagent
+        reagent: Triclor
+        amount: 0.5 # Counteracts some loss from vomiting, makes effects more linear
         conditions:
         - !type:ReagentThreshold
-          max: 11 # Limit self-replication to prevent infinite accumulation
+          max: 15 # Limit self-replication to prevent infinite accumulation
+      - !type:AdjustReagent
+        conditions: # Vomiting behaves weirdly and might leave unmetabolisable 0.1 at 40u (floating point errors?)
+        - !type:ReagentThreshold
+          max: 1
+        reagent: Triclor
+        amount: -0.5
+      - !type:ChemVomit
       - !type:ModifyBloodLevel
         amount: -5
       - !type:ModifyBleedAmount
         amount: 0.5
       - !type:MovespeedModifier # primairly to decrease speed for a while longer after finishing vomiting
-        walkSpeedModifier: 0.9
+        walkSpeedModifier: 0.8
         sprintSpeedModifier: 0.8
-        statusLifetime: 4
+        statusLifetime: 6
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: StutteringAccent
       - !type:Jitter
 
 - type: reagent
