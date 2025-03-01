@@ -16,7 +16,7 @@ admin-verb-text-make-wizard = Сделать магом
 wizard-title = Маг
 wizard-description = A могущественный космический маг посещает станцию. Покажите им хаос.
 lich-greeting =
-    With a hideous feeling of emptiness you watch in horrified fascination as skin sloughs off bone! Blood boils, nerves disintegrate, eyes boil in their sockets! As your organs crumble to dust in your fleshless chest you come to terms with your choice.
-    You're a lich.
+    С отвратительным чувством опустошенности вы с ужасом и восхищением наблюдаете, как кожа отслаивается от костей! Кровь кипит, нервы сдают, глаза вылезают из орбит! Когда ваши органы рассыпаются в прах в вашей лишенной плоти груди, вы смиряетесь со своим выбором.
+    Вы - лич.
 objective-condition-wizard-alive-title = Убедитесь, что маг { $targetName } останется жив.
 stamp-component-stamped-name-wizard = Маг
