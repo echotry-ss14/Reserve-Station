@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Qwerlink(discord dago#7393) for SS220",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "specialdelivery"
+    },
+    {
+      "name": "specialdelivery_unfolded"
+    }
+  ]
+}

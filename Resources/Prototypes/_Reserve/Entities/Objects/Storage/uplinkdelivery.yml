@@ -1,0 +1,27 @@
+- type: entity
+  parent: Present
+  id: SpecialDeliveryBox
+  name: особая посылка
+  description: Старая помятая коробка. Пахнет диско и ретро. Интересно, что внутри?
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Reserve/Hotline/specialdelivery.rsi
+    layers:
+      - state: specialdelivery
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpecialDeliveryBoxTrash
+      - id: ClothingHeadHatAlex
+        orGroup: HotMask
+      - id: ClothingHeadHatJake
+        orGroup: HotMask
+      - id: ClothingHeadHatRasmus
+        orGroup: HotMask
+      - id: ClothingHeadHatRichter
+        orGroup: HotMask
+      - id: ClothingHeadHatRichard
+        orGroup: HotMask
+      - id: ClothingHeadHatTony
+        orGroup: HotMask

@@ -1998,3 +1998,17 @@
   - !type:BuyerDepartmentCondition
     whitelist:
     - Medical
+
+# reserve hotline maski
+
+- type: listing
+  id: UplinkSpecialDelivery
+  name: uplink-special-delivery-name
+  description: uplink-special-delivery-desc
+  icon: { sprite: /Textures/_Reserve/Hotline/specialdelivery.rsi, state: specialdelivery }
+  productEntity: SpecialDeliveryBox
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkPointless
+
