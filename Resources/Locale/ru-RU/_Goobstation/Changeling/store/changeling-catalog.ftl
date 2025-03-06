@@ -104,12 +104,12 @@ evolutionmenu-utility-biodegrade-desc =
     Затрачивает 30 химикатов.
 evolutionmenu-utility-stims-name = Эфедриновая передозировка
 evolutionmenu-utility-stims-desc =
-    Сделайте инъекцию из смеси стимуляторов в своё тело, быстро убирает любую усталость и ускоряет вас.
+    Сделайте инъекцию из смеси стимуляторов в своё тело, быстро убирает любую усталость и ускоряет.
     Многократное использование отравляет.
     Затрачивает 30 химикатов.
 evolutionmenu-utility-fleshmend-name = Новая плоть
 evolutionmenu-utility-fleshmend-desc =
-    Проведите быструю регенерацию повреждённым механически и термически тканей.
+    Проведите быструю регенерацию тканям, которые повреждёны механически и термически.
     Затрачивает 35 химикатов.
 evolutionmenu-utility-chameleon-name = Кожа хамелеона
 evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой,
@@ -123,7 +123,7 @@ evolutionmenu-utility-spacesuit-desc =
     Затрачивает 20 химикатов.
 evolutionmenu-utility-hivemindaccess-name = Голос улья
 evolutionmenu-utility-hivemindaccess-desc =
-    Изменяет рецепторы для доступа голоса улья, позволяет общаться с генокрадами, которые также получили такую способность.
+    Изменяет рецепторы для доступа к голосу улья, позволяет общаться с генокрадами, которые также получили такую способность.
     Ключ канала :g
 evolutionmenu-utility-absorbbiomatter-name = Поглощение биомассы
 evolutionmenu-utility-absorbbiomatter-desc =
