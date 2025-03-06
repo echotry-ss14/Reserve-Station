@@ -109,7 +109,7 @@ evolutionmenu-utility-stims-desc =
     Затрачивает 30 химикатов.
 evolutionmenu-utility-fleshmend-name = Новая плоть
 evolutionmenu-utility-fleshmend-desc =
-    Проведите быструю регенерацию тканям, которые повреждёны механически и термически.
+    Проведите быструю регенерацию тканям, которые повреждены механически и термически.
     Затрачивает 35 химикатов.
 evolutionmenu-utility-chameleon-name = Кожа хамелеона
 evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой,
