@@ -102,33 +102,33 @@ evolutionmenu-utility-biodegrade-desc =
     Выплевывает едкое вещество на все сковывающие вас предметы, позволяя освободиться.
     При использовании этой способности, когда вас схватили, вы плюнете кислотой в лицо нападающим.
     Затрачивает 30 химикатов.
-evolutionmenu-utility-stims-name = Ephedrine Overdose
+evolutionmenu-utility-stims-name = Передозировка эфедрина
 evolutionmenu-utility-stims-desc =
-    Inject a cocktail of stimulants into yourself, quickly removing any stuns and giving yourself a speed boost.
-    Continuous injection is poisonous.
-    Costs 30 chemicals.
-evolutionmenu-utility-fleshmend-name = Fleshmend
+    Инъекция коктейля стимуляторов в себя, быстро снимает любые станы и даёт вам скорость.
+    Продолжительная инъекция ядовита.
+    Затрачивает 30 химикатов.
+evolutionmenu-utility-fleshmend-name = Исцеление плоти
 evolutionmenu-utility-fleshmend-desc =
-    Rapidly heal yourself of all bruises and burns.
-    Costs 35 chemicals.
+    Быстро исцеляет все царапины и ожоги.
+    Затрачивает 35 химикатов.
 evolutionmenu-utility-chameleon-name = Кожа хамелеона
 evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой,
-evolutionmenu-utility-lesserform-name = Lesser Form
+evolutionmenu-utility-lesserform-name = Меньшая форма
 evolutionmenu-utility-lesserform-desc =
-    Abandon your current form and turn into a sentient monkey.
-    Costs 20 chemicals.
-evolutionmenu-utility-spacesuit-name = Space Adaptation
+    Отказ от своей текущей формы и превращение в разумного обезьяна.
+    Затрачивает 20 химикатов.
+evolutionmenu-utility-spacesuit-name = Адаптация к космосу.
 evolutionmenu-utility-spacesuit-desc =
-    Get rid of useless tissue in order to facilitate space travel. A source of oxygen is still required for space walking.
-    Costs 20 chemicals.
-evolutionmenu-utility-hivemindaccess-name = Hivemind Access
+    Избавьтесь от бесполезных тканей, чтобы облегчить космические путешествия. Для выхода в космос по-прежнему необходим источник кислорода.
+    Затрачивает 20 химикатов.
+evolutionmenu-utility-hivemindaccess-name = Разум улья
 evolutionmenu-utility-hivemindaccess-desc =
-    Tunes our chemical receptors for hivemind communication, allowing us to recognize and communicate with other changelings who have also evolved this ability.
-    Default radio key is :g
-evolutionmenu-utility-absorbbiomatter-name = Absorb Biomatter
+    Настраивает химические рецепторы для общения с другими генокрадами, которые также развили этот навык.
+    Стандартный радио-ключ: :g
+evolutionmenu-utility-absorbbiomatter-name = Поглощение биоматерии
 evolutionmenu-utility-absorbbiomatter-desc =
-    Absorbs an organic food item, letting you regain chemicals depending on its contents.
-    Can absorb nutriment, cooked and uncooked proteins, and fat.
+    Поглощает органический продукт питания, позволяя вам восстановить химикаты в зависимости от его содержимого.
+    Можно поглотить продукты питания, приготовленные и неприготовленные белки и жиры.
 evolutionmenu-utility-lastresort-name = Крайняя мера
 evolutionmenu-utility-lastresort-desc =
     Откажитесь от своего текущего тела и сбегите в форме слизняка.

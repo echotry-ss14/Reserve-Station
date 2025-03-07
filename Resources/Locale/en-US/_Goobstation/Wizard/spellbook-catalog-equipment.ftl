@@ -68,10 +68,10 @@ spellbook-staff-slipping-desc =
 
 spellbook-wand-name = Magic Wand
 spellbook-wand-desc =
-    The legendary wizard's wand. Has 15 different modes of magical impact, activate it to change them.
-    Only wizards and their apprentices can change the firing mode of wands.
+    The iconic wizard's wand. Has 14 different magical firing modes, activate it to change them.
+    Only wizards and their apprentices can change wand firing mode.
     Can be used on yourself.
-    The magic wand is more compact compared to a staff, but does not recharge automatically.
+    Wand is more compact compared to staves but doesn't recharge automatically.
 
 spellbook-magic-boots-name = Magical Boots
 spellbook-magic-boots-desc =
