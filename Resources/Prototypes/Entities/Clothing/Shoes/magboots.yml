@@ -23,6 +23,12 @@
     walkModifier: 0.85
     sprintModifier: 0.8
   - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
   - type: StaticPrice
     price: 200
   - type: Tag
@@ -87,34 +93,6 @@
     price: 3000
 
 - type: entity
-  parent: [ClothingShoesBase, BaseGrandTheftContraband, BaseMagicContraband]
-  id: ClothingShoesBootsNonSlipperyMag
-  name: магические сапоги
-  description: Магические ботинки, которые не скользят и обеспечивают отличное сцепление.
-  components:
-  - type: Sprite
-    sprite: Clothing/Shoes/Boots/magicboots.rsi
-    state: icon
-  - type: Clothing
-    sprite: Clothing/Shoes/Boots/magicboots.rsi
-    isEquipped: true
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
-  - type: MagicBoots
-  - type: NoSlip
-  - type: ComponentToggler
-    components:
-    - type: NoSlip
-  - type: Tag
-    tags:
-    - WhitelistChameleon
-    - HighRiskItem
-  - type: StaticPrice
-    price: 800
-  - type: Appearance
-
-- type: entity
   parent: [ClothingShoesBootsMagBase, BaseJetpack, BaseSyndicateContraband]
   id: ClothingShoesBootsMagSyndie
   name: blood-red magboots
@@ -148,4 +126,4 @@
   components:
   - type: InstantAction
     itemIconStyle: BigItem
-    event: !type:ToggleActionEvent 
+    event: !type:ToggleActionEvent
