@@ -719,6 +719,16 @@
   categories:
   - SpellbookEquipment
 
+- type: listing
+  id: SpellbookMagicBoots
+  name: spellbook-magic-boots-name
+  description: spellbook-magic-boots-desc
+  productEntity: ClothingShoesBootsNonSlipperyMag
+  cost:
+    WizCoin: 2
+  categories:
+  - SpellbookEquipment
+
 # Summons
 - type: listing
   id: SpellbookMagicalLamp
