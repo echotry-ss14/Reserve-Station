@@ -93,10 +93,10 @@
   description: Магические ботинки, которые не скользят и обеспечивают отличное сцепление.
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/magicboots.rsi
+    sprite: _Reserve/Clothing/Shoes/Boots/magicboots.rsi
     state: icon
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/magicboots.rsi
+    sprite: _Reserve/Clothing/Shoes/Boots/magicboots.rsi
     isEquipped: true
   - type: ClothingSpeedModifier
     walkModifier: 1
