@@ -87,32 +87,6 @@
     price: 3000
 
 - type: entity
-  parent: [ClothingShoesBase, BaseGrandTheftContraband, BaseMagicContraband]
-  id: ClothingShoesBootsNonSlipperyMag
-  name: магические сапоги
-  description: Магические ботинки, которые не скользят и обеспечивают отличное сцепление.
-  components:
-  - type: Sprite
-    sprite: _Reserve/Clothing/Shoes/Boots/magicboots.rsi
-    state: icon
-  - type: Clothing
-    sprite: _Reserve/Clothing/Shoes/Boots/magicboots.rsi
-    isEquipped: true
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
-  - type: Magboots
-    requiresGrid: true
-  - type: NoSlip
-  - type: Tag
-    tags:
-    - WhitelistChameleon
-    - HighRiskItem
-  - type: StaticPrice
-    price: 800
-  - type: Appearance
-
-- type: entity
   parent: [ClothingShoesBootsMagBase, BaseJetpack, BaseSyndicateContraband]
   id: ClothingShoesBootsMagSyndie
   name: blood-red magboots
