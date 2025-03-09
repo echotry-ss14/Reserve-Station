@@ -73,3 +73,6 @@ spellbook-wand-desc =
     Can be used on yourself.
     Wand is more compact compared to staves but doesn't recharge automatically.
 
+spellbook-magic-boots-name = Magical Boots
+spellbook-magic-boots-desc =
+    Magical boots that never slip and provide excellent traction on any surface.
