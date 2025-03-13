@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2025 18:28:29
-  entityCount: 12907
+  time: 03/13/2025 18:41:01
+  entityCount: 12906
 maps:
 - 1
 grids:
@@ -3830,17 +3830,6 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 5
-- proto: ActionToggleLight
-  entities:
-  - uid: 8
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 7
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 7
 - proto: AirAlarm
   entities:
   - uid: 9
@@ -5255,7 +5244,7 @@ entities:
       pos: -36.5,-2.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -17726.879
+      secondsUntilStateChange: -17760.559
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5748,7 +5737,7 @@ entities:
     - type: DeviceLinkSink
       invokeCounter: 2
     - type: Door
-      secondsUntilStateChange: -20142.533
+      secondsUntilStateChange: -20176.213
       state: Opening
     - type: DeviceLinkSource
       linkedPorts:
@@ -5848,7 +5837,7 @@ entities:
       pos: -20.5,-8.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -12471.8
+      secondsUntilStateChange: -12505.479
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -34996,7 +34985,7 @@ entities:
       pos: -18.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -16335.578
+      secondsUntilStateChange: -16369.257
       state: Closing
     - type: Firelock
       emergencyCloseCooldown: 6663.0933389
@@ -56202,7 +56191,7 @@ entities:
       pos: -9.637523,21.683886
       parent: 2
     - type: HandheldLight
-      toggleActionEntity: 8
+      toggleActionEntity: invalid
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -56213,7 +56202,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 8
+          - invalid
     - type: Physics
       angularDamping: 0
       linearDamping: 0
@@ -80062,7 +80051,7 @@ entities:
       pos: -22.5,-24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -22550.426
+      secondsUntilStateChange: -22584.105
       state: Opening
 - proto: WoodenBench
   entities:
