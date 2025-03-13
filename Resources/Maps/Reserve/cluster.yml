@@ -4,7 +4,7 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2025 17:03:39
+  time: 03/13/2025 20:58:24
   entityCount: 12689
 maps:
 - 1
@@ -5773,21 +5773,53 @@ entities:
     - type: Transform
       pos: 10.5,14.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        78:
+        - DoorStatus: DoorBolt
+        77:
+        - DoorStatus: DoorBolt
   - uid: 76
     components:
     - type: Transform
       pos: 10.5,13.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        77:
+        - DoorStatus: DoorBolt
+        78:
+        - DoorStatus: DoorBolt
   - uid: 77
     components:
     - type: Transform
       pos: 11.5,11.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        76:
+        - DoorStatus: DoorBolt
+        75:
+        - DoorStatus: DoorBolt
   - uid: 78
     components:
     - type: Transform
       pos: 12.5,11.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        75:
+        - DoorStatus: DoorBolt
+        76:
+        - DoorStatus: DoorBolt
   - uid: 79
     components:
     - type: Transform

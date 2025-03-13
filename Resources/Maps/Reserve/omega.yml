@@ -4,7 +4,7 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2025 17:35:19
+  time: 03/13/2025 20:57:23
   entityCount: 13704
 maps:
 - 1
@@ -5759,21 +5759,53 @@ entities:
     - type: Transform
       pos: -24.5,13.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 3
+    - type: DeviceLinkSource
+      linkedPorts:
+        114:
+        - DoorStatus: DoorBolt
+        115:
+        - DoorStatus: DoorBolt
   - uid: 113
     components:
     - type: Transform
       pos: -24.5,14.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        114:
+        - DoorStatus: DoorBolt
+        115:
+        - DoorStatus: DoorBolt
   - uid: 114
     components:
     - type: Transform
       pos: -27.5,13.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        113:
+        - DoorStatus: DoorBolt
+        112:
+        - DoorStatus: DoorBolt
   - uid: 115
     components:
     - type: Transform
       pos: -27.5,14.5
       parent: 2
+    - type: DeviceLinkSink
+      invokeCounter: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        113:
+        - DoorStatus: DoorBolt
+        112:
+        - DoorStatus: DoorBolt
 - proto: AirlockCaptainGlassLocked
   entities:
   - uid: 116
