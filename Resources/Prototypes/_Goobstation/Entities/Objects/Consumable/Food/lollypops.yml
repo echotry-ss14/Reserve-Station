@@ -1085,7 +1085,7 @@
   id: FoodSnackLollypopWrappedMystery
   name: wrapped-mystery-lollypop-name
   suffix: good
-  description: wrapped-mystery-lollypop-desc
+  description: A mysterious lollypop. Perfect for all your doctoring needs.
   components:
   - type: Tag
     tags:
