@@ -73,7 +73,6 @@ spellbook-wand-desc =
     Can be used on yourself.
     Wand is more compact compared to staves but doesn't recharge automatically.
 
-
 spellbook-staff-animate-name = Staff of Animation
 spellbook-staff-animate-desc =
     An arcane staff capable of infusing eldritch energy on contact which cause inanimate objects to come to life.
