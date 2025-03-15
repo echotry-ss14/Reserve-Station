@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingShoesBase, BaseGrandTheftContraband, BaseMagicContraband]
+  parent: [ClothingShoesBase, BaseMagicContraband]
   id: ClothingShoesBootsNonSlipperyMag
   name: магические сапоги
   description: Магические ботинки, которые не скользят и обеспечивают отличное сцепление.
