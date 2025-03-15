@@ -44,24 +44,6 @@
         - NonEnergy
       reflectingInHands: true
       inRightPlace: true
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.7
-          Slash: 0.7
-          Piercing: 0.7
-          Heat: 0.6
-      activeBlockModifier:
-        coefficients:
-          Blunt: 0.8
-          Slash: 0.8
-          Piercing: 0.8
-          Heat: 0.7
-        flatReductions:
-          Heat: 3
-          Blunt: 3
-          Slash: 3
-          Piercing: 3
     - type: Appearance
     - type: Damageable
       damageContainer: Shield
