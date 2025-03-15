@@ -1,0 +1,10 @@
+- type: listing
+  id: UplinkUniversalPinpointer
+  name: uplink-universal-pinpointer-name
+  description: uplink-universal-pinpointer-desc
+  icon: { sprite: /Textures/Objects/Devices/pinpointer.rsi, state: pinpointer-way }
+  productEntity: PinpointerUniversal
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkDeception
