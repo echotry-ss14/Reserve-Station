@@ -136,7 +136,7 @@
   name: sleeper-title
   description: sleeper-description
   showInVote: true
-  minPlayers: 5
+  minPlayers: 5000 # Reserve, Геймдиректор иди нахуй.
   rules:
     - CalmDynamic
     - LavalandStormScheduler # Lavaland Change
@@ -149,7 +149,7 @@
   name: guide-title
   description: guide-description
   showInVote: true
-  minPlayers: 25
+  minPlayers: 5000 # Reserve, Геймдиректор иди нахуй.
   rules:
     - CombatDynamic
     - LavalandStormScheduler # Lavaland Change

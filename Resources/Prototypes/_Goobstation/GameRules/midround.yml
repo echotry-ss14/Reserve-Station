@@ -116,9 +116,9 @@
     duration: null
     occursDuringRoundEnd: false
     chaos:
-      Hostile: 100
-      Medical: 100
-      Death: 100
+      Hostile: 250
+      Medical: 250
+      Death: 250
   - type: AntagSelection
     selectionTime: PostPlayerSpawn
     definitions:
@@ -130,13 +130,14 @@
         - AntagImmune
         - CommandStaff
       briefing:
-        text: head-rev-role-greeting
+        text: head-rev-role-greeting-consent-only # Reserve-ConsentRev
         color: CornflowerBlue
         sound: "/Audio/Ambience/Antag/headrev_start.ogg"
-      startingGear: HeadRevGear
+      #startingGear: HeadRevGear # Reserve-ConsentRev
       components:
       - type: Revolutionary
       - type: HeadRevolutionary
+        onlyConsentConvert: true # Reserve-ConsentRev
       mindRoles:
       - MindRoleHeadRevolutionary
   - type: Tag
