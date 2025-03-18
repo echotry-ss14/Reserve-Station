@@ -191,6 +191,17 @@
 # Wearables
 
 - type: listing
+  id: UplinkClothingDreadnought
+  name: uplink-hardsuit-cybersun-dreadnought-name
+  description: uplink-hardsuit-cybersun-dreadnought-desc
+  icon: { sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/dreadnought.rsi, state: icon }
+  productEntity: CrateSyndicateDreadnought
+  cost:
+    Telecrystal: 150
+  categories:
+  - UplinkWearables
+
+- type: listing
   id: UplinkClothingHeadHelmetSwatSyndicate
   name: uplink-helmet-swat-name
   description: uplink-helmet-swat-desc
@@ -323,6 +334,20 @@
     - Clown
     - Mime
 
+- type: listing
+  id: UplinkClowncar
+  name: uplink-clowncar-name
+  description: uplink-clowncar-desc
+  icon: { sprite: /Textures/_Goobstation/Objects/Vehicles/clowncar.rsi, state: clowncar }
+  productEntity: CrateFunClownCarUplink
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Clown
 
 - type: listing
   id: UplinkMobRoachMicrobomb
@@ -662,22 +687,6 @@
     whitelist:
       tags:
       - NukeOpsUplink
-
-- type: listing
-  id: UplinkMysteriousScroll
-  name: uplink-sleeping-carp-name
-  description: uplink-sleeping-carp-desc
-  productEntity: SleepingCarpScroll
-  cost:
-    Telecrystal: 70
-  categories:
-  - UplinkWeaponry
-  conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
-
 
 # Misc
 - type: listing
