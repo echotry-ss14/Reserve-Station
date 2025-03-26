@@ -23,12 +23,6 @@
     walkModifier: 0.85
     sprintModifier: 0.8
   - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.ToggleVisuals.Toggled:
-        enum.ToggleVisuals.Layer:
-          True: {state: icon-on}
-          False: {state: icon}
   - type: StaticPrice
     price: 200
   - type: Tag
@@ -126,4 +120,4 @@
   components:
   - type: InstantAction
     itemIconStyle: BigItem
-    event: !type:ToggleActionEvent
+    event: !type:ToggleActionEvent 
