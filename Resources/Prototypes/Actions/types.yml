@@ -9,17 +9,17 @@
 
 # actions
 
-- type: entity
-  id: ActionScream
-  name: Scream
-  description: AAAAAAAAAAAAAAAAAAAAAAAAA
-  components:
-  - type: InstantAction
-    useDelay: 10
-    icon: Interface/Actions/scream.png
-    event: !type:ScreamActionEvent
-    checkCanInteract: false
-    autoPopulate: false
+# - type: entity
+#   id: ActionScream
+#   name: Scream
+#   description: AAAAAAAAAAAAAAAAAAAAAAAAA
+#   components:
+#   - type: InstantAction
+#     useDelay: 10
+#     icon: Interface/Actions/scream.png
+#     event: !type:ScreamActionEvent
+#     checkCanInteract: false
+#     autoPopulate: false
 
 - type: entity
   id: ActionTurnUndead
