@@ -32,15 +32,7 @@ public sealed class VocalSystem : EntitySystem
     private void OnMapInit(EntityUid uid, VocalComponent component, MapInitEvent args)
     {
         // try to add scream action when vocal comp added
-        if (component.ScreamAction != null)
-        {
-            var action = _actions.CreateAction(component.ScreamAction);
-            if (action != null)
-            {
-                component.ScreamActionEntity = action;
-                _actions.AddAction(uid, action);
-            }
-        }
+        _actions.AddAction(uid, ref component.ScreamActionEntity, component.ScreamAction);
         LoadSounds(uid, component);
     }
 
