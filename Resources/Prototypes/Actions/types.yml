@@ -19,6 +19,7 @@
     icon: Interface/Actions/scream.png
     event: !type:ScreamActionEvent
     checkCanInteract: false
+    autoPopulate: false
 
 - type: entity
   id: ActionTurnUndead
