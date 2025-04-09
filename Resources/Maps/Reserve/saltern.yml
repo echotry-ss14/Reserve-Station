@@ -3920,9 +3920,6 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
-      - 5747
-      - 5746
-      - 5780
       - 7506
       - 7583
       - 270
@@ -4086,20 +4083,10 @@ entities:
       - 7548
       - 7534
       - 7468
-      - 5712
       - 5738
       - 5739
-      - 5725
-      - 5726
       - 5727
-      - 5728
       - 5729
-      - 5747
-      - 5780
-      - 5711
-      - 5709
-      - 5710
-      - 5850
   - uid: 21
     components:
     - type: Transform
@@ -34699,16 +34686,9 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
-      - 5850
       - 5738
       - 5739
       - 5746
-      - 5747
-      - 5780
-      - 5709
-      - 5710
-      - 5711
-      - 5725
       - 5726
   - uid: 5653
     components:
@@ -35131,9 +35111,6 @@ entities:
     - type: Transform
       pos: 8.5,-31.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35142,9 +35119,6 @@ entities:
     - type: Transform
       pos: 10.5,-30.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35153,7 +35127,6 @@ entities:
     - type: Transform
       pos: 13.5,-24.5
       parent: 2
-    - type: DeviceNetwork
       configurators:
       - invalid
       deviceLists:
@@ -35167,9 +35140,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,-32.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 20
   - uid: 5713
@@ -35251,9 +35221,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,-28.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35263,9 +35230,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,-29.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35274,9 +35238,6 @@ entities:
     - type: Transform
       pos: 7.5,-27.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 20
   - uid: 5728
@@ -35284,9 +35245,6 @@ entities:
     - type: Transform
       pos: 8.5,-27.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 20
   - uid: 5729
@@ -35294,9 +35252,6 @@ entities:
     - type: Transform
       pos: 9.5,-27.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 20
 - proto: FirelockElectronics
@@ -35348,9 +35303,6 @@ entities:
     - type: Transform
       pos: 4.5,-23.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35359,9 +35311,6 @@ entities:
     - type: Transform
       pos: 2.5,-23.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35408,9 +35357,6 @@ entities:
     - type: Transform
       pos: 1.5,-28.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35579,9 +35525,6 @@ entities:
     - type: Transform
       pos: 1.5,-26.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -35935,9 +35878,6 @@ entities:
     - type: Transform
       pos: 3.5,-31.5
       parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5652
       - 20
@@ -55532,19 +55472,6 @@ entities:
     - type: Transform
       pos: -9.637523,21.683886
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: invalid
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - invalid
     - type: Physics
       angularDamping: 0
       linearDamping: 0
