@@ -44,7 +44,7 @@ public sealed partial class RevenantSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
-    [Dependency] private readonly PoweredLightSystem _poweredLight = default!; //ss220 revenant buff
+    [Dependency] private readonly PoweredLightSystem _poweredLight = default!; //reserve revenant buff
 
     private void InitializeAbilities()
     {
@@ -247,7 +247,7 @@ public sealed partial class RevenantSystem
         }
 
         var lookup = _lookup.GetEntitiesInRange(uid, component.DefileRadius, LookupFlags.Approximate | LookupFlags.Static);
-        var entities = _lookup.GetEntitiesInRange(uid, component.DefileRadius); //ss220 revenant buff //new one for lights breaking
+        var entities = _lookup.GetEntitiesInRange(uid, component.DefileRadius); //reserve revenant buff //new one for lights breaking
         var tags = GetEntityQuery<TagComponent>();
         var entityStorage = GetEntityQuery<EntityStorageComponent>();
         var items = GetEntityQuery<ItemComponent>();
@@ -260,7 +260,7 @@ public sealed partial class RevenantSystem
             {
                 //hardcoded damage specifiers til i die.
                 var dspec = new DamageSpecifier();
-                dspec.DamageDict.Add("Structural", 55); //ss220 Revenant buff //that isn't buff, but.. Uhh, balance?
+                dspec.DamageDict.Add("Structural", 55); //reserve Revenant buff //that isn't buff, but.. Uhh, balance?
                 _damage.TryChangeDamage(ent, dspec, origin: uid);
             }
 
@@ -276,7 +276,7 @@ public sealed partial class RevenantSystem
                 TryComp<PhysicsComponent>(ent, out var phys) && phys.BodyType != BodyType.Static)
                 _throwing.TryThrow(ent, _random.NextAngle().ToWorldVec());
 
-        //ss220 Revenant buff start
+        //reserve Revenant buff start
             //flicker lights
             //if (lights.HasComponent(ent))
             //    _ghost.DoGhostBooEvent(ent);
@@ -292,7 +292,7 @@ public sealed partial class RevenantSystem
 
             _poweredLight.TryDestroyBulb(entity, lightComp);
         }
-        //ss220 Revenant buff end
+        //reserve Revenant buff end
     }
 
     private void OnOverloadLightsAction(EntityUid uid, RevenantComponent component, RevenantOverloadLightsActionEvent args)

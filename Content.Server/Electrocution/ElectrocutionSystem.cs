@@ -340,7 +340,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         bool ignoreInsulation = false, // Goobstation
         StatusEffectsComponent? statusEffects = null,
         TransformComponent? sourceTransform = null,
-        bool ignoreInsulation = false) //SS220 Add ignore insulation
+        bool ignoreInsulation = false) //reserve Add ignore insulation
     {
         if (!DoCommonElectrocutionAttempt(uid, sourceUid, ref siemensCoefficient, ignoreInsulation)) // Goob edit
             return false;
