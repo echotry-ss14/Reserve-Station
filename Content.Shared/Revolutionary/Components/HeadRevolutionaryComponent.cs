@@ -31,6 +31,7 @@ public sealed partial class HeadRevolutionaryComponent : Component
     [DataField]
     public bool ConvertAbilityEnabled = true;
 
+
     // Reserve-ConsentRev-Start
     /// <summary>
     /// If head rev's convert can convert only with consist of other convertable person.
@@ -38,3 +39,6 @@ public sealed partial class HeadRevolutionaryComponent : Component
     [DataField] public bool OnlyConsentConvert = false;
     // Reserve-ConsentRev-End
 }
+
+
+
