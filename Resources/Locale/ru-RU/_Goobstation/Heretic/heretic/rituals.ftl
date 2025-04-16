@@ -24,7 +24,7 @@ heretic-ritual-fail-sacrifice-blade = У некоторых из них еще �
 
 heretic-ritual-side-knowledge = Ритуал знания
 heretic-ritual-side-shark = Палящая акула ## Не готовая хернь
-heretic-ritual-side-cloak = Плащ Пустоты ## ^^^
+heretic-ritual-side-cloak = Плащ Пустоты
 heretic-ritual-side-ghoul = Ритуал разрушения ## Угадай что с этим не так
 heretic-ritual-side-armor = Ритуал оружейника
 heretic-ritual-side-water = Ритуал священника
