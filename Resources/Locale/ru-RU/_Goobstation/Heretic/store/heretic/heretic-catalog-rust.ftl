@@ -40,12 +40,12 @@ knowledge-path-rust-s6-desc =
 
     Дает вам Агрессивное Распространение - заклинание, которое распространяет ржавчину на близлежащие поверхности.
 
-knowledge-path-rust-s7-name = Toxic Blade
+knowledge-path-rust-s7-name = Токсичный клинок
 knowledge-path-rust-s7-desc =
-    The Blacksmith hands you their blade. "The Blade will guide you through the flesh, should you let it." The heavy rust weights it down. You stare deeply into it. The Rusted Hills call for you, now.
+    Кузнец вручает вам свой клинок. "Клинок проведет тебя сквозь плоть, если ты позволишь ему". Ржавчина отягощает его. Вы пристально вглядываетесь в него. Ржавые холмы зовут вас прямо сейчас.
 
-    Your Rusty Blade now causes toxic damage to those you attack and also increases rot level of corpses.
-    Allows you to rust reinforced and mining walls.
+    Теперь ваш Ржавый клинок наносит токсичный урон тем, на кого вы нападаете, а также увеличивает уровень гниения трупов.
+    Позволяет вам накладывать ржавчину на укрепленные и шахтёрские стены.
 
 knowledge-path-rust-s8-name = Энтропийный шлейф
 knowledge-path-rust-s8-desc =
