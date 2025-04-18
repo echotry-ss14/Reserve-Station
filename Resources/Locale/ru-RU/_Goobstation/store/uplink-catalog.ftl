@@ -92,7 +92,7 @@ uplink-whimsy-bundle-desc = Вам нравится распространять
 # Ammo
 
 uplink-blast-grenade-name = Фугасная граната
-uplink-blast-grenade-desc = Более высокий урон, меньший радиус. Совместима с China-Lake.
+uplink-blast-grenade-desc = Более высокий урон, меньший радиус. Совместима с Чайна-Лейк.
 
 uplink-frag-grenade-name = Осколочная граната
 uplink-frag-grenade-desc = Меньший урон, больший радиус. Совместима с China-Lake.
