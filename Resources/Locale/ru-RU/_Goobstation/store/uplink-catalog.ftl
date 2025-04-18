@@ -66,7 +66,7 @@ uplink-c20r-name = C-20r
 uplink-c20r-desc = Cтарый надёжный: Классический пистолет-пулемет C-20r.
 
 uplink-buldog-name = Бульдог
-uplink-buldog-desc = Дробовик с барабанным механизмом подачи патрона.
+uplink-buldog-desc = Дробовик с магазинным питанием.
 
 uplink-l6-saw-name = L6 SAW
 uplink-l6-saw-desc = Больше дакки: культовый легкий пулемет L6.
