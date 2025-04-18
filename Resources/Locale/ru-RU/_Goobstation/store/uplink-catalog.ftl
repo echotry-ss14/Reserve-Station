@@ -95,7 +95,7 @@ uplink-blast-grenade-name = Фугасная граната
 uplink-blast-grenade-desc = Более высокий урон, меньший радиус. Совместима с Чайна-Лейк.
 
 uplink-frag-grenade-name = Осколочная граната
-uplink-frag-grenade-desc = Меньший урон, больший радиус. Совместима с China-Lake.
+uplink-frag-grenade-desc = Меньший урон, больший радиус. Совместима с Чайна-Лейк.
 
 uplink-rifle-mag-name = Магазин для винтовки (.20 винтовочный)
 uplink-rifle-mag-desc = Магазин на 25 патронов, содержащий винтовочные пули калибра .20. Подходит для Лектера и M-90.
