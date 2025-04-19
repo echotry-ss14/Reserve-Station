@@ -8,7 +8,6 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._White.CustomGhostSpriteSystem;
 
-// WD add
 public sealed class CustomGhostSpriteSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
