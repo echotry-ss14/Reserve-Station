@@ -5,7 +5,6 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client._White.CustomGhostSpriteSystem;
 
-// WD add
 public sealed class CustomGhostVisualizer : VisualizerSystem<GhostComponent>
 {
     protected override void OnAppearanceChange(EntityUid uid, GhostComponent component, ref AppearanceChangeEvent args)
