@@ -8,7 +8,6 @@ namespace Content.Shared._White.CustomGhostSystem;
 /// <summary>
 /// Use this for custom ghost's
 /// </summary>
-// WD add
 [Prototype("customGhost")]
 public sealed class CustomGhostPrototype : IPrototype
 {
