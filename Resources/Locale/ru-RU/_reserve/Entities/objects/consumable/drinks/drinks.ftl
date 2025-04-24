@@ -1,3 +1,3 @@
 ent-DrinkBacchusBlessing = { ent-DrinkGlass }
-    .suffix = Благословение Бахуса
-    .desc = { ent-DrinkGlass.desc }
+    .desc = Вы и не думали, что жидкость может быть настолько отвратительной. Вы уверены в этом?...
+    .suffix = благословение бахуса

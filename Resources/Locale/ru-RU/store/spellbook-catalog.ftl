@@ -6,10 +6,6 @@ spellbook-blink-desc = Не моргайте, иначе вы не замети�
 spellbook-force-wall-name = Силовой барьер
 spellbook-force-wall-desc = Создайте три стены чистой энергии, через которые вы можете пройти, а другие - нет.
 spellbook-polymoprh-spider-name = Полиморф-паук
-spellbook-repulse-name = Импульс
-spellbook-repulse-desc = Прикажите всем уйти с вашего пути или оттолкните их от себя.
-spellbook-smoke-name = Дым
-spellbook-smoke-desc = Очевидно, создаёт облако дыма.
 spellbook-polymorph-spider-name = Полиморф-паук
 spellbook-polymorph-spider-desc = Превращает вас в паука!
 spellbook-polymorph-rod-name = Полиморф-жезл
@@ -18,8 +14,6 @@ spellbook-charge-name = Зарядка
 spellbook-charge-desc = Добавляет заряд вашей палочке!
 spellbook-ethereal-jaunt-name = Эфирная прогулка
 spellbook-ethereal-jaunt-description = Перейдите на Эфирный план чтобы ускользнуть от врагов!
-spellbook-mind-swap-name = Mind Swap
-spellbook-mind-swap-description = Exchange bodies with another person!
 
 # Equipment
 
@@ -33,7 +27,6 @@ spellbook-hammer-mjollnir-name = Мьёльнир
 spellbook-hammer-mjollnir-description = В ваших руках мощь ГРОЗЫ. Отправляйте врагов в полет с помощью мощного взмаха или броска прямо в них!
 spellbook-hammer-singularity-name = Молот сингулярности
 spellbook-hammer-singularity-description = Вы когда-нибудь задумывались, каково это - быть сингулярностью? Размахивайте этим молотом, чтобы притянуть всё вокруг, даже если вы промахнетесь!
-spellbook-wand-locker-description = Стреляйте в своих врагов проклятыми шкафчиками и запирайте их!
 spellbook-staff-animation-name = Посох оживления
 spellbook-staff-animation-description = Оживите неодушевлённые предметы!
 

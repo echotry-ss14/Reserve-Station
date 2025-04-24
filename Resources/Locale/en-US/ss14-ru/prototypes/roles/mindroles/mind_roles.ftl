@@ -66,7 +66,3 @@ ent-MindRoleTraitorReinforcement = Syndicate Reinforcement Role
     .desc = { ent-MindRoleTraitor.desc }
 ent-MindRoleWizard = Wizard Role
     .desc = { ent-BaseMindRoleAntag.desc }
-ent-MindRoleInitialInfected = Initial Infected Role
-    .desc = { ent-BaseMindRoleAntag.desc }
-ent-MindRoleZombie = Zombie Role
-    .desc = { ent-MindRoleGhostRoleTeamAntagonistFlock.desc }

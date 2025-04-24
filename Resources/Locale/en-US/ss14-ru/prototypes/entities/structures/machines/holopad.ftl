@@ -9,7 +9,6 @@ ent-HolopadBluespace = bluespace holopad
     .suffix = Unrestricted range
 ent-HolopadHologram = { "" }
     .suffix = DO NOT MAP
-ent-HolopadHologram = hologram
     .desc = { "" }
 ent-HolopadGeneralTools = { ent-Holopad }
     .suffix = Tools
