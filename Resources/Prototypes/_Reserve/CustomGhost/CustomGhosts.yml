@@ -10,6 +10,6 @@
   id: svarshik-ghost
   ckey: Svarshik
   sprite: /Textures/_Reserve/CustomGhosts/svarshik-ghost.rsi
-  alpha: 0.8
-  ghostName: svarshik
-  ghostDescription: Schizo
+  alpha: 0.6
+  ghostName: Svarshik
+  ghostDescription: Вам кажется.
