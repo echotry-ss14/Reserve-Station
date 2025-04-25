@@ -714,7 +714,7 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - NamesSyndicatePrefix
+        - SyndicateNamesPrefix
         - NamesSyndicateNormal
       - type: NpcFactionMember
         factions:

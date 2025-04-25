@@ -35,7 +35,7 @@
     size: Normal
   - type: RandomMetadata # No metagaming these, jimbo.
     nameSegments:
-    - NamesSyndicatePrefix
+    - SyndicateNamesPrefix
     - NamesSyndicateNormal
   - type: Damageable
     damageContainer: Inorganic

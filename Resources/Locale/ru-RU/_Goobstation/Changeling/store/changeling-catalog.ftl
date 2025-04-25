@@ -1,7 +1,4 @@
 # Changeling
-store-ling-category-combat = Бой
-store-ling-category-sting = Укусы
-store-ling-category-utility = Утилита# бой
 evolutionmenu-combat-armhammer-name = Арм Хаммер
 evolutionmenu-combat-armhammer-desc =
     Преобразуйте одну из своих рук в гротескный молот, состоящий из костей и плоти, способный сокрушать противников, сбивая их с ног и отправляя в полет. Сбивает с ног только при легкой атаке.
@@ -112,7 +109,7 @@ evolutionmenu-utility-fleshmend-desc =
     Быстро исцеляет все царапины и ожоги.
     Затрачивает 35 химикатов.
 evolutionmenu-utility-chameleon-name = Кожа хамелеона
-evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой,
+evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой.
 evolutionmenu-utility-lesserform-name = Меньшая форма
 evolutionmenu-utility-lesserform-desc =
     Отказ от своей текущей формы и превращение в разумного обезьяна.
@@ -129,33 +126,6 @@ evolutionmenu-utility-absorbbiomatter-name = Поглощение биомате
 evolutionmenu-utility-absorbbiomatter-desc =
     Поглощает органический продукт питания, позволяя вам восстановить химикаты в зависимости от его содержимого.
     Можно поглотить продукты питания, приготовленные и неприготовленные белки и жиры.
-evolutionmenu-utility-stims-name = Эфедриновая передозировка
-evolutionmenu-utility-stims-desc =
-    Сделайте инъекцию из смеси стимуляторов в своё тело, быстро убирает любую усталость и ускоряет.
-    Многократное использование отравляет.
-    Затрачивает 30 химикатов.
-evolutionmenu-utility-fleshmend-name = Новая плоть
-evolutionmenu-utility-fleshmend-desc =
-    Проведите быструю регенерацию тканям, которые повреждены механически и термически.
-    Затрачивает 35 химикатов.
-evolutionmenu-utility-chameleon-name = Кожа хамелеона
-evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой,
-evolutionmenu-utility-lesserform-name = Низшая форма
-evolutionmenu-utility-lesserform-desc =
-    Откажитесь от вашего тела и превратитесь в умную мартышку.
-    Затрачивает 20 химикатов.
-evolutionmenu-utility-spacesuit-name = Адаптация к космосу
-evolutionmenu-utility-spacesuit-desc =
-    Избавьтесь от бесполезной кожи, чтобы совершать космические путешествия. Для дыхания в космосе требуется источник кислорода.
-    Затрачивает 20 химикатов.
-evolutionmenu-utility-hivemindaccess-name = Голос улья
-evolutionmenu-utility-hivemindaccess-desc =
-    Изменяет рецепторы для доступа к голосу улья, позволяет общаться с генокрадами, которые также получили такую способность.
-    Ключ канала :g
-evolutionmenu-utility-absorbbiomatter-name = Поглощение биомассы
-evolutionmenu-utility-absorbbiomatter-desc =
-    Поглощайте органическую пищу и пополняйте свои химикаты, в зависимости от состава пищи.
-    Поглощает жиры, углеводы и протеин.
 evolutionmenu-utility-lastresort-name = Крайняя мера
 evolutionmenu-utility-lastresort-desc =
     Откажитесь от своего текущего тела и сбегите в форме слизняка.
