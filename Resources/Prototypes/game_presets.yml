@@ -256,7 +256,7 @@
   showInVote: false
   rules:
     - Nukeops
-    - SubGamemodesRule
+  #  - SubGamemodesRule #Reserve edit - no thieves on nukeops
     - BasicStationEventScheduler
   #  - MeteorSwarmScheduler Goobstation - nuh uh
     - SpaceTrafficControlEventScheduler

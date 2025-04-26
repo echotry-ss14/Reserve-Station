@@ -23,18 +23,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - Events you experienced as a different character.
   - All information related to the player of a character rather than the character itself. (See "Metafriending and Metagrudging" below.)
   - All information gained while dead or a ghost.
+  - All information gained while in critical condition or unconscious.
   - The fact that a round will end.
 
   This does not prevent knowing that a shift will end, but does prohibit things like preparing to kill people at central command when roleplay rules stop being enforced on LRP.
 
   ## Nuclear Operatives
 
-  The existence of Nuclear Operatives beyond a myth that no one would act on is shielded.
+  Nukies are considered propaganda by Nanotrasen, and crew isn't informed on them at all.
+  Posters seen on-station are ignored and called syndicate propaganda.
 
   The fact that the nuke disk must be protected and could be used by a bad actor to try to destroy the station is not shielded.
 
   The revealing condition for this shield is any of the following:
-  - discovering a blood red hardsuit
   - discovering a nuclear operative's shuttle
   - an operative name
   - a War Ops announcement
@@ -44,7 +45,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   In the eyes of the public, changelings are an exterminated predatory lifeform and their potential existence on the station is shielded.
   This metashield prohibits players from crew bloodtesting until the metashield is revealed.
-
+  
   Knowledge about the abilities of changelings is not shielded.
 
   The revealing condition for this shield is any of the following:
@@ -57,15 +58,51 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   ## Heretics
 
   To normal people, heretics are generally unknown. Security and Command may be aware that a group of people following a rogue god exists, but it's an absurd reality.
-  This metashield prohibits normal players from knowing what runes or reality fractures are. Security may be suspicious of them.
+  This metashield prohibits normal players from knowing what runes or reality fractures are. Security may be suspicious of them. 
 
   Knowledge about the ability of heretics is not shielded.
 
   The revealing condition for this shield is any of the following:
-  - witnessing a crewmember drawing a rune
-  - witnessing a crewmember harvesting a reality fracture
+  - witnessing a crewmember drawing a rune  
+  - witnessing a crewmember harvesting a reality fracture 
   - witnessing a crewmember using their powers
 
+  ## Zombies
+
+  Zombies are known galaxy-wide, but not as real-life, instead, as fiction.
+  Nuclear Operatives and Syndicate Agents are aware of Romerol and what it can do, but are prohibited of speaking about it publicly - unless they want their families to die. 
+
+  Revealing conditions to the "Zombie" Shield:
+  - You are a Nuclear Operative
+  - You are a Syndicate Agent
+  - You are a Zombie
+  - You have seen Zombies on the station
+
+  ## Infections
+
+  Zombies are known as extinct, they previously ravaged humanity hundreds of years ago in medieval times.
+  A cure was made, and is still held onto by chemists and Chief Medical Officers as a show of how long your family has been in the field.
+
+  Revealing conditions to the "Infections" Shield:
+  - You are a Chemist
+  - You are a Chief Medical Officer
+  - Zombies are announced to be real and station-wide
+
+  ## Deathsquad
+
+  Deathsquad is known to exist - per the posters on the station, but they are not known as a crew killsquad, instead known as an elite team sent into stations to handle extreme threats even the best of ERT Security leaders could handle.
+  The station's Nanotrasen Representative and Blueshield Officer are aware that Deathsquad is a crew killsquad, but are heavily prohibited to mention it, and will be dealt with after, or during, the shift.
+   
+  In private conversations, faxes, or phone calls, both BSO & NTR are advised to use the term 'Janitor Squad' to refer to the Deathsquad.
+  Crew can also choose to roleplay as if they've seen deathsquad movies, knowing limited aspects of their gear one would reasonably know watching an action-movie.
+
+  Revealing conditions to the "Deathsquad" Shield:
+  - Code Omicron is called, nuking the station
+  - Code Epsilon is called, terminating contracts
+  - You are the Nanotrasen Representative (NTR)
+  - You are the Blueshield Officer (BSO)
+  - A Central Command Official (Non-NTR/BSO) mentions Deathsquad as a [bold]Killsquad[/bold]
+   
   ## Implanted Implants
 
   Implanted implants are shielded.
@@ -102,12 +139,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - seeing the item used for its hidden purpose
   - experiencing a situation where absolutely no other explanation is possible
   - discovering an unlocked uplink
-
-  ## MRP Amendment 1
-  A shield prevents your character from remembering anything that happened while unconscious. This shield is never revealed IC.
-
-  ## MRP Amendment 2
-  There is a "New Life Rule" shield. It prevents you from remembering anything that lead to your death, even if you are put into an MMI. If you are cloned, it also prevents you from remembering everything from that round. This shield is never revealed IC.
 
   ## Metafriending and Metagrudging
   This section provides additional information on a concept that is prohibited by multiple metashield items that are never revealed IC. Giving a person or character preferential treatment based on something that your character should not know is considered metafriending. Treating a person or character negatively based on something that your character should not know is considered metagrudging.

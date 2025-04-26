@@ -72,7 +72,6 @@ ent-PlayerStationAi = { ent-PlayerStationAiEmpty }
     .suffix = Спавн должности
     .desc = { ent-PlayerStationAiEmpty.desc }
 ent-StationAiBrain = { ent-PositronicBrain }
-    .suffix = НЕ МАППИТЬ
     .desc = { ent-PositronicBrain.desc }
 ent-StationAiHoloLocal = Голограмма ИИ
     .desc = Голографическое представление ИИ.

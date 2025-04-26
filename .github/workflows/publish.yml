@@ -17,8 +17,8 @@ name: Publish
 
 on:
   workflow_dispatch:
-  # schedule:
-   # - cron: '0 10 * * *'
+  schedule:
+    - cron: '0 10 * * *'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -26,22 +26,12 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #Reserve edit. No self-hosted sadly
+
 
     steps:
     - name: Install dependencies
       run: sudo apt-get install -y python3-paramiko python3-lxml
-
-    - uses: actions/checkout@v3.6.0
-      with:
-        submodules: 'recursive'
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v3.2.0
-      with:
-        dotnet-version: 9.0.x
-
-    - name: Get Engine Tag
-      run: |
 
     - name: Check .NET Installation
       id: check-dotnet
@@ -52,6 +42,17 @@ jobs:
           echo "skip=false" >> $GITHUB_ENV
         fi
 
+    - uses: actions/checkout@v3.6.0
+      with:
+        submodules: 'recursive'
+    - name: Setup .NET Core
+      # if: env.skip == 'false' #Reserve edit. Always setup. Or idk.
+      uses: actions/setup-dotnet@v3.2.0
+      with:
+        dotnet-version: 9.0.x
+
+    - name: Get Engine Tag
+      run: |
         cd RobustToolbox
         git fetch --depth=1
 
@@ -73,13 +74,13 @@ jobs:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
 
-    # - name: Publish changelog (Discord)
-    #   run: Tools/actions_changelogs_since_last_run.py
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+    - name: Publish changelog (Discord)
+      run: Tools/actions_changelogs_since_last_run.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
 
-    # - name: Publish changelog (RSS)
-    #   run: Tools/actions_changelog_rss.py
-    #   env:
-    #     CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}
+    - name: Publish changelog (RSS)
+      run: Tools/actions_changelog_rss.py
+      env:
+        CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}

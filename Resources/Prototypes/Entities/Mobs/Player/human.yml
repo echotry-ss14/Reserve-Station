@@ -124,7 +124,7 @@
   name: Urist McHands
   parent: BaseMobHuman
   id: MobHuman
-  
+
 #Syndie
 - type: entity
   parent: MobHuman
@@ -139,7 +139,7 @@
     prototypes: [SyndicateOperativeGearExtremelyBasic]
     roleLoadout: [ RoleSurvivalSyndicate ]
   - type: RandomMetadata
-    nameSegments: [names_death_commando]
+    nameSegments: [NamesDeathCommando]
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -186,13 +186,13 @@
   id: MobHumanSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
   suffix: Human, NukeOps
   components:
-    - type: NukeOperative
-    - type: RandomMetadata
-      nameSegments:
-      - nukeops-role-operator
-      - SyndicateNamesNormal
-    - type: Loadout
-      prototypes: [SyndicateOperativeReinforcementGear] # goobstation - duke nukies
+  - type: NukeOperative
+  - type: RandomMetadata
+    nameSegments:
+    - nukeops-role-operator
+    - NamesSyndicateNormal
+  - type: Loadout
+    prototypes: [SyndicateOperativeReinforcementGear] # goobstation - duke nukies
 
 # Nuclear Operative
 - type: entity
@@ -219,7 +219,7 @@
   - type: RandomMetadata
     nameSegments:
     - SyndicateNamesPrefix
-    - SyndicateNamesNormal
+    - NamesSyndicateNormal
   - type: NpcFactionMember
     factions:
     - Syndicate

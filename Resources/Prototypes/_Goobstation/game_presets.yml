@@ -1,13 +1,17 @@
 # SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Fenn <162015305+TooSillyFennec@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
 # SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
 # SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+# SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 # SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
@@ -28,101 +32,101 @@
 - type: gamePreset
   id: Changeling
   alias:
-  - ling
-  - lings
-  - changeling
+    - ling
+    - lings
+    - changeling
   name: changeling-gamemode-title
   description: changeling-gamemode-description
   showInVote: false
   rules:
-  - Changeling
-  - SubGamemodesRule
-  - BasicStationEventScheduler
-  #- MeteorSwarmScheduler Goobstation - nuh uh
-  - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+    - Changeling
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+    #- MeteorSwarmScheduler Goobstation - nuh uh
+    - BasicRoundstartVariation
+    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Traitorling
   alias:
-  - lingtraitor
-  - traitorling
+    - lingtraitor
+    - traitorling
   name: traitorling-title
   description: traitorling-description
   showInVote: false
   rules:
-  - CalmLing
-  - CalmTraitor
-  - BasicStationEventScheduler
-  #- MeteorSwarmScheduler Goobstation - nuh uh
-  - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+    - CalmLing
+    - CalmTraitor
+    - BasicStationEventScheduler
+    #- MeteorSwarmScheduler Goobstation - nuh uh
+    - BasicRoundstartVariation
+    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: NukeTraitor
   alias:
-  - nuketot
-  - optraitor
-  - optot
+    - nuketot
+    - optraitor
+    - optot
   name: nukeops-title
   description: nukeops-description
   showInVote: false
   rules:
-  - Calmops
-  - CalmTraitor
-  - BasicStationEventScheduler
-  #- MeteorSwarmScheduler Goobstation - nuh uh
-  - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+    - Calmops
+    - CalmTraitor
+    - BasicStationEventScheduler
+    #- MeteorSwarmScheduler Goobstation - nuh uh
+    - BasicRoundstartVariation
+    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: NukeLing
   alias:
-  - nukeling
-  - opling
+    - nukeling
+    - opling
   name: nukeops-title
   description: nukeops-description
   showInVote: false
   rules:
-  - Calmops
-  - CalmLing
-  - BasicStationEventScheduler
-  #- MeteorSwarmScheduler Goobstation - nuh uh
-  - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+    - Calmops
+    - CalmLing
+    - BasicStationEventScheduler
+    #- MeteorSwarmScheduler Goobstation - nuh uh
+    - BasicRoundstartVariation
+    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: RevTraitor
   alias:
-  - revtraitor
-  - revtot
-  - totrevs
+    - revtraitor
+    - revtot
+    - totrevs
   name: revtraitor-title
   description: revtraitor-description
   showInVote: false
   rules:
-  - CalmRevs
-  - CalmTraitor
-  - BasicStationEventScheduler
-  #- MeteorSwarmScheduler Goobstation - nuh uh
-  - LavalandStormScheduler # Lavaland Change
+    - CalmRevs
+    - CalmTraitor
+    - BasicStationEventScheduler
+    #- MeteorSwarmScheduler Goobstation - nuh uh
+    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: RevLing
   alias:
-  - revling
-  - lingrevs
+    - revling
+    - lingrevs
   name: revling-title
   description: revling-description
   showInVote: false
   rules:
-  - CalmRevs
-  - CalmLing
-  - BasicStationEventScheduler
-  #- MeteorSwarmScheduler Goobstation - nuh uh
-  - BasicRoundstartVariation
-  - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+    - CalmRevs
+    - CalmLing
+    - BasicStationEventScheduler
+    #- MeteorSwarmScheduler Goobstation - nuh uh
+    - BasicRoundstartVariation
+    - BasicRoundstartVariation
+    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Blob
@@ -140,43 +144,31 @@
   - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
-  id: Honkops
+  id: TheGhost
   alias:
-  - honkops
-  name: honkops-title
-  description: honkops-description
-  showInVote: false
-  rules:
-  - Honkops
-  - SubGamemodesRule
-  - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
-  - SpaceTrafficControlEventScheduler
-  - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
-
-- type: gamePreset
-  id: TheSleeper
-  alias:
-  - calm
-  - calmdynamic
+    - calm
+    - calmdynamic
   name: sleeper-title
   description: sleeper-description
   showInVote: true
   minPlayers: 5
   rules:
-  - CalmDynamic
-  - LavalandStormScheduler # Lavaland Change
+    - CalmDynamic
+    - LavalandStormScheduler
+    - SubGamemodesRule
+    - RareIonStormScheduler
 
 - type: gamePreset
   id: TheGuide
   alias:
-  - combat
-  - combatdynamic
+    - combat
+    - combatdynamic
   name: guide-title
   description: guide-description
   showInVote: true
   minPlayers: 25
   rules:
-  - CombatDynamic
-  - LavalandStormScheduler # Lavaland Change
+    - CombatDynamic
+    - LavalandStormScheduler
+    - SubGamemodesRule
+    - IonStormScheduler
