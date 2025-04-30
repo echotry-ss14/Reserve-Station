@@ -12,7 +12,7 @@ changeling-absorb-end-self = Еще одно поглощение. Вы эвол
 changeling-absorb-end-self-ling = Поглощен еще один генокрад. Вы развиваетесь быстрее.
 changeling-absorb-onexamine = [color=red]Тело кажется полым[/color].
 changeling-absorb-fail-nograb = Тело не в захвате.
-changeling-absorb-fail-onfire = Цель в огне, сначала потушите цель!
+changeling-absorb-fail-onfire = Вы в огне, сначала потушите себя!
 
 changeling-absorbbiomatter-start = { THE($user) } начинает поглощать пищу!
 changeling-absorbbiomatter-bad-food = Эта пища не усваивается.
@@ -51,8 +51,8 @@ changeling-equip-armor-fail = Необходимо предварительно 
 changeling-inject = Вы делаете себе инъекцию.
 changeling-inject-fail = Не удалось сделать себе инъекцию!
 
-changeling-passive-activate = Активированная способность.
-changeling-passive-activate-fail = Не удалось активировать способность.
+changeling-passive-activate = Пассивная способность активирована.
+changeling-passive-activate-fail = Не удалось активировать пассивную способность.
 changeling-passive-active = Уже активен!
 
 changeling-fleshmend = Ваше тело скручивается, затягивая раны и регенерируя мертвые клетки.
