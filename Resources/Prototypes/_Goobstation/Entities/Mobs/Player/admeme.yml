@@ -41,8 +41,8 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryLeader
-    - NamesLastMilitary
+    - NamesMilitaryFirstLeader #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
   - type: RandomHumanoidSpawner
     settings: NavyOfficer
 
@@ -64,8 +64,8 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryLeader
-    - NamesLastMilitary
+    - NamesMilitaryFirstLeader #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
 
 # Navy Captain
 
@@ -79,8 +79,8 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryHighRank
-    - NamesLastMilitary
+    - NamesMilitaryFirstHighRank #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
   - type: RandomHumanoidSpawner
     settings: NavyCaptain
 
@@ -102,8 +102,8 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryHighRank
-    - NamesLastMilitary
+    - NamesMilitaryFirstHighRank #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
 
 # Navy Undercover Officer
 
@@ -117,8 +117,8 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryLeader
-    - NamesLastMilitary
+    - NamesMilitaryFirstLeader #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
   - type: RandomHumanoidSpawner
     settings: NavyOfficerUndercover
 
@@ -140,8 +140,8 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryLeader
-    - NamesLastMilitary
+    - NamesMilitaryFirstLeader #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
 
 # Special Operations Officer
 
@@ -155,8 +155,8 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryHighRank
-    - NamesLastMilitary
+    - NamesMilitaryFirstHighRank #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
   - type: RandomHumanoidSpawner
     settings: SpecialOperationsOfficer
 
@@ -178,8 +178,8 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryHighRank
-    - NamesLastMilitary
+    - NamesMilitaryFirstHighRank #Reserve datasets fix
+    - NamesMilitaryLast #Reserve datasets fix
 
 # Diplomat
 
@@ -193,8 +193,8 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryPolitical
-    - names_last
+    - NamesMilitaryFirstPolitical #Reserve datasets fix
+    - NamesLast #Reserve datasets fix
   - type: RandomHumanoidSpawner
     settings: DiplomatGear
 
@@ -216,8 +216,8 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstMilitaryPolitical
-    - names_last
+    - NamesMilitaryFirstPolitical #Reserve datasets fix
+    - NamesLast #Reserve datasets fix
 
 # Inspector
 
@@ -231,8 +231,8 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstInspector
-    - names_last
+    - NamesInspectorFirst #Reserve datasets fix
+    - NamesLast #Reserve datasets fix
   - type: RandomHumanoidSpawner
     settings: InspectorGear
 
@@ -254,8 +254,8 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstInspector
-    - names_last
+    - NamesInspectorFirst #Reserve datasets fix
+    - NamesLast #Reserve datasets fix
 
 ## Other Shit
 
