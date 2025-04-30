@@ -40,7 +40,7 @@ ghost-role-information-navy-officer-undercover-description = Завершите 
 ghost-role-information-navy-officer-undercover-rules = Следуйте указаниям [color=#yellow][bold]Капитана флота[/bold][/color], или другого должностного лица Центрального Командования.
 
 ghost-role-information-diplomat-name = Дипломат
-ghost-role-information-diplomat-description = Представляет Центральное командование, управляет отношениями с группировками на борту станции. Устраните проблемы, которые, вероятно, были вызваны капитаном.
+ghost-role-information-diplomat-description = Представляет собой интересы Центрального Командования, управляет отношениями с группировками на борту станции. Устраните проблемы, которые, вероятно, были вызваны капитаном.
 
 ghost-role-information-inspector-name = Аудитор Центрального Командования
 ghost-role-information-inspector-description = Проведите инспекцию имущества станции и ее экипажа. Возможно, вы погибнете в результате ужасного несчастного случая, и будет вызван эскадрон смерти.
