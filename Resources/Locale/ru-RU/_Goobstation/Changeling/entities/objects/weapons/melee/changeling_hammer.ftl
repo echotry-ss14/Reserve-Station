@@ -1,3 +1,3 @@
-ent-ArmHammerChangeling = arm hammer
-    .desc = A hammer made out of flesh and bone, heavy enough to smash through structures and people alike.
-    .suffix = Unremoveable
+ent-ArmHammerChangeling = рука-молот
+    .desc = Молот, сделанный из плоти и костей, достаточно тяжелый, чтобы крушить как структуры, так и людей.
+    .suffix = Неснимаемый

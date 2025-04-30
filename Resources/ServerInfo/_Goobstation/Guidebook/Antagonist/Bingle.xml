@@ -6,41 +6,41 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Bingle
+# Бинглы
 
-A bingle is a disgusting fungus that rapidly grows and takes over stations. Very weak on its own, their strength is in numbers.
+Бингл - это отвратительный гриб, который быстро растет и захватывает станции. Сами по себе они очень слабы, их сила в численности.
 
   <Box>
-    <GuideEntityEmbed Entity="MobBingle" Caption="Bingle"/>
-	  <GuideEntityEmbed Entity="BinglePit" Caption="Bingle Pit"/>
+    <GuideEntityEmbed Entity="MobBingle" Caption="бингл"/>
+	  <GuideEntityEmbed Entity="BinglePit" Caption="бинглпит"/>
   </Box>
 
-A bingle is a midround antagonist that spawns alone, but can quickly grow in numbers
+Бингл - это мидраунд антагонист, который появляется в одиночку, но может быстро увеличиваться в количестве
 
-## Playing As A Bingle
+## Игра за бингла
 
-- The most difficult part of a bingle pit's development is the beginning, when it is very weak. As the first bingle you should prioritize dragging as many items to the pit as fast as you can.
-Bingles are very strong in melee combat, stunning in a few hits. Try to take out any lone witnesses before they can call out the pits location.
+- Самая сложная часть разработки бинглпита - это начало, когда он еще очень слаб. В качестве первого бингла вам следует расставить приоритеты, перетаскивая как можно больше предметов в яму как можно быстрее.
+Бинглы очень сильны в ближнем бою, оглушая несколькими ударами. Постарайтесь убрать всех одиноких свидетелей, прежде чем они успеют сообщить о местонахождении ямы.
 
-- Once there are a few bingles, you should focus on dragging items in, as well as protecting the pit. If it breaks, you wont be able to make any more bingles and the colony will die out.
+- Как только появится несколько бинглов, вам следует сосредоточиться на перетаскивании предметов, а также на защите ямы. Если яма сломается, вы не сможете сделать больше бинглов, и колония вымрет.
 
-- The bingle pit is the home of bingles, when several items are drug into it and fall down a new bingle is made. After quite a large number of items are drug into it, bingles are upgraded into armored bingles, which have far more health than the normal ones. The bingle pit also grows to larger than before, allowing for corpses to be dropped into the pit.
+- Бинглпит - это место обитания бинглов, когда в нее попадают несколько предметов и падают вниз, образуется новый бингл. После того, как в нее попадает довольно большое количество предметов, бинглы превращаются в бронированных бинглов, у которых намного больше здоровья, чем у обычных. Бинглпит также становится больше чем раньше, что позволяет сбрасывать в нее трупы.
 
-## Playing Against Bingles
+## Игра против Бинглов
 
-The most best way to play against bingles is to avoid melee combat. Instead; Use ranged weapons to deal with them and thin their numbers from afar.
+Лучший способ играть против бинглов - избегать ближнего боя. Вместо этого используйте оружие дальнего боя, чтобы бороться с ними и уменьшать их численность издалека.
   <Box>
     <GuideEntityEmbed Entity="WeaponRifleLecter"/>
 	  <GuideEntityEmbed Entity="WeaponLaserCarbine"/>
   </Box>
-The bingle pit itself can only be damaged by melee weapons and explosives. When attacking the pit directly be careful to avoid falling into it, as you can do so even while alive. It is typically best to deal with the bingles themselves before attacking the pit.
+Сам бинглпит можно повредить только оружием ближнего боя и взрывчаткой. Атакуя яму напрямую, будьте осторожны и не падайте в нее, так как вы можете сделать это, даже будучи живым. Как правило, лучше всего разобраться с самими бинглами, прежде чем атаковать яму.
 
-If a bingle infestation is growing out of hand, consider shutting down gravity, bingles cannot drop items into a pit without gravity and therefor cannot multiply.
+Если заражение бинглами выходит из-под контроля, подумайте о том, чтобы отключить гравитацию, бинглы не могут сбрасывать предметы в яму без гравитации и поэтому не могут размножаться.
 
   <Box>
     <GuideEntityEmbed Entity="GravityGenerator"/>
   </Box>
 
-All items (and people) lost to the pit will be spat out when destroyed!
+Все предметы (и люди), потерянные в яме, будут выплюнуты при уничтожении!
 
 </Document>

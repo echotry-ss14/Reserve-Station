@@ -1,3 +1,3 @@
-ent-ArmClawChangeling = hand claw
-    .desc = A grotesque claw made out of bone and flesh that cleaves through people as a hot knife through butter.
-    .suffix = Unremoveable
+ent-ArmClawChangeling = рука-коготь
+    .desc = Огромный коготь, сделанный из кости и плоти, который проходит сквозь людей, как горячий нож сквозь масло.
+    .suffix = Неснимаемый

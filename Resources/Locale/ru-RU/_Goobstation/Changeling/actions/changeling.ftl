@@ -1,5 +1,5 @@
 ent-ActionEvolutionMenu = Открыть меню эволюции
-    .desc = Открывает мегю эволюции.
+    .desc = Открывает меню эволюции.
 ent-ActionAbsorbDNA = Поглотить ДНК
     .desc = Поглотите ДНК цели, оставляя ее оболочку. Стоит 25 химикатов.
 ent-ActionStingExtractDNA = укус ДНК
