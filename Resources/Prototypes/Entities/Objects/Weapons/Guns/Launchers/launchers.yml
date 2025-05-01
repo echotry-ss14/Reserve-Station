@@ -560,3 +560,44 @@
       tags:
         - CartridgeRocket
     proto: ImmovableRodSlow
+
+- type: entity
+  parent: [BaseWeaponLauncher, BaseGunWieldable, BaseSyndicateContraband]
+  name: Riffetoebator
+  id: WeaponLauncherRiffetoEbator
+  description: MFER IN ASS.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Launchers/Riffetoebator.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Launchers/Riffetoebator.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 0.01 # Goobstation
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lol.ogg
+    damage:
+        types:
+          Explosion: 1000
+          Blunt: 500
+          Heat: 300
+        spreadAngle: 1.5
+        recoilAngle: 35.0
+  - type: BallisticAmmoProvider
+    autoCycle: false # Goobstation
+    whitelist:
+      tags:
+      - Grenade
+    capacity: 3
+    proto: GrenadeFrag
+    explosionRadius: 50.0
+    explosionPenetration: 100.0
