@@ -1,19 +1,11 @@
-﻿- type: dataset
-  id: ATVDescriptions
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: MIT
+
+- type: localizedDataset
+  id: DescriptionsATV
   values:
-  - Всепобеждающее транспортное средство.
-  - Муравьиное транспортное средство.
-  - Овощ в любое время.
-  - Фактически два транспортных средства.
-  - Переменная любого типа.
-  - Травмобезопасный автомобиль.
-  - Алгоритм-передаваемый вирус.
-  - Вакансия алкоголика-дети.
-  - Жопораздирающий вулкан.
-  - А-Теле Вижн.
-  - Неуклюжий бродяга.
-  - Искусство-Трагедия-Волонтер.
-  - Вакансия автоматического тако.
-  - Еще один потрясающий вид.
-  - Все-все-все девственницы.
-  - Ужасный автомобиль.
+    prefix: descriptions-atv-dataset-
+    count: 16

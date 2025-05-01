@@ -1,3 +1,11 @@
+<!--
+SPDX-FileCopyrightText: 2023 M3739 <47579354+M3739@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
 <Document>
   # Киборги
   Киборги - это человеко-машинные гибриды, специально созданные [textlink="робототехническим" link="Robotics"] подотделом РНД для выполнения различных обязанностей на станции. Ограниченные строго соблюдаемыми [color=cyan]законами ИИ[/color], они безоговорочно служат экипажу. [italic](В большинстве случаев.)[italic]

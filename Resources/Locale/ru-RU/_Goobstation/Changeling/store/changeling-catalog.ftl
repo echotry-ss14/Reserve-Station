@@ -1,7 +1,8 @@
 # Changeling
 store-ling-category-combat = Бой
 store-ling-category-sting = Укусы
-store-ling-category-utility = Утилита# бой
+store-ling-category-utility = Утилиты
+# Боевое
 evolutionmenu-combat-armhammer-name = Рука-клинок
 evolutionmenu-combat-armhammer-desc =
     Преобразуйте одну из своих рук в гротескный молот, состоящий из костей и плоти, способный сокрушать противников, сбивая их с ног и отправляя в полет. Сбивает с ног только при легкой атаке.
@@ -112,7 +113,7 @@ evolutionmenu-utility-fleshmend-desc =
     Быстро исцеляет все царапины и ожоги.
     Затрачивает 35 химикатов.
 evolutionmenu-utility-chameleon-name = Кожа хамелеона
-evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой, делая вас невидимым.
+evolutionmenu-utility-chameleon-desc = Изменяет пигмент вашей кожи в соответствии с окружающей обстановкой, делая вас практически невидимым.
 evolutionmenu-utility-lesserform-name = Меньшая форма
 evolutionmenu-utility-lesserform-desc =
     Откажитесь от своей текущей формы и превратитесь в разумную обезьяну.

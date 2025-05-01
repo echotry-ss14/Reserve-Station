@@ -1,55 +1,22 @@
-- type: dataset
-  id: RevenantType
-  values:
-  - сущность
-  - привидение
-  - фантом
-  - полтергейст
-  - ревенант
-  - душа
-  - тень
-  - дух
+# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: MIT
 
-- type: dataset
-  id: RevenantAdjective
+- type: localizedDataset
+  id: NamesRevenantType
   values:
-  - адской
-  - бездонной
-  - жестокой
-  - тёмной
-  - бесконечной
-  - вечной
-  - огненной
-  - ненавистной
-  - отвратительной
-  - весёлой
-  - равнодушной
-  - злобной
-  - мирной
-  - жгучей
-  - тихой
-  - злорадной
+    prefix: names-revenant-type-dataset-
+    count: 8
 
-- type: dataset
-  id: RevenantTheme
+- type: localizedDataset
+  id: NamesRevenantAdjective
   values:
-  - агонии
-  - злости
-  - смерти
-  - болезни
-  - скорби
-  - ненависти
-  - жалости
-  - порчи
-  - токсичности
-  - мести
-  - муки
-  - тоски
-  - боли
-  #- despair
-  #- desperation
-  #- destruction
-  #- hellfire
-  #- laughter
-  #- screams
-  #- suffering
+    prefix: names-revenant-adjective-dataset-
+    count: 18
+
+- type: localizedDataset
+  id: NamesRevenantTheme
+  values:
+    prefix: names-revenant-theme-dataset-
+    count: 18
