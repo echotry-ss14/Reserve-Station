@@ -5,7 +5,7 @@
 
 - type: entity
   name: Heaven's gate
-  parent: [ BaseWeaponRifle, BaseGunWieldable, BaseSyndicateContraband ]
+  parent: [ BaseWeaponSniper, BaseGunWieldable, BaseSyndicateContraband ] #Reserve heavensgate fix
   id: WeaponSniperHeavensGate
   description: An anti tank rifle. On its side, "leading us on and on" is written using a cheap black marker.
   components:
@@ -25,7 +25,7 @@
           tags:
           - CartridgeAntiMaterielHeavy
   - type: Gun
-    fireRate: 0.125 # 8 seconds
+    fireRate: 0.5 # 2 seconds #Reserve heavensgate fix
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: ChamberMagazineAmmoProvider
@@ -45,7 +45,7 @@
         volume: -3
   - type: Appearance
   - type: UseDelay
-    delay: 0.1
+    delay: 1.8 #Reserve heavensgate fix end
   - type: UseDelayBlockShoot
   - type: SpeedModifiedOnWield
     walkModifier: 0.90 # %of total walkspeed - 0.9 = 10% slowdown

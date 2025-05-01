@@ -122,7 +122,7 @@ public sealed partial class ZombieComponent : Component
     public float MinZombieInfectionChance = 0.25f;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public float ZombieMovementSpeedDebuff = 0.70f;
+    public float ZombieMovementSpeedDebuff = 0.85f; //Reserve zombie-buff
 
     /// <summary>
     /// The skin color of the zombie
@@ -190,13 +190,16 @@ public sealed partial class ZombieComponent : Component
     public DamageSpecifier PassiveHealing = new()
     {
         DamageDict = new ()
+        //Reserve zombie-buff begin
         {
-            { "Blunt", -0.4 },
-            { "Slash", -0.2 },
-            { "Piercing", -0.2 },
-            { "Heat", -0.02 },
-            { "Shock", -0.02 }
+            { "Blunt", -1 },
+            { "Slash", -1 },
+            { "Piercing", -1 },
+            { "Heat", -0.5 },
+            { "Shock", -0.5 },
+            { "Cold", -0.5 }
         }
+        //Reserve zombie-buff end
     };
 
     /// <summary>
@@ -212,11 +215,17 @@ public sealed partial class ZombieComponent : Component
     public DamageSpecifier HealingOnBite = new()
     {
         DamageDict = new()
+         //Reserve zombie-buff begin
         {
-            { "Blunt", -2 },
-            { "Slash", -2 },
-            { "Piercing", -2 }
+            { "Blunt", -10 },
+            { "Slash", -10 },
+            { "Piercing", -10 },
+            { "Heat", -10 },
+            { "Shock", -10 },
+            { "Cold", -10 },
+            { "Stamina", -25 }
         }
+        //Reserve zombie-buff end
     };
 
     /// <summary>

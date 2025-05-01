@@ -4,3 +4,7 @@ ent-MagazineBoxHighCaliber = { ent-BaseMagazineBoxHighCaliber }
     .desc = { ent-BaseMagazineBoxHighCaliber.desc }
 ent-MagazineBoxHighCaliberExplosive = коробка с патронами (.50 взрывные)
     .desc = { ent-BaseMagazineBoxHighCaliber.desc }
+ent-MagazineBoxAntiMaterielHeavyArmourPiercing = коробка с патронами (.92 бронебойные)
+    .desc = Коробка с патронами для винтовки "Врата рая". Эффективны против пехоты, пробивают навылет любую броню!
+ent-MagazineBoxAntiMaterielHeavyAntiTank = коробка с патронами (.92 противотанковые)
+    .desc = Коробка с патронами для винтовки "Врата рая". Эффективны против строений, один такой боеприпас способен уничтожить несколько стен. Взамен, урон по пехоте заметно ниже.

@@ -100,7 +100,7 @@
       - type: RandomMetadata
         nameSegments:
         - nukeops-role-commander
-        - SyndicateNamesElite
+        - NamesSyndicateElite #Reserve datasets fix
       - type: NpcFactionMember
         factions:
         - Syndicate
@@ -117,7 +117,7 @@
       - type: RandomMetadata
         nameSegments:
         - nukeops-role-agent
-        - SyndicateNamesNormal
+        - NamesSyndicateNormal #Reserve datasets fix
       - type: NpcFactionMember
         factions:
         - Syndicate
@@ -135,7 +135,7 @@
       - type: RandomMetadata
         nameSegments:
         - nukeops-role-operator
-        - SyndicateNamesNormal
+        - NamesSyndicateNormal #Reserve datasets fix
       - type: NpcFactionMember
         factions:
         - Syndicate

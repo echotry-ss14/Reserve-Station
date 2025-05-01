@@ -39,8 +39,8 @@
       prototypes: [ERTOfficerEchoGear]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst #Reserve datasets fix
+      - NamesMilitaryLast #Reserve datasets fix
     - type: GhostRole
       requirements:
         - !type:DepartmentTimeRequirement
@@ -66,8 +66,8 @@
       prototypes: [ERTMedicalEchoGear]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst #Reserve datasets fix
+      - NamesMilitaryLast #Reserve datasets fix
     - type: GhostRole
       requirements:
         - !type:DepartmentTimeRequirement
@@ -92,8 +92,8 @@
       prototypes: [ERTEngiEchoGear]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst #Reserve datasets fix
+      - NamesMilitaryLast #Reserve datasets fix
     - type: GhostRole
       requirements:
         - !type:DepartmentTimeRequirement

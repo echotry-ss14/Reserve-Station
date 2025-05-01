@@ -828,7 +828,7 @@
   name: uplink-92-AT-name
   description: uplink-92-AT-desc
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Boxes/anti_materiel.rsi, state: base-b }
-  productEntity: MagazineBoxAntiMaterielHeavyArmourPiercing
+  productEntity: MagazineBoxAntiMaterielHeavyAntiTank #Reserve heavensgate fix
   cost:
     Telecrystal: 8
   categories:
@@ -870,21 +870,21 @@
       - ContravendUplink
 
 # Martial Arts
-- type: listing
-  id: UplinkCQCManual
-  name: uplink-cqc-name
-  description: uplink-cqc-desc
-  productEntity: CQCManual
-  cost:
-    Telecrystal: 60
-  categories:
-  - UplinkWeaponry
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-      - ContravendUplink
+#- type: listing #Reserve - no CQC begin
+#  id: UplinkCQCManual
+#  name: uplink-cqc-name
+#  description: uplink-cqc-desc
+#  productEntity: CQCManual
+#  cost:
+#    Telecrystal: 60
+#  categories:
+#  - UplinkWeaponry
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - NukeOpsUplink
+#      - ContravendUplink #Reserve - no CQC end
 
 - type: listing
   id: UplinkMysteriousScroll

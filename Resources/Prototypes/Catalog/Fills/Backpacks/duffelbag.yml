@@ -374,6 +374,8 @@
       - id: ClothingHeadHelmetRaid
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
+      - id: DoubleEmergencyOxygenTankFilled #Reserve raid suit rework
+      - id: DoubleEmergencyNitrogenTankFilled #Reserve raid suit rework
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
