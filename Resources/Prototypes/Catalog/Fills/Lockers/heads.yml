@@ -377,7 +377,7 @@
     - id: Multitool
     - id: MedTekCartridge
     - id: RapidSyringeGun
-    - id: BoxSyringePax
+    # - id: BoxSyringePax # reserve - no pax
     - id: ClothingBeltMilitaryWebbingCMOFilled
     # Shitmed
     - id: MedicalBiofabricatorFlatpack
