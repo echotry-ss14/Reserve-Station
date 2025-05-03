@@ -45,6 +45,9 @@ ghost-role-information-diplomat-description = Представляет собо�
 ghost-role-information-inspector-name = Аудитор Центрального Командования
 ghost-role-information-inspector-description = Проведите инспекцию имущества станции и ее экипажа. Возможно, вы погибнете в результате ужасного несчастного случая, и будет вызван эскадрон смерти.
 
+ghost-role-information-greytider-name = Грейтайдер
+ghost-role-information-greytider-description = Будь робастным.
+
 ghost-role-information-sentient-shark-name = Разумная акула
 
 # Халфлайф
