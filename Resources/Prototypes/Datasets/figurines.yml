@@ -248,7 +248,7 @@
   id: FigurinesMouse
   values:
     prefix: figurines-mouse-
-    count: 7
+    count: 9
 
 - type: localizedDataset
   id: FigurinesSlime
