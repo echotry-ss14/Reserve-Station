@@ -1,5 +1,5 @@
-devil-roundend-name = Дъявол
-objective-issuer-devil = Дъявол
+devil-roundend-name = Дьявол
+objective-issuer-devil = Дьявол
 
 roundend-prepend-devil-contracts = Кто-то заключил [color=red]{$number}[/color] успешных контрактов.
 roundend-prepend-devil-contracts-named = [color=white]{$name}[/color] совершил [color=red]{$number}[/color] успешных контрактов.
@@ -32,7 +32,7 @@ handshake-fail =  Вы пожали руку {POSS-ADJ($user)}, но ничег�
 
 not-enough-souls = У вас недостаточно душ чтобы использовать это заклинание!
 
-weaktoholy-component-bible-sizzle = кожа {$target} подпалена при помощи {$item}!
+weaktoholy-component-bible-sizzle = Кожа {$target} подпалена при помощи {$item}!
 devil-banish-begin = {$user} начинает проводить экзорцизм на {$target}!
 devil-exorcised = Пол трещит и раскалывается под ногами {$target}, когда его обратно отправляют в ад!
 

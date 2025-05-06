@@ -1,50 +1,50 @@
-devil-contract-contractee = contractee
-devil-contract-contractor = contractor
+devil-contract-contractee = получатель контракта
+devil-contract-contractor = контрактор
 
-devil-contract-early-sign-failed = The contractor must wait for the contractee to sign first!
-devil-contract-no-soul-sign-failed = You do not have a soul to sell!
-devil-sign-invalid-user = You do not have the power to fulfill this contract!
+devil-contract-early-sign-failed = Контрактор должен сначала дождаться подписания контракта!
+devil-contract-no-soul-sign-failed = У вас нет души на продажу!
+devil-sign-invalid-user = У вас нет полномочий для выполнения этого контракта!
 
-contract-summon-flavor = {$name}'s hand bursts into flames before revealing a black roll of parchment...
-burn-contract-prompt = Burn contract.
-burn-contract-popup-success = The contract bursts into flames! It seems someones fate has been sealed...
-burn-contract-popup-fail = You cannot burn a contract during a deal!
+contract-summon-flavor = Руки {$name} вспыхивают пламенем, обнажая черный свиток пергамента...
+burn-contract-prompt = Сжечь контракт.
+burn-contract-popup-success = Контракт сгорает в огне! Кажется, чья-то судьба решена...
+burn-contract-popup-fail = Вы не можете сжечь контракт, пока сделка активна!
 
 
-contract-victim-signed = A chill runs down your spine as you lift the pen...
-contract-devil-signed = The contract pulses with dark energy...
-contract-soul-added = You gain another soul in your possession...
-contract-uneven-odds = These odds aren't fair. You need {$number} more contract weight.
-devil-contract-examined = This contract has a weight of: {$weight}.
+contract-victim-signed = Холодок пробегает у вас по спине, когда вы беретесь за ручку...
+contract-devil-signed = Контракт пульсирует темной энергией...
+contract-soul-added = Вы получили в свое распоряжение еще одну душу...
+contract-uneven-odds = Эти шансы просто нечестно. Вам нужно увеличить вес контракта на {$number}.
+devil-contract-examined = Вес этого контракта: {$weight}.
 
-devil-deal-time-ran-out = Your vision goes black as your muscles fail you. You've run out of time.
+devil-deal-time-ran-out = В глазах темнеет, мышцы подводят. Время на исходе.
 
-revival-contract-accepted = You feel your connection to your body strengthen...
-revival-contract-rejected = You reject the unholy offer.
-revival-contract-expired = Times up.
-revival-contract-prompt = {$offerer} offers to restore your life for a price... Do you accept?
-revival-contract-use-success = You offer {$target} a deal no man could refuse...
-revival-contract-use-failed = You cannot offer {$target} two deals at once.
+revival-contract-accepted = Вы чувствуете, как укрепляется ваша связь с собственным телом...
+revival-contract-rejected = Вы отвергаете нечестивую сделку.
+revival-contract-expired = Время вышло.
+revival-contract-prompt = {$offerer} предлагает вернуть вам жизнь за определенную плату... Вы согласны?
+revival-contract-use-success = Вы предложили {$target} сделку, от которой невозможно отказаться...
+revival-contract-use-failed = Вы не можете заключить две сделки с одной целью одновременно.
 
-revival-contract-prompt-reject = Reject Offer
-revival-contract-prompt-accept = Accept Offer
+revival-contract-prompt-reject = Отклонить сделку
+revival-contract-prompt-accept = Принять сделку
 
-revival-contract-menu-title = Contract From the Depths
-revival-contract-menu-prompt = Sell your soul for a second chance?
+revival-contract-menu-title = Контракт из глубин ада
+revival-contract-menu-prompt = Продать душу за второй шанс?
 
-default-contract-content = This binding contract made this day between:
+default-contract-content = Это обязательный к исполнению контракт, заключенный в этот день между:
 
-            - The Infernal Party (Hereinafter "Contractor")
-            - The Mortal Party (Hereinafter "Contractee")
+            - Адская сторона (Далее "Контрактор")
+            - Смертная сторона (Далее "Получатель контракта")
 
-            {"["}bold]Clauses of Binding:{"["}/bold]
-            {"["}italic]The following parties give up the following possessions{"["}/italic{"]"}
+            {"["}bold]Положения, имеющие обязательную силу:{"["}/bold]
+            {"["}italic]Следующие стороны отказываются от следующего имущества{"["}/italic{"]"}
 
-            Article I: Soul
-            Contractee: Soul Ownership
+            Статья I: Душа
+            Получатель контракта: Владение душой
 
-            Article II: Mortality
-            Contractee: Death
+            Статья II: Смертность
+            Получатель контракта: Смерть
 
-            {"["}italic]All clauses come into effect upon signing of this paper by both parties.{"["}/italic]
-            {"["}italic]{"["}color=#ac3a0d]Clauses may not be broken. Ever.{"["}/color]{"["}/italic]
+            {"["}italic]Все пункты вступают в силу с момента подписания этого документа обеими сторонами.{"["}/italic]
+            {"["}italic]{"["}color=#ac3a0d]Условия не могут быть нарушены. Никогда.{"["}/color]{"["}/italic]
