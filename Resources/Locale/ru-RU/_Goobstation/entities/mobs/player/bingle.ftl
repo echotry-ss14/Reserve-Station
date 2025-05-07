@@ -1,5 +1,5 @@
-ent-MobBingle = bingle
-    .desc = bingle
+ent-MobBingle = бингл
+    .desc = бингл
 ent-MobBinglePrime = { ent-MobBingle }
-    .suffix = Prime
+    .suffix = Прайм
     .desc = { ent-MobBingle.desc }

@@ -1,11 +1,13 @@
 ent-ClothingBackpackStasisBattery = Стазис хранилище
     .desc = Хранит энергию, чтобы заморозить течение времени, искажая пространство внутри для увеличения емкости.
 ent-ClothingBackpackStasisBatteryUnremoveable = { ent-ClothingBackpackStasisBattery }
-    .suffix = Unremoveable
+    .suffix = Неснимаемый
     .desc = { ent-ClothingBackpackStasisBattery.desc }
 ent-ClothingBackpackStasisBatteryUnremoveableFilled = { ent-ClothingBackpackStasisBatteryUnremoveable }
-    .suffix = Filled, Unremoveable
+    .suffix = Заполненный, Неснимаемый
     .desc = { ent-ClothingBackpackStasisBatteryUnremoveable.desc }
 ent-ClothingBackpackMercFilledHECU = { ent-ClothingBackpackMerc }
-    .suffix = Filled, HECU
+    .suffix = Заполненный, HECU
     .desc = { ent-ClothingBackpackMerc.desc }
+ent-ClothingBackpackDuffelGman = странный вещмешок
+    .desc = Странная, неснимаемая сумка, способная вместить абсурдное количество предметов. Кажется невидимой невооруженным глазом.

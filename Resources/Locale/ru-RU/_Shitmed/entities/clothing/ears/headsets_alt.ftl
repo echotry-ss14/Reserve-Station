@@ -1,2 +1,2 @@
-ent-ClothingHeadsetAltAbductor = abductor over-ear headset
+ent-ClothingHeadsetAltAbductor = полноразмерная гарнитура абдуктора
     .desc = { ent-ClothingHeadsetAlt.desc }

@@ -3,3 +3,5 @@ ent-ClothingEyesHudChrono = футуристический визор
 ent-ClothingEyesHudChronoUnremoveable = { ent-ClothingEyesHudChrono }
     .suffix = Unremoveable
     .desc = { ent-ClothingEyesHudChrono.desc }
+ent-ClothingEyesHudDiagnosticMedical = меддиагностический визор
+    .desc = Визор, содержащий как медицинскую, так и диагностическую информацию.

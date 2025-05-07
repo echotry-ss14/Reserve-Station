@@ -1,2 +1,2 @@
-ent-ClothingAbductorBelt = abductor belt
-    .desc = Can hold various OUR things.
+ent-ClothingAbductorBelt = пояс абдуктора
+    .desc = Может вместить различные НАШИ вещи.

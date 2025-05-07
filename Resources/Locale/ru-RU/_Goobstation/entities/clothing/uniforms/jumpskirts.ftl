@@ -8,3 +8,5 @@ ent-ClothingUniformSkirtMailCarrier = юбка почтальона
     .desc = Враг собак - везде.
 ent-ClothingUniformJumpskirtReporter = платье репортёра
     .desc = Экстравагантное черное платье, призванное привлечь внимание как можно большего количества людей.
+ent-ClothingUniformJumpskirtTrainer = юбка профессионального тренера
+    .desc = Юбка, предназначенная для профессиональных тренеров Nanotrasen. Наполняет вас чувством гордости.
