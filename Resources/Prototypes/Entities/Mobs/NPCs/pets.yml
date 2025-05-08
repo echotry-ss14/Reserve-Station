@@ -990,3 +990,25 @@
 #  - type: AlwaysRevolutionaryConvertible
   - type: StealTarget
     stealGroup: AnimalTropico
+
+- type: entity
+  name: ZloySky
+  parent: ZloySky
+  id: MobZloySky
+  description: Riffets pet.
+  components:
+  - type: InteractionPopup
+    successChance: 1
+    interactSuccessString: petting-success-pig
+    interactFailureString: petting-failure-pig
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/ZloySky.ogg
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - VimPilot
