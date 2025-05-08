@@ -1,4 +1,4 @@
-devil-contract-contractee = получатель контракта
+devil-contract-contractee = контрагент
 devil-contract-contractor = контрактор
 
 devil-contract-early-sign-failed = Контрактор должен сначала дождаться подписания контракта!
