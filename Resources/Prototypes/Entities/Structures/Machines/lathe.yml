@@ -742,10 +742,13 @@
     - ServiceWeapons
     - SpecOpsGoogles
     - PowerCells
+    # EE
+    - ShrapnelAmmo
   - type: EmagLatheRecipes # Goobstation
     emagStaticPacks:
     - SyndicateAmmoLightStatic
     - SyndicateAmmoHeavyStatic
+    - ShrapnelAmmoSyndicate # EE
   - type: MaterialStorage
     whitelist:
       tags:

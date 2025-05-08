@@ -181,8 +181,6 @@
   - type: StorageFill
     contents:
       - id: WeaponSubMachineGunC20r
-      - id: MagazinePistolSubMachineGun
-        amount: 2
 #     - id: SMGSuppressor
 
 - type: entity
@@ -260,6 +258,57 @@
         amount: 1
       - id: MagazineHighCaliberExplosive # Goobstation - Burner Heavy Assault Rifle
 
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmo
+  id: ClothingBackpackDuffelSyndicateAmmoFilledIncendiary
+  name: ammo bundle
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, and 2 ammo boxes for the L6 SAW."
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolSubMachineGunIncendiary
+        amount: 4
+      - id: MagazineShotgunIncendiary
+        amount: 4
+      - id: MagazineLightRifleBoxIncendiary
+        amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmo
+  id: ClothingBackpackDuffelSyndicateAmmoFilledShrapnel
+  name: ammo bundle
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, and 2 ammo boxes for the L6 SAW."
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolSubMachineGunShrapnel
+        amount: 4
+      - id: MagazineShotgunBirdshot
+        amount: 4
+      - id: MagazineLightRifleBoxShrapnel
+        amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelSyndicateCostumeCentcom
+  name: CentCom official costume duffel bag
+  description: "Contains a full CentCom Official uniform set, headset and clipboard included. Encryption keys and ID access are not included."
+  suffix: DO NOT MAP
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterArmorBasic
+      - id: ClothingHeadHatCentcom
+      - id: ClothingEyesGlassesSunglasses
+      - id: ClothingUniformJumpsuitCentcomOfficial
+      - id: ClothingShoesBootsJack
+      - id: ClothingHandsGlovesColorBlack
+      - id: ClothingHeadsetAltCentComFake
+      - id: Paper
+      - id: Pen
+      - id: CentcomPDAFake
 
 - type: entity
   parent: ClothingBackpackDuffelClown
