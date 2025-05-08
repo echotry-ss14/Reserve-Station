@@ -379,6 +379,7 @@
     - id: RapidSyringeGun
     # - id: BoxSyringePax # reserve - no pax
     - id: ClothingBeltMilitaryWebbingCMOFilled
+    - id: Wrench # reserve - wrench for cmo
     # Shitmed
     - id: MedicalBiofabricatorFlatpack
     # Goobstation End
