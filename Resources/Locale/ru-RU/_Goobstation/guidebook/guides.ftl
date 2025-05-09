@@ -26,6 +26,7 @@ guide-entry-sop-deltaalert = Код Дельта
 guide-entry-sop-epsilonalert = Код Эпсилон
 guide-entry-sop-gammaalert = Код гамма
 guide-entry-sop-violetalert = Фиолетовый код
+guide-entry-sop-omicronalert = Код Омикрон
 # - Стандартные процедуры
 guide-entry-sop-demoting = Увольнение/понижение
 guide-entry-sop-evacuation = Эвакуация
