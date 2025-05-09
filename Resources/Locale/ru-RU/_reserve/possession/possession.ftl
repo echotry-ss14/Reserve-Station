@@ -1,9 +1,9 @@
 possession-fail-changeling = Здесь нет души, с которой можно было бы что-то сделать!
 possession-fail-heretic = Сила мансуса не позволяет вам овладеть ими!
-possession-fail-ghoul = Тут нет разума, которыми вы бы могли овладеть!
-possession-fail-ghost = Тут нет разума, которыми вы бы могли овладеть!
-possession-fail-temporary = Тут нет разума, которыми вы бы могли овладеть!
-possession-fail-target-dead = Тут нет разума, которыми вы бы могли овладеть!
+possession-fail-ghoul = Тут нет разума, которым вы бы могли овладеть!
+possession-fail-ghost = Тут нет разума, которым вы бы могли овладеть!
+possession-fail-temporary = Тут нет разума, которым вы бы могли овладеть!
+possession-fail-target-dead = Тут нет разума, которым вы бы могли овладеть!
 possession-fail-target-shielded = Надоедливый щит разума не дает вам проникнуть в их разум!
 possession-fail-target-already-possessed = Кто-то другой уже завладел этим разумом...
 

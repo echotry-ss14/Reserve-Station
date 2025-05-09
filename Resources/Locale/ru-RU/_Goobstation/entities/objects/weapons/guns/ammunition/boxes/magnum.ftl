@@ -1,8 +1,8 @@
 ent-BaseMagazineBoxMagnumExtended = { ent-BaseMagazineBoxMagnum }
     .desc = { ent-BaseMagazineBoxMagnum.desc }
-ent-MagazineBoxMagnumEnsnaring = ammunition box (.45 magnum ensnaring)
+ent-MagazineBoxMagnumEnsnaring = коробка с патронами (.45 магнум ensnaring)
     .desc = { ent-BaseMagazineBoxMagnumExtended.desc }
-ent-MagazineBoxMagnumEMP = ammunition box (.45 magnum EMP)
+ent-MagazineBoxMagnumEMP = коробка с патронами (.45 магнум ЭМИ)
     .desc = { ent-BaseMagazineBoxMagnumExtended.desc }
-ent-MagazineBoxMagnumFlash = ammunition box (.45 magnum flash)
+ent-MagazineBoxMagnumFlash = коробка с патронами(.45 магнум вспышка)
     .desc = { ent-BaseMagazineBoxMagnumExtended.desc }

@@ -8,9 +8,9 @@
 - type: dataset
   id: names_gman
   values:
-  - The G-Man
+  - Джи-мэн
 
 - type: dataset
   id: names_conquest
   values:
-  - Conquest
+  - Завоеватель

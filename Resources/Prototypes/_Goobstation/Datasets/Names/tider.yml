@@ -6,25 +6,25 @@
 - type: dataset
   id: TiderNamesFirst
   values:
-  - Grey
-  - Maint
-  - Robust
-  - Crawling
-  - Tunnel
-  - John
-  - Insulated
-  - Bashing
+  - Серый
+  - Техтуннельный
+  - Робастный
+  - Крадущийся
+  - Туннельный
+  - Джон
+  - Изолированный
+  - Избитый
 
 - type: dataset
   id: TiderNamesLast
   values:
-  - Tide
-  - Crawler
-  - King
-  - Toolbox
-  - Breaker
-  - Stealer
-  - Wrench
-  - Crowbar
-  - Shitter
-  - Belt
+  - Тайд
+  - Обходчик
+  - Король
+  - Тулбокс
+  - Взломщик
+  - Похититель
+  - Ключ
+  - Монтировка
+  - Говнюк
+  - Пояс

@@ -1,6 +1,6 @@
-ent-CartridgeMagnumEnsnaring = cartridge (.45 magnum ensnaring)
+ent-CartridgeMagnumEnsnaring = патрон (.45 магнум ensnaring)
     .desc = { ent-BaseCartridgeMagnum.desc }
-ent-CartridgeMagnumEMP = cartridge (.45 magnum EMP)
+ent-CartridgeMagnumEMP = патрон (.45 магнум ЭМИ)
     .desc = { ent-BaseCartridgeMagnum.desc }
-ent-CartridgeMagnumFlash = cartridge (.45 magnum flash)
+ent-CartridgeMagnumFlash = патрон (.45 магнум вспышка)
     .desc = { ent-BaseCartridgeMagnum.desc }

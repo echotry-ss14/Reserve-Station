@@ -1,2 +1,2 @@
-ent-MagazineBoxLightRifleSubsonic = ammunition box (.30 rifle subsonic)
+ent-MagazineBoxLightRifleSubsonic = коробка с патронами (.30 сверхзвуковой)
     .desc = { ent-BaseMagazineBoxLightRifle.desc }

@@ -1,2 +1,2 @@
-ent-CartridgeLightRifleSubsonic = cartridge (.30 rifle subsonic)
+ent-CartridgeLightRifleSubsonic = патрон (.30 сверхзвуковой)
     .desc = { ent-BaseCartridgeLightRifle.desc }

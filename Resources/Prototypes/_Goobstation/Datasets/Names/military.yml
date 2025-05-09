@@ -8,22 +8,22 @@
 - type: dataset
   id: NamesMilitaryFirstHighRank
   values:
-  - Admiral
-  - Fleet Admiral
-  - Captain
+  - Адмирал
+  - Адмирал флота
+  - Капитан
 
 - type: dataset
   id: NamesMilitaryFirstPolitical
   values:
-  - Ambassador
-  - Counsellor
-  - Minister Counsellor
+  - Амбассадор
+  - Советник
+  - Советник-посланник
 
 - type: dataset
   id: NamesInspectorFirst #Reserve datasets fix
   values:
-  - Auditor
-  - Senior Auditor
-  - Inspector
-  - Senior Inspector
+  - Аудитор
+  - Старший аудитор
+  - Инспектор
+  - Старший инспектор
 
