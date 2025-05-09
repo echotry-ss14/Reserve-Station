@@ -135,7 +135,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatTrainer
-  name: шляпа профессионального тренера
+  name: NCT's hat
   description: A hat issued to Nanotrasen Career Trainers. Makes you feel stylish
   components:
   - type: Sprite
@@ -146,7 +146,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadBeretTrainer
-  name: берет профессонального тренера
+  name: NCT's beret
   description: A beret issued to Nanotrasen Career Trainers. Makes you feel stylish
   components:
   - type: Sprite
