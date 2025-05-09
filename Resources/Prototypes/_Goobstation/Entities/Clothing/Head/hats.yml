@@ -136,7 +136,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatTrainer
   name: шляпа профессионального тренера
-  description: Берет, который выдается профессиональным тренерам Nanotrasen. В нем вы будете чувствовать себя стильно.
+  description: A hat issued to Nanotrasen Career Trainers. Makes you feel stylish
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Head/Hats/trainer.rsi
@@ -147,7 +147,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadBeretTrainer
   name: берет профессонального тренера
-  description: Берет, который выдается профессиональным тренерам Nanotrasen. В нем вы будете чувствовать себя стильно.
+  description: A beret issued to Nanotrasen Career Trainers. Makes you feel stylish
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Head/Hats/trainer_beret.rsi
