@@ -27,6 +27,7 @@ handshake-offer-popup-self = Вы протянули руку к {$target} с л
 handshake-accept-verb = Принять рукопожатие.
 handshake-decline-verb = Отказаться от рукопожатия.
 handshake-decline-message = Цель отклонила ваше предложение пожать руку.
+
 handshake-success = Пожимая руку {$user}, вы чувствуете себя немного легче.
 handshake-fail =  Вы пожали руку {POSS-ADJ($user)}, но ничего не произошло!
 
