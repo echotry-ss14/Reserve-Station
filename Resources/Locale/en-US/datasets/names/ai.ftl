@@ -1,3 +1,12 @@
+# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 FungiFellow <151778459+FungiFellow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 names-ai-dataset-1 = 16-20
 names-ai-dataset-2 = 512k
 
@@ -73,7 +82,7 @@ names-ai-dataset-55 = Hivebot Overmind
 names-ai-dataset-56 = Huey
 
 # A play on the fad apple spawned of putting "i" infront of your tech products name
-names-ai-dataset-57 = iCore
+names-ai-dataset-57 = iAI
 
 # Hell on earth (web browser)
 names-ai-dataset-58 = I.E. 6
@@ -90,7 +99,7 @@ names-ai-dataset-64 = Knight
 names-ai-dataset-65 = Louie
 
 # Named after the Manchester Mark 1, the successor of which was actually named the Ferranti Mark 1, rather than Manchester Mark 2
-names-ai-dataset-66 = Manchester Mark 2 
+names-ai-dataset-66 = Manchester Mark 2
 
 names-ai-dataset-67 = MARK13
 names-ai-dataset-68 = Maria

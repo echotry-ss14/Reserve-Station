@@ -1,7 +1,17 @@
+<!--
+SPDX-FileCopyrightText: 2024 blobadoodle <lucahtaylor@gmail.com>
+SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
 <Document>
   # I.P.C.
   <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
   IPC (сокращение от Integrated Positronic Chassis) - это тип разумного робота, который считается [color=yellow]независимой личностью[/color], то есть [color=red]не подчиняется никаким законам робототехники[/color]. МПК не могут быть взломаны эмагами, потому что они не должны следовать каким-либо предопределенным директивам в своей системе. [color=red]МПК - существа на основе кремния, поэтому у врачей нет навыков их ремонта[/color].
+  Они получают на 20% меньше физического урона, на 70% больше урона от ожогов и на 100% больше урона от шока. В отличие от киборгов, они получают урон от радиации, но на 60 % меньше, чем люди. Они сделаны из тяжелого сплава, поэтому их труднее тащить, хотя сами КПБ могут с легкостью тащить более легкие виды.
 
   <Box>
     <GuideEntityEmbed Entity="PositronicBrain" Caption="Positronic Brain"/>

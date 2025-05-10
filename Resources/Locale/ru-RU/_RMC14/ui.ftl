@@ -1,7 +1,7 @@
 rmc-ui-link-discord-account = Связать аккаунт Discord
 rmc-ui-link-discord-account-text =
     Нажмите на кнопку ниже, чтобы скопировать код.
-    Затем перейдите на канал #account-linking, чтобы связать ваши аккаунты.
+    Затем перейдите на канал #привязка, чтобы связать ваши аккаунты.
 rmc-ui-link-discord-account-copy = Скопировать код
 rmc-ui-link-discord-account-copied = Скопировано!
 rmc-ui-link-discord-account-already-linked = [bold]Ваш аккаунт уже связан![/bold].

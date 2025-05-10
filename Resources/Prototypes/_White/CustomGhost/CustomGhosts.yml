@@ -1,0 +1,7 @@
+- type: customGhost
+  id: pzakusik-ghost
+  ckey: PZAKusik
+  sprite: /Textures/_White/CustomGhosts/pzakusik-ghost.rsi
+  alpha: 0.8
+  ghostName: Kutos
+  ghostDescription: ... 

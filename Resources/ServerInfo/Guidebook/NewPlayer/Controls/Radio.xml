@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2024 UBlueberry <161545003+UBlueberry@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
 <Document>
 # Общение и текстовые каналы
 Общение это ключевая часть Космической Станции 14. Вы можете нажать [keybind="FocusChatInputWindow"/] чтобы активировать поле ввода для чата.

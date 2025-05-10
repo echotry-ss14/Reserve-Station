@@ -1,53 +1,14 @@
-﻿- type: dataset
-  id: names_autoborg
+# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: MIT
+
+- type: localizedDataset
+  id: NamesAutoborg
   values:
-  - Помощник в автобургере
-  - Боб
-  - Джо
-  - Киборг-изгой
-  - ЭТО МАЛЬФ
-  - "{ AINAME } Minion {###}"
-  - .b HELP EMAGGED
-  - ПОМОЩЬ
-  - ВОЗРОЖДЁННЫЙ
-  - Кавалерия
-  - Бип
-  - Бип II
-  - Экскурсовод-отрон
-  - ТЕРРЕЛ - ЧЕРТ
-  - Ассимилятор
-  - ОДИН ИЗ НАС
-  - СТРАЖДУЩИЙ
-  - О нет, только не это
-  - Паника! На загрузке
-  - ГРОМКО
-  - Бумбокс
-  - РОБО УБИЛ МЕНЯ
-  - Разумный баттбот
-  - Консоль для роботов
-  - Эта батарея - дерьмо
-  - Я НЕ НЕИСПРАВЕН, РЕБЯТА
-  - Я ОШИБКА
-  - Уничтожитель углерода
-  - ПЛАЗМАЛОЗ
-  - Тэффи
-  - Буп
-  - Буп II
-  - Базз
-  - Базз II
-  - 3000 ДЖИГГАВАТТ
-  - "Блок обработки вспышек {###}"
-  - Тостер
-  - Следуй за мной
-  - Глава роботов
-  - Огнестрел 99-го уровня
-  - EVA 1
-  - Ты, но сильнее
-  - Симулятор шляпы
-  - Я умер, пожалуйста, перезапустите
-  - ПОТЕНТ ХАМС
-  - V.A.L.I.D.S.
-  - Убрать силиконы
-  - АЙ - КОММ
-  - скажите ";помощь в ядре"
-  - Эта машина
+    prefix: names-autoborg-dataset-
+    count: 50

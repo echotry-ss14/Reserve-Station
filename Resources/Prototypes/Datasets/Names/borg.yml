@@ -1,41 +1,14 @@
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 darkdan <145926356+Starbuckss14@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # only used roundstart, names can be changed after
-- type: dataset
-  id: names_borg
+- type: localizedDataset
+  id: NamesBorg
   values:
-  - Боб
-  - Джо
-  - Бип
-  - Бип II
-  - Бумбокс
-  - Тур Гайд-о-трон
-  - Тэффи
-  - Буп
-  - Буп II
-  - Базз
-  - Базз II
-  - Тостер
-  - Глава роботов
-  - ЕВА 1
-  - Мистер Робист
-  - Жестянка
-  - R2-PO
-  - C-3-D2
-  - Робби
-  - Робобот
-  - Чинила
-  - Сонни
-  - Автобот
-  - Уитли
-  - Келлер
-  - Ксенос
-  - Эхо
-  - Вектор
-  - Б-0-РГ
-  - Мегабайт
-  - Зад-Бот
-  - Десептиборг
-  - Ле Борг
-  - Биперс
-  - Милаха-Бот
-  - Самоделкин
-  - Близняшка
+    prefix: names-borg-dataset-
+    count: 43

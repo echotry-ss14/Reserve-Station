@@ -1,3 +1,13 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Speebro <100388782+Speebr0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Speebro <speebro@notreal.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   id: EngineeringTechFab
   parent: [BaseLatheLube, BaseSiloUtilizer]
@@ -22,6 +32,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - SharedBoardsStatic
     - EngineeringBoardsStatic
@@ -83,6 +95,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - ToolsStatic
     - SharedBoardsStatic
@@ -143,6 +157,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - SharedBoardsStatic
     - EngineeringBoardsStatic
@@ -160,10 +176,11 @@
     - ElectronicsStatic
     - SurgeryStatic
     - ScienceBoardsStatic
+    - ScienceExplosives # Goobstation - Roundstart Grenade Tech
+    - GrenadeTriggersStatic # Goobstation - Roundstart Grenade Tech
     dynamicPacks:
     - AdvancedTools
     - ScienceEquipment
-    - ScienceExplosives
     - ScienceClothing
     - ScienceWeapons
     - AtmosTools
@@ -218,6 +235,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - ServiceBoardsStatic
     - MaterialsStatic
@@ -226,6 +245,7 @@
     - PowerCellsStatic
     - LatheMiscStatic
     - ChemistryStatic
+    - TapeRecorderStatic
     dynamicPacks:
     - Janitor
     - Instruments
