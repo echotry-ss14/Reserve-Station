@@ -175,6 +175,7 @@ namespace Content.Server.Database
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
             bool includeUnbanned=true);
 
+        Task<ServerBanDef?> GetLastServerBanAsync(); //ADT-Tweak: Логи банов для диса
         Task AddServerBanAsync(ServerBanDef serverBan);
         Task AddServerUnbanAsync(ServerUnbanDef serverBan);
 
@@ -231,6 +232,7 @@ namespace Content.Server.Database
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
             bool includeUnbanned = true);
 
+        Task<ServerRoleBanDef?> GetLastServerRoleBanAsync(); //ADT-Tweak: Логи банов для диса
         Task<ServerRoleBanDef> AddServerRoleBanAsync(ServerRoleBanDef serverBan);
         Task AddServerRoleUnbanAsync(ServerRoleUnbanDef serverBan);
 
@@ -638,6 +640,13 @@ namespace Content.Server.Database
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetServerBansAsync(address, userId, hwId, modernHWIds, includeUnbanned));
         }
+        //Start-ADT-Tweak: логи банов для диса
+        public Task<ServerBanDef?> GetLastServerBanAsync()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLastServerBanAsync());
+        }
+        //End-ADT-Tweak
 
         public Task AddServerBanAsync(ServerBanDef serverBan)
         {
@@ -685,6 +694,12 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetServerRoleBansAsync(address, userId, hwId, modernHWIds, includeUnbanned));
+        }
+
+        public Task<ServerRoleBanDef?> GetLastServerRoleBanAsync()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLastServerRoleBanAsync());
         }
 
         public Task<ServerRoleBanDef> AddServerRoleBanAsync(ServerRoleBanDef serverRoleBan)

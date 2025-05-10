@@ -1117,7 +1117,7 @@
   id: UplinkSurplusBundle
   name: uplink-surplus-bundle-name
   description: uplink-surplus-bundle-desc
-  productEntity: CrateSyndicateSurplusBundle
+  productEntity: SupplyPodCircleSyndicateSurplusBundle # WWDP-EDIT
   cost:
     Telecrystal: 100 # goob
   categories:
@@ -1137,7 +1137,7 @@
   id: UplinkSuperSurplusBundle
   name: uplink-super-surplus-bundle-name
   description: uplink-super-surplus-bundle-desc
-  productEntity: CrateSyndicateSuperSurplusBundle
+  productEntity: SupplyPodCircleSyndicateSuperSurplusBundle # WWDP-EDIT
   cost:
     Telecrystal: 200 # goob
   categories:
@@ -1722,7 +1722,7 @@
   name: uplink-clothing-outer-hardsuit-juggernaut-name
   description: uplink-clothing-outer-hardsuit-juggernaut-desc
   icon: { sprite: /Textures/Clothing/OuterClothing/Hardsuits/cybersun.rsi, state: icon } # goobstation - duke nukies
-  productEntity: CrateCybersunJuggernautBundle
+  productEntity: SupplyPodCircleCybersunJuggernautBundle #Reserve supplypods
   cost:
     Telecrystal: 75 # goob
   categories:

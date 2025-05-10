@@ -35,6 +35,7 @@ public sealed partial class GhostGui : UIWidget
     public event Action? ReturnToBodyPressed;
     public event Action? GhostRolesPressed;
     public event Action? GhostBarPressed; // Goobstation - Ghost Bar
+    public event Action? ReturnToRoundPressed; // Reserve - Respawn
 
     public GhostGui()
     {
@@ -49,7 +50,8 @@ public sealed partial class GhostGui : UIWidget
         GhostWarpButton.OnPressed += _ => RequestWarpsPressed?.Invoke();
         ReturnToBodyButton.OnPressed += _ => ReturnToBodyPressed?.Invoke();
         GhostRolesButton.OnPressed += _ => GhostRolesPressed?.Invoke();
-        GhostBarButton.OnPressed += _ => GhostBarPressed?.Invoke(); // Goobstation - Ghost Bar
+        // GhostBarButton.OnPressed += _ => GhostBarPressed?.Invoke(); // Goobstation - Ghost Bar // Reserve - Respawn
+        ReturnToRound.OnPressed += _ => ReturnToRoundPressed?.Invoke(); // Reserve - Respawn
     }
 
     public void Hide()
@@ -64,7 +66,7 @@ public sealed partial class GhostGui : UIWidget
     {
         ReturnToBodyButton.Disabled = !canReturnToBody ?? true;
         // Goobstation start
-        GhostBarButton.Disabled = !canEnterGhostBar ?? true;
+        // GhostBarButton.Disabled = !canEnterGhostBar ?? true; // Reserve - Respawn
         GhostRolesButton.Disabled = !canTakeGhostRoles ?? true;
         // Goobstation end
 

@@ -275,7 +275,7 @@
   name: uplink-hardsuit-cybersun-dreadnought-name
   description: uplink-hardsuit-cybersun-dreadnought-desc
   icon: { sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/dreadnought.rsi, state: icon }
-  productEntity: CrateSyndicateDreadnought
+  productEntity: SupplyPodCircleCybersunDreadnoughtBundle #Reserve supplypods
   cost:
     Telecrystal: 150
   categories:

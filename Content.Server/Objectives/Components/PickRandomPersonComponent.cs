@@ -15,6 +15,9 @@ namespace Content.Server.Objectives.Components;
 [RegisterComponent]
 public sealed partial class PickRandomPersonComponent : Component
 {
+    /// <summary>
+    /// DeltaV: If true a target must have a job with SetPreference set to true.
+    /// </summary>
     [DataField]
-    public bool NeedsOrganic; // Goobstation: Only pick non-silicon players.
+    public bool OnlyChoosableJobs;
 }

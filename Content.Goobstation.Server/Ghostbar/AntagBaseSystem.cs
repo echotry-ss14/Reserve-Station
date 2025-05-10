@@ -27,13 +27,13 @@ public sealed class AntagBaseSystem : EntitySystem
     {
         var DirPath = new ResPath(AntagMapDIR);
 
-        if (_mapLoader.TryLoadMap(DirPath,
-                out var MapStat,
-                out _,
-                new DeserializationOptions { InitializeMaps = true }))
-        {
-            _mapSystem.SetPaused(MapStat.Value.Comp.MapId, false);
-            EnsureComp<ProtectedGridComponent>(MapStat.Value.Comp.Owner);
-        }
+        //if (_mapLoader.TryLoadMap(DirPath, // Reserve - no Ghostbar
+        //        out var MapStat,
+        //        out _,
+        //        new DeserializationOptions { InitializeMaps = true }))
+        //{
+        //    _mapSystem.SetPaused(MapStat.Value.Comp.MapId, false);
+        //    EnsureComp<ProtectedGridComponent>(MapStat.Value.Comp.Owner);
+        //} // Reserve - no Ghostbar
     }
 }

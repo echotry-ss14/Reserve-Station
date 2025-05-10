@@ -252,8 +252,8 @@
   description: View a Solar Control Interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: { sprite: _White/Interface/Actions/consoles.rsi, state: solar } # WWDP-Edit
+    iconOn: _White/Interface/Actions/consoles.rsi/solar.png # WWDP-Edit
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.SolarControlConsoleUiKey.Key }
@@ -288,8 +288,8 @@
   description: View a Cargo Ordering Interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: { sprite: _White/Interface/Actions/consoles.rsi, state: cargo } # WWDP-Edit
+    iconOn: _White/Interface/Actions/consoles.rsi/cargo.png # WWDP-Edit
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.CargoConsoleUiKey.Orders }

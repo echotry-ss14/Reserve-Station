@@ -78,4 +78,11 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<float> DiscordWatchlistConnectionBufferTime =
         CVarDef.Create("discord.watchlist_connection_buffer_time", 5f, CVar.SERVERONLY);
+
+    /// <summary>
+    /// URL of the Discord webhook which will relay bans info to the channel.
+    /// </summary>
+    public static readonly CVarDef<string> DiscordBansWebhook =
+        CVarDef.Create("discord.bans_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
 }
