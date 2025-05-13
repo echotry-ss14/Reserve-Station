@@ -203,7 +203,7 @@
 
 - type: entity
   id: GrenadeBlast
-  name: blast grenade
+  name: "40mm blast grenade"
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -220,7 +220,7 @@
 
 - type: entity
   id: GrenadeFlash
-  name: flash grenade
+  name: "40mm flash grenade"
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -237,7 +237,7 @@
 
 - type: entity
   id: GrenadeFrag
-  name: frag grenade
+  name: "40mm frag grenade"
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -254,7 +254,7 @@
 
 - type: entity
   id: GrenadeEMP
-  name: EMP grenade
+  name: "40mmEMP grenade"
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
@@ -263,6 +263,95 @@
     sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: emp
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+
+- type: entity
+  id: GrenadeBeanbagShotgun
+  name: "40mm beanbag shot"
+  parent: BaseGrenade
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeSpreadBeanbag
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+
+- type: entity
+  id: GrenadeBirdshot
+  name: "40mm birdshot"
+  description: "For hunting alien birds of unusual size."
+  parent: BaseGrenade
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeSpreadBirdshot
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+
+- type: entity
+  id: GrenadeSlug
+  name: "40mm slug"
+  description: "For hunting alien game the size of a mountain."
+  parent: BaseGrenade
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeSlug
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+
+- type: entity
+  id: Grenade00Buckshot
+  name: "40mm 00-Buckshot"
+  description: "For when you're hunting alien game animals the size of a house."
+  parent: BaseGrenade
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeSpread00Buckshot
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+
+- type: entity
+  id: Grenade0000Buckshot
+  name: "40mm 0000-Buckshot"
+  parent: BaseGrenade
+  description: "For when you're hunting alien game animals the size of a dropship."
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeSpread0000Buckshot
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: frag
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

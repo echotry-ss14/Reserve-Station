@@ -104,6 +104,7 @@
   - MagazinePistolSubMachineGunIncendiary
   - MagazineBoxShotgunIncendiaryHighCaliber # Goobstation
   - MagazineLightRifleIncendiary
+  - MagazineCaselessRifleIncendiary
   - SpeedLoaderMagnumIncendiary
   - MagazineShotgunIncendiary
   - MagazineBoxPistolIncendiary
@@ -172,11 +173,13 @@
   - MagazinePistolUranium
   - MagazinePistolSubMachineGunUranium
   - MagazineLightRifleUranium
+  - MagazineCaselessRifleUranium
   - SpeedLoaderMagnumUranium
   - MagazineBoxPistolUranium
   - MagazineBoxMagnumUranium
   - MagazineBoxLightRifleUranium
   - MagazineBoxRifleUranium
+  - MagazineBoxCaselessRifleUranium
   - BoxShotgunUranium
   - MagazineBoxShotgunUraniumHighCaliber # Goobstation
   # Goobstation R&D Console rework start
@@ -242,6 +245,34 @@
   technologyPrerequisites:
   - WeaponizedLaserManipulation
   # Goobstation R&D Console rework end
+
+- type: technology
+  id: ShrapnelMunitions
+  name: research-technology-shrapnel-munitions
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    state: base
+  discipline: Arsenal
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - MagazineRifleShrapnel
+  - MagazinePistolShrapnel
+  - MagazinePistolSubMachineGunShrapnel
+  - MagazineMagnumShrapnel
+  - MagazineLightRifleShrapnel
+  - MagazineCaselessRifleShrapnel
+  - MagazineBoxPistolShrapnel
+  - MagazineBoxMagnumShrapnel
+  - MagazineBoxLightRifleShrapnel
+  - MagazineBoxRifleShrapnel
+  - MagazineBoxCaselessRifleShrapnel
+  # Goobstation R&D Console rework start
+  position: 4,1
+  technologyPrerequisites:
+  - UraniumMunitions
+  # Goobstation R&D Console rework end
+
 
 - type: technology
   id: WaveParticleHarnessing
