@@ -4,8 +4,8 @@ guide-entry-rules-nrp = НРП правила
 # Goob SOP
 # - Основные справочники
 guide-entry-sop = СРП
-guide-entry-sop-alert-levels = _Коды станции
-guide-entry-sop-emergencies = _Чрезвычайные ситуации
+guide-entry-sop-alert-levels = Коды станции
+guide-entry-sop-emergencies = Чрезвычайные ситуации
 guide-entry-sop-jobs = Профессии
 guide-entry-sop-legal = Закон
 guide-entry-sop-standards = Стандартные процедуры
@@ -26,6 +26,7 @@ guide-entry-sop-deltaalert = Код Дельта
 guide-entry-sop-epsilonalert = Код Эпсилон
 guide-entry-sop-gammaalert = Код гамма
 guide-entry-sop-violetalert = Фиолетовый код
+guide-entry-sop-omicronalert = Код Омикрон
 # - Стандартные процедуры
 guide-entry-sop-demoting = Увольнение/понижение
 guide-entry-sop-evacuation = Эвакуация
@@ -82,3 +83,8 @@ guide-entry-sop-janitor = Уборщик
 guide-entry-sop-librarian = Библиотекарь
 guide-entry-sop-mime = Мим
 guide-entry-sop-reporter = Репортер
+# - Космический закон
+guide-entry-space-law-table = Таблица статей
+guide-entry-space-law-violations-minor = 1ХХ статьи (лёгкие)
+guide-entry-space-law-violations-average = 2ХХ статьи (средние)
+guide-entry-space-law-violations-serious = 3ХХ статьи (тяжкие)
