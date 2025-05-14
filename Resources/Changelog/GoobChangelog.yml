@@ -4054,7 +4054,7 @@ Entries:
         Ashen passage now deals heat damage to the user on activation. Ashen
         path heretics receive less damage from this, the higher their path stage
         is, the lower the damage will be. Flesh stalkers and raw prophets will
-        not take damage when jaunting 
+        not take damage when jaunting
   id: 455
   time: '2025-01-11T14:09:57.0000000+00:00'
 - author: Piras314
@@ -4080,7 +4080,7 @@ Entries:
     - type: Tweak
       message: >-
         Lethargic sting doesn't inject mute toxin but slowly drains victim's
-        stamina. 
+        stamina.
     - type: Tweak
       message: Toggling of ling equipment doesn't cost any chemicals anymore.
   id: 457

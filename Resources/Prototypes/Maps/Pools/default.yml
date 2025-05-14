@@ -52,24 +52,29 @@
   #- Amber TODO: goob amber
   - Bagel
   - Box
-  - Cluster
-  #- Core
+#  - Cluster Reserve - alternative: ReserveCluster
+#  - Core
   - Fland
  # - Gate Goobstation - My name is Walter Hartwell White, I live at 2308 Negra alloya line albequrque new mexico.
   - Loop
   - Marathon
   - Meta
   - Oasis
-  - Omega
+#  - Omega Reserve - alternative: ReserveOmega
   - Origin
-  - Saltern
   - Packed
   - Reach
-#  - Train # Goobstation - all my friends hate train
+# - Train # Goobstation - all my friends hate train
   - FlandHighPop
   - OasisHighPop
-  - Barratry # Goobstation - Re-add barratry
+  # NOBODY LOVES BARRATRY
+  #- Barratry # Goobstation - Re-add barratry
   - Kettle # Goobstation - Re-add kettle (before it was gemini!)
   - Submarine # goobstation - kill yourse
   - Leonid # Goobstation - for goob by goob
   - Delta # Goobstation - ported from Corvax
+# RESERVE
+  - ReserveSillyIsland # Reserve, silly port
+  - ReserveSaltern
+  - ReserveOmega
+  - ReserveCluster

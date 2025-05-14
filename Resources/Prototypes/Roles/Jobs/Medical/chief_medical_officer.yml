@@ -149,7 +149,7 @@
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain
-  canBeAntag: false
+  canBeAntag: true #Reserve - no MS for heads
   goobcoins: 40 #Goob content
   access:
   - Medical
@@ -161,8 +161,8 @@
   - Cryogenics
   - External # goobstation
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
+  #- !type:AddImplantSpecial #Reserve - no MS for heads
+  #  implants: [ MindShieldImplant ] #Reserve - no MS for heads
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
@@ -177,7 +177,7 @@
   equipment:
     id: CMOPDA
     ears: ClothingHeadsetAltMedical # Goobstation
-    eyes: ClothingEyesGlassesMed # Goobstation
+    eyes: ClothingEyesGlassesMedicalCommand # Reserve-CommandHUD
     belt: ClothingBeltMedicalFilled
   storage:
     back:

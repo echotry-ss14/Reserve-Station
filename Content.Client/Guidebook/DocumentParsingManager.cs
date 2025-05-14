@@ -145,7 +145,8 @@ public sealed partial class DocumentParsingManager
     }
 
     public bool TryAddMarkup(Control control, string text, bool log = true)
-    {
+    {   
+        text = CutComments(text); // Reserve parse fix
         try
         {
             foreach (var child in ControlParser.ParseOrThrow(text))
@@ -164,6 +165,16 @@ public sealed partial class DocumentParsingManager
 
         return true;
     }
+
+    // Reserve parse fix
+    private string CutComments(string text)
+    {
+	if (text.Contains("<!--")){
+           return text.Remove(text.IndexOf("<!--"), text.IndexOf("-->") + 3);
+        }
+	return text;
+    }
+    // Reserve parse fix
 
     private Parser<char, Control> CreateTagControlParser(string tagId, Type tagType, ISandboxHelper sandbox)
     {

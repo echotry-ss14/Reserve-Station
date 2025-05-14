@@ -4364,13 +4364,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 9.5,-0.5
       parent: 2
-- proto: ComputerCrewMonitoring
-  entities:
-  - uid: 1239
-    components:
-    - type: Transform
-      pos: 7.5,9.5
-      parent: 2
 - proto: ComputerId
   entities:
   - uid: 1242

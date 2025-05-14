@@ -220,11 +220,9 @@
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
     startAudio:
-      path: /Audio/Announcements/announce.ogg
+      path: /Audio/_Reserve/announcement/flux.ogg # Reserve
     weight: 8
     duration: 35
-    chaos: # Goobstation
-      Anomaly: 100
   - type: AnomalySpawnRule
 
 - type: entity
@@ -238,11 +236,9 @@
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
     startAudio:
-      path: /Audio/Announcements/announce.ogg
+      path: /Audio/_Reserve/announcement/bluespace_artifact.ogg  # Reserve
     weight: 8
     duration: 35
-    chaos: # Goobstation
-      Anomaly: 40
   - type: BluespaceArtifactRule
 
 - type: entity
@@ -254,8 +250,6 @@
     reoccurrenceDelay: 5
     earliestStart: 1
     duration: 1
-    chaos: # Goobstation
-      Anomaly: 40
   - type: BluespaceLockerRule
 
 - type: entity
@@ -266,8 +260,6 @@
     weight: 7
     duration: 1
     minimumPlayers: 15
-    chaos: # Goobstation
-      Power: 100
   - type: BreakerFlipRule
 
 - type: entity
@@ -315,12 +307,6 @@
     reoccurrenceDelay: 20
     minimumPlayers: 60
     duration: null
-    chaos: # Goobstation
-      Hostile: 20
-      Friend: 20
-      Combat: 40
-      Death: 100
-      Medical: 100
   - type: SpaceSpawnRule
     spawnDistance: 0
   - type: AntagSpawner
@@ -350,12 +336,6 @@
     earliestStart: 45
     reoccurrenceDelay: 20
     minimumPlayers: 30
-    chaos: # Goobstation
-      Hostile: 20
-      Friend: 20
-      Combat: 40
-      Death: 40
-      Medical: 40
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
     # Goobstation start
@@ -450,12 +430,6 @@
     duration: 1
     earliestStart: 30
     minimumPlayers: 20
-    chaos: # Goobstation
-      Hostile: 20
-      Friend: 20
-      Combat: 40
-      Death: 100
-      Medical: 100
   - type: RandomSpawnRule
     prototype: MobRevenant
 
@@ -515,12 +489,9 @@
   - type: StationEvent
     startAnnouncement: station-event-gas-leak-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/gasleak_start.ogg # Reserve
     endAnnouncement: station-event-gas-leak-end-announcement
     weight: 8
-    chaos:
-      Atmos: 100
-      Medical: 50
   - type: GasLeakRule
 
 - type: entity
@@ -532,10 +503,6 @@
     minimumPlayers: 15
     weight: 7
     duration: 240
-    chaos:
-      Hostile: 20
-      Friend: 20
-      Medical: 100
   - type: KudzuGrowthRule
 
 - type: entity
@@ -547,7 +514,7 @@
     startAnnouncement: station-event-power-grid-check-start-announcement
     endAnnouncement: station-event-power-grid-check-end-announcement
     startAudio:
-      path: /Audio/Announcements/power_off.ogg
+      path: /Audio/_Reserve/announcement/power_off.ogg # Reserve
       params:
         volume: -4
     duration: 60
@@ -563,11 +530,9 @@
     startAnnouncement: station-event-solar-flare-start-announcement
     endAnnouncement: station-event-solar-flare-end-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/solarflare.ogg # Reserve
     duration: 120
     maxDuration: 240
-    chaos: # Goobstation
-      Friend: 20
   - type: SolarFlareRule
     onlyJamHeadsets: true
     affectedChannels:
@@ -591,13 +556,11 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/ventclog.ogg # Reserve
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
     duration: 60
-    chaos: # Goobstation
-      Mess: 200
   - type: VentClogRule
 
 - type: entity
@@ -607,7 +570,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/aliens.ogg
+      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -631,7 +594,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -655,7 +618,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/aliens.ogg
+      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -675,7 +638,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
     earliestStart: 45 # DeltaV - was 20
     minimumPlayers: 30 # DeltaV - was 20
     weight: 1 # DeltaV - was 1.5
@@ -758,7 +721,7 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - NamesSyndicatePrefix
+        - SyndicateNamesPrefix
         - NamesSyndicateNormal
         nameFormat: name-format-nukie-generic
       - type: NpcFactionMember
@@ -784,7 +747,7 @@
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/_Reserve/announcement/intercept.ogg # Reserve
     duration: null # the rule has to last the whole round not 1 second
     occursDuringRoundEnd: false
   - type: AlertLevelInterceptionRule
@@ -854,7 +817,7 @@
   components:
   - type: StationEvent
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/attention.ogg # Reserve
     weight: 5
     minimumPlayers: 25
     reoccurrenceDelay: 20

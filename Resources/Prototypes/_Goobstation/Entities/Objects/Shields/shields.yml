@@ -33,10 +33,11 @@
     - type: ItemToggleSize
       activatedSize: Ginormous
     - type: Clothing
-      sprite: _Goobstation/Objects/Shields/blueshieldshield.rsi
+      sprite: _Reserve/Objects/Shields/BlueShieldShield.rsi
       quickEquip: false
       slots:
       - Belt
+      - suitStorage
     - type: ComponentToggler
       components:
       - type: DisarmMalus
@@ -133,5 +134,3 @@
     autoRechargeRate: 150
   - type: Item
     size: Normal
-  - type: Tag
-    tags: [] # ignore "WhitelistChameleon" tag

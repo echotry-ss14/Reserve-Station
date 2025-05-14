@@ -594,6 +594,7 @@ public sealed class StationSystem : EntitySystem
 
         return stats;
     }
+
     // Goobstation start
     public HashSet<EntityUid> GetAllStationGrids()
     {

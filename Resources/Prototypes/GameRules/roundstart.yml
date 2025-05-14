@@ -231,7 +231,7 @@
   id: Nukeops
   components:
   - type: GameRule
-    minPlayers: 20
+    minPlayers: 30
   - type: LoadMapRule
     mapPath: /Maps/_Goobstation/Nonstations/nukieplanet.yml # goob edit
   - type: AntagSelection
@@ -358,13 +358,14 @@
       max: 3
       playerRatio: 15
       briefing:
-        text: head-rev-role-greeting
+        text: head-rev-role-greeting-consent-only # Reserve-ConsentRev
         color: CornflowerBlue
         sound: "/Audio/Ambience/Antag/headrev_start.ogg"
-      startingGear: HeadRevGear
+      #startingGear: HeadRevGear # Reserve-ConsentRev
       components:
       - type: Revolutionary
       - type: HeadRevolutionary
+        onlyConsentConvert: true # Reserve-ConsentRev
       mindRoles:
       - MindRoleHeadRevolutionary
 

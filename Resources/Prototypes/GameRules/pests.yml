@@ -32,7 +32,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/attention.ogg # Reserve
     earliestStart: 15
     weight: 6
     duration: 30 # DeltaV: was 50, used as a delay now
@@ -57,7 +57,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/attention.ogg # Reserve
     earliestStart: 15
     weight: 6
     duration: 30 # DeltaV: was 50, used as a delay now
@@ -88,7 +88,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/attention.ogg # Reserve
     weight: 6
     duration: 30 # DeltaV: was 50, used as a delay now
     chaos: # Goobstation
@@ -110,7 +110,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/attention.ogg # Reserve
     weight: 6
     duration: 30 # DeltaV: was 50, used as a delay now
     chaos: # Goobstation
@@ -132,7 +132,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/_Reserve/announcement/attention.ogg # Reserve
     earliestStart: 15
     weight: 6
     duration: 30 # DeltaV: was 50, used as a delay now

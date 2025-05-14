@@ -80,7 +80,7 @@
   showInVote: false # secret
   description: kessler-syndrome-description
   rules:
-#    - KesslerSyndromeScheduler
+    - KesslerSyndromeScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
@@ -129,9 +129,9 @@
     - BlobGameMode
     - LoneAbductorSpawn
     - BasicStationEventScheduler
-#    - KesslerSyndromeScheduler
-#    - MeteorSwarmMildScheduler # Goob Edit
-#    - MeteorSwarmScheduler # Goob edit
+    - KesslerSyndromeScheduler
+    - MeteorSwarmMildScheduler
+    - MeteorSwarmScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
@@ -173,7 +173,7 @@
     - secret
     - sekrit
   name: secret-title
-  showInVote: false # Goob - Game Director
+  showInVote: true
   description: secret-description
   rules:
     - Secret
@@ -258,7 +258,7 @@
   rules:
   - Nukeops
   - DummyNonAntagChance
-  - SubGamemodesRule
+  #  - SubGamemodesRule #Reserve edit - no thieves on nukeops
   - BasicStationEventScheduler
   #  - MeteorSwarmScheduler Goobstation - nuh uh
   - SpaceTrafficControlEventScheduler
@@ -275,7 +275,7 @@
   description: rev-description
   showInVote: false
   rules:
-  - DummyNonAntagChance  
+  - DummyNonAntagChance
   - Revolutionary
   - SubGamemodesRule
   - BasicStationEventScheduler
@@ -315,7 +315,7 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
- # - KesslerSyndromeScheduler
+  - KesslerSyndromeScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change

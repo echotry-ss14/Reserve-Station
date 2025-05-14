@@ -18,17 +18,14 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - Must follow all other rules (no slurs/sexual names/etc)
   - Usernames, objects, random characters, very "low effort" names, "meta" names, or otherwise implausible names cannot be used as names. See examples below.
   - Admin rulings on IC names are final and disputes should be done through the forums, not by refusing to comply with an admin
-  - Species have naming conventions that are part of their in-universe culture. These may be subverted if they have sufficient in-character reasoning and effort to explain their non-standard name. Non-standard names are held to higher scrutiny and you may be questioned on why your name breaks these conventions.
 
-  # Naming Conventions:
-  Clowns and mimes are exempt from the prohibition on titles/honorifics and have loosened restrictions on low-effort and implausible names.
+  Clowns and mimes are exempt from the prohibition on titles/honorifics, and have loosened restrictions on low effort and implausible names.
 
   ## Clarification on "Meta" Names
-  Meta names attempt to take advantage of some game mechanic or game design choice. "Urist McHands" is a meta name because it is the default name for admin-spawned humans. "Operator Whiskey" is a meta name because it follows the naming pattern of nuclear operatives. This rule is not intended to prevent things like nuclear operatives using a fake ID with names that appear to be nuclear operative names if they decide that they want to do that.
+  Meta names are ones which attempt to take advantage of some game mechanic or game design choice. "Urist McHands" is a meta name because it is the default name used for admin spawned humans. "Operator Whiskey" is a meta name because it follows the naming pattern of nuclear operatives. This rule is not intended to prevent things like nuclear operatives using a fake ID with names that appear to be nuclear operative names if they decide that they want to do that.
 
   ## Conventions and Examples
-
-  Any name considered [color=#449944]Good:[/color] can be used for the species it falls under. Any names considered [color=#994444]Bad:[/color] cannot be used for that specie or any other species.
+  [color=#994444]Bad[/color] cannot be used by any species. [color=#449944]Acceptable[/color] names can be used by any species.
 
   Humans, Slimes, Dwarves, Vulpkanins, and Harpies should use the Firstname Lastname convention.
 
@@ -83,9 +80,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   Vox use a single name made of random syllables, often with repeating patterns.
   Names should not be excessively long or be so repetitive/convoluted as to be unreadable.
 
-  Examples
-  - [color=#449944]Good:[/color] Hirixashahre
-  - [color=#449944]Good:[/color] Xapikrikrik
+  - [color=#449944]Acceptable:[/color] Hirixashahre
+  - [color=#449944]Acceptable:[/color] Xapikrikrik
   - [color=#994444]Bad:[/color] Chipikirchitchitchitbecretretrer
   - [color=#994444]Bad:[/color] Trololol
 
@@ -133,6 +129,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - [color=#994444]Bad:[/color] Urist McHands
   - [color=#994444]Bad:[/color] Admin
   - [color=#994444]Bad:[/color] Game-Master
-  - [color=#994444]Bad:[/color] Operative Whiskey
+  - [color=#994444]Bad:[/color] Joe Mamma
   - [color=#994444]Bad:[/color] Middle-Aged Man
+  - [color=#994444]Bad:[/color] Operative Whiskey
 </Document>

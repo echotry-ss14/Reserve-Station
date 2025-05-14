@@ -172,7 +172,8 @@ public sealed partial class ChatSystem : SharedChatSystem
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
     public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
-    public const string DefaultAnnouncementSound = "/Audio/Announcements/attention.ogg";
+    public const string DefaultAnnouncementSound = "/Audio/_Reserve/announcement/attention.ogg"; // Reserve Announcements
+    public const string CentComAnnouncementSound = "/Audio/_Reserve/announcement/command_report.ogg"; // Reserve Announcements
 
     private bool _loocEnabled = true;
     private bool _deadLoocEnabled;
@@ -285,6 +286,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         string wrappedMessagePostfix = "" // Goobstation
         )
     {
+        if (message.Contains("/"))
+            return;
+
         if (HasComp<GhostComponent>(source))
         {
             // Ghosts can only send dead chat messages, so we'll forward it to InGame OOC.
@@ -456,6 +460,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         SoundSpecifier? announcementSound = null,
         Color? colorOverride = null
         )
+    // Reserve-Start
     {
         sender ??= Loc.GetString("chat-manager-sender-announcement");
 
@@ -463,10 +468,12 @@ public sealed partial class ChatSystem : SharedChatSystem
         _chatManager.ChatMessageToAll(ChatChannel.Radio, message, wrappedMessage, default, false, true, colorOverride);
         if (playSound)
         {
-            _audio.PlayGlobal(announcementSound == null ? DefaultAnnouncementSound : _audio.ResolveSound(announcementSound), Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
+            if (sender == Loc.GetString("admin-announce-announcer-default")) announcementSound = new SoundPathSpecifier(CentComAnnouncementSound); // Reserve-Announcements: Support custom alert sound from admin panel
+            _audio.PlayGlobal(announcementSound == null ? DefaultAnnouncementSound : _audio.GetSound(announcementSound), Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
         }
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Global station announcement from {sender}: {message}");
     }
+    // Reserve-End
 
     /// <summary>
     /// Dispatches an announcement to players selected by filter.

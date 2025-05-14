@@ -250,7 +250,7 @@
       types:
         Blunt: 0
   - type: Gun
-    fireRate: 0.66
+    fireRate: 0.33
     selectedMode: SemiAuto
     showExamineText: false
     availableModes:
@@ -306,7 +306,7 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Slash: 6
+        Slash: 4
   - type: Ammo
     muzzleFlash: null
   - type: Destructible

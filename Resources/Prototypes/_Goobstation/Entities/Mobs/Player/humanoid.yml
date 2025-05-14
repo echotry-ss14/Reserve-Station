@@ -148,6 +148,7 @@
   id: MobFelinidRandom
   name: Urist McFelinid
   suffix: Random Appearance
+  categories: [ HideSpawnMenu ] # Reserve
   components:
   - type: RandomHumanoidAppearance
   - type: RandomMetadata

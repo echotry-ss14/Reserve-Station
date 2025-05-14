@@ -1,12 +1,5 @@
-<!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-
-SPDX-License-Identifier: AGPL-3.0-or-later
--->
-
 <Document>
-  # Tesla Engine
+  # Генератор на основе Теслы
   The Tesla Engine is a powerful generator that uses a contained ball of lightning to produce energy for the station.
   <Box>
     <GuideEntityEmbed Entity="TeslaGenerator"/>
@@ -17,7 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   It generates power by harnessing the lightning strikes produced by the lightning ball using Tesla Coils.
 
-  ## Containment Field
+  ## Поле сдерживаемя
   The Tesla Engine requires a containment field to prevent the lightning ball from escaping and destroying the station.
 
   It is suggested to use the minimum size containment field for the lightning ball.

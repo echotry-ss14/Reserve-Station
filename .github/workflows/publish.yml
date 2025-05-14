@@ -26,7 +26,8 @@ concurrency:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest #Reserve edit. No self-hosted sadly
+
 
     steps:
     - name: Install dependencies
@@ -45,7 +46,7 @@ jobs:
       with:
         submodules: 'recursive'
     - name: Setup .NET Core
-      if: env.skip == 'false'
+      # if: env.skip == 'false' #Reserve edit. Always setup. Or idk.
       uses: actions/setup-dotnet@v3.2.0
       with:
         dotnet-version: 9.0.x

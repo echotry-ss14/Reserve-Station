@@ -21,6 +21,19 @@
       raffle:
         settings: default
 
+# Reserve - no MS for heads begin
+- type: randomHumanoidSettings
+  id: VisitorHeadNoMindShield
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: ghost-role-information-command-name
+      description: ghost-role-information-command-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: default
+# Reserve - no MS for heads end
+
 - type: randomHumanoidSettings
   id: VisitorCaptain
   parent: VisitorHead
@@ -34,7 +47,7 @@
 
 - type: randomHumanoidSettings
   id: VisitorCE
-  parent: VisitorHead
+  parent: VisitorHeadNoMindShield #Reserve - no MS for heads
   components:
     - type: GhostRole
       name: job-name-ce
@@ -45,7 +58,7 @@
 
 - type: randomHumanoidSettings
   id: VisitorCMO
-  parent: VisitorHead
+  parent: VisitorHeadNoMindShield #Reserve - no MS for heads
   components:
     - type: GhostRole
       name: job-name-cmo
@@ -56,7 +69,7 @@
 
 - type: randomHumanoidSettings
   id: VisitorHOP
-  parent: VisitorHead
+  parent: VisitorHeadNoMindShield #Reserve - no MS for heads
   components:
     - type: GhostRole
       name: job-name-hop
@@ -78,7 +91,7 @@
 
 - type: randomHumanoidSettings
   id: VisitorResearchDirector
-  parent: VisitorHead
+  parent: VisitorHeadNoMindShield #Reserve - no MS for heads
   components:
     - type: GhostRole
       name: job-name-rd
@@ -89,7 +102,7 @@
 
 - type: randomHumanoidSettings
   id: VisitorQM
-  parent: VisitorHead
+  parent: VisitorHeadNoMindShield #Reserve - no MS for heads
   components:
     - type: GhostRole
       name: job-name-qm

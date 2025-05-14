@@ -244,6 +244,10 @@
       - Normal
       - CosmicCultMonument # DeltaV - Cosmic Cult
       - Abductor
+  # Reserve-Start
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 35
+  # Reserve-End
 
 - type: entity
   id: ActionAGhostShowSolar

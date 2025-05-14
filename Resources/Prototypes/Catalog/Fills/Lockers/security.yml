@@ -84,7 +84,7 @@
       - id: WeaponEnergyShotgun
       #- id: WeaponDisabler #Goobstation (Disablers in belts)
       - id: ClothingBeltSecurityFilled
-      - id: ClothingHandsGlovesKravMaga # Goobstation - Martial Arts
+      #- id: ClothingHandsGlovesKravMaga # Goobstation - Martial Arts #Reserve edit
       - id: BoxLethalInjection # Goobstation
       - id: Flash
       - id: ClothingEyesGlassesSecurity
@@ -120,7 +120,7 @@
       - id: WeaponEnergyShotgun # Goobstation
       #- id: WeaponDisabler #Goobstation (Disablers in belts)
       - id: ClothingBeltSecurityFilled
-      - id: ClothingHandsGlovesKravMaga # Goobstation - Martial Arts
+      # - id: ClothingHandsGlovesKravMaga # Goobstation - Martial Arts #Reserve edit
       - id: BoxLethalInjection # Goobstation
       - id: Flash
       - id: ClothingEyesGlassesSecurity
