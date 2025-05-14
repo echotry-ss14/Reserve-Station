@@ -83,7 +83,3 @@ namespace Content.Goobstation.Shared.Bible // Death to serverside components. Gl
 
     }
 }
-<<<<<<<< HEAD:Content.Shared/Bible/Components/BibleComponent.cs
-========
-
->>>>>>>> 546ed7a4d0b43d4016b8abf66d166c65f25513cf:Content.Goobstation.Shared/Bible/BibleComponent.cs

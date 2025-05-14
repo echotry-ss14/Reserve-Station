@@ -3,16 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-<<<<<<<< HEAD:Resources/Prototypes/_Goobstation/Guidebook/chaplain.yml
 - type: guideEntry
   id: Chaplain
   name: guide-entry-chaplain
   text: "/ServerInfo/_Goobstation/Guidebook/Service/Chaplain.xml"
-
-========
-- type: localizedDataset
-  id: GoobGeneratorsNamesTeslaLast
-  values:
-    prefix: goob-generators-names-tesla-last-dataset-
-    count: 5
->>>>>>>> 546ed7a4d0b43d4016b8abf66d166c65f25513cf:Resources/Prototypes/_Goobstation/Datasets/Names/tesla_last.yml
