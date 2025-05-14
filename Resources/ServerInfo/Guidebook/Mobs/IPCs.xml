@@ -10,7 +10,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <Document>
   # I.P.C.
   <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
+<<<<<<< HEAD
   IPC (сокращение от Integrated Positronic Chassis) - это тип разумного робота, который считается [color=yellow]независимой личностью[/color], то есть [color=red]не подчиняется никаким законам робототехники[/color]. МПК не могут быть взломаны эмагами, потому что они не должны следовать каким-либо предопределенным директивам в своей системе. [color=red]МПК - существа на основе кремния, поэтому у врачей нет навыков их ремонта[/color].
+  Они получают на 20% меньше физического урона, на 70% больше урона от ожогов и на 100% больше урона от шока. В отличие от киборгов, они получают урон от радиации, но на 60 % меньше, чем люди. Они сделаны из тяжелого сплава, поэтому их труднее тащить, хотя сами КПБ могут с легкостью тащить более легкие виды.
+=======
+  An IPC (short for Integrated Positronic Chassis) is a type of sentient robot and is considered an [color=yellow]independent individual[/color], meaning [color=red]they are not guided by any laws of robotics[/color]. IPCs cannot be hacked by Emags because they do not have to follow any predefined directives in their system. [color=red]IPCs are silicon-based beings, so they are usually healed by Science or Engineering instead of Medical.[/color]
+  They take 20% less Brute damage, 70% more Heat damage and 100% more Shock damage. Contrary to cyborgs, they take Radiation damage, but 60% less than humans. They are made of a heavy alloy, which means they are harder to pull, though IPCs themselves can pull more lightweight species with ease.
+>>>>>>> Goob/master
 
   <Box>
     <GuideEntityEmbed Entity="PositronicBrain" Caption="Positronic Brain"/>

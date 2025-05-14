@@ -1,9 +1,5 @@
-ent-MindRoleWizard = Wizard Role
-    .desc = { ent-BaseMindRoleAntag.desc }
 ent-MindRoleApprentice = Apprentice Role
     .desc = { ent-BaseMindRoleAntag.desc }
-ent-SpawnPointWizard = { ent-BaseAntagSpawner }
-    .desc = { ent-BaseAntagSpawner.desc }
 ent-SpawnPointMarkerWizard = wizard
     .desc = { ent-MarkerBase.desc }
 ent-BaseStationWizardTarget = { "" }

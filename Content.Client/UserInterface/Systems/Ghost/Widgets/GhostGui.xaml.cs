@@ -35,6 +35,8 @@ public sealed partial class GhostGui : UIWidget
     public event Action? ReturnToBodyPressed;
     public event Action? GhostRolesPressed;
     public event Action? GhostBarPressed; // Goobstation - Ghost Bar
+    public event Action? ReturnToRoundPressed; // Reserve - Respawn
+    private int _prevNumberRoles;
 
     public GhostGui()
     {
@@ -49,7 +51,8 @@ public sealed partial class GhostGui : UIWidget
         GhostWarpButton.OnPressed += _ => RequestWarpsPressed?.Invoke();
         ReturnToBodyButton.OnPressed += _ => ReturnToBodyPressed?.Invoke();
         GhostRolesButton.OnPressed += _ => GhostRolesPressed?.Invoke();
-        GhostBarButton.OnPressed += _ => GhostBarPressed?.Invoke(); // Goobstation - Ghost Bar
+        // GhostBarButton.OnPressed += _ => GhostBarPressed?.Invoke(); // Goobstation - Ghost Bar // Reserve - Respawn
+        ReturnToRound.OnPressed += _ => ReturnToRoundPressed?.Invoke(); // Reserve - Respawn
     }
 
     public void Hide()
@@ -64,21 +67,20 @@ public sealed partial class GhostGui : UIWidget
     {
         ReturnToBodyButton.Disabled = !canReturnToBody ?? true;
         // Goobstation start
-        GhostBarButton.Disabled = !canEnterGhostBar ?? true;
+        // GhostBarButton.Disabled = !canEnterGhostBar ?? true; // Reserve - Respawn
         GhostRolesButton.Disabled = !canTakeGhostRoles ?? true;
         // Goobstation end
 
         if (roles != null)
         {
             GhostRolesButton.Text = Loc.GetString("ghost-gui-ghost-roles-button", ("count", roles));
-            if (roles > 0)
+
+            if (roles > _prevNumberRoles)
             {
                 GhostRolesButton.StyleClasses.Add(StyleBase.ButtonCaution);
             }
-            else
-            {
-                GhostRolesButton.StyleClasses.Remove(StyleBase.ButtonCaution);
-            }
+
+            _prevNumberRoles = (int)roles;
         }
 
         TargetWindow.Populate();

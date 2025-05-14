@@ -1,1 +1,1 @@
-reagent-effect-guidebook-remove-delayed-knockdown = Cancels stun baton delayed knockdown.
+reagent-effect-guidebook-remove-delayed-knockdown = Отменяет задержку и оглушение станбатона.

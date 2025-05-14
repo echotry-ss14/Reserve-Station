@@ -37,4 +37,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - Вместо крови - слизь зеленого цвета. Она замедляет персонажей на ней на 25%.
   - Слаймолюды дышат реже человека в 5 раз, следовательно получают по [color=red]0.2[/color] урона удушьем без азота. Могут долго обходиться без азота.
 
+  They take [color=#1e90ff]40% less Blunt damage and 20% less Poison damage[/color], but [color=#ffa500]50% more Cold damage, 20% more Slash damage and 20% more Piercing damage[/color].
+
 </Document>

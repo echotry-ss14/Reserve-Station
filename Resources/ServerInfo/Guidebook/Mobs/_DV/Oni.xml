@@ -22,6 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   ## Диета
   - Ничего особенного.
 
+<<<<<<< HEAD
   ## Преимущества
   - Получает на 15% меньше тупого, колющего и проникающего урона.
   - Наносит больше урона в ближнем бою: на 35% больше тупого и удушающего, на 20% больше колющего и пронзающего.
@@ -34,5 +35,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - Их точность при стрельбе из оружия ужасна.
   - Их труднее носить и тащить.
   - Они крупнее людей, поэтому в них легче попасть.
+=======
+  ## Drawbacks
+  - They are too big and unwieldy, so usually they need an extra hand to use guns. If a gun already requires two hands, they are most likely unable to shoot it at all.
+  - They are harder to carry and pull.
+  - They are bigger than Humans, making them easier to hit.
+>>>>>>> Goob/master
 
 </Document>

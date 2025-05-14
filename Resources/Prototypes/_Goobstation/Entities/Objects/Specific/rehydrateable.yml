@@ -7,15 +7,15 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- type: entity
-  parent: MonkeyCube
-  id: SkibidiCube
-  name: skibidi toilet cube
-  description: What a sigma?
-  components:
-  - type: Rehydratable
-    possibleSpawns:
-    - MobSkibidiToilet
+#- type: entity #Reserve remove sigma begin
+#  parent: MonkeyCube
+#  id: SkibidiCube
+#  name: skibidi toilet cube
+#  description: What a sigma?
+#  components:
+#  - type: Rehydratable
+#    possibleSpawns:
+#    - MobSkibidiToilet #Reserve remove sigma end
 
 - type: entity
   parent: MonkeyCube

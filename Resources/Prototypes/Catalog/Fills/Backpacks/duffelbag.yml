@@ -140,6 +140,7 @@
       - id: Retractor
       - id: Scalpel
       - id: BoneGel # Shitmed Change
+      - id: MedicalStitches # Shitmed Change
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
@@ -157,6 +158,7 @@
       - id: ClothingHandsGlovesNitrile
       - id: EmergencyRollerBedSpawnFolded
       - id: BoneGel # Shitmed Change
+      - id: MedicalStitches # Shitmed Change
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -374,6 +376,8 @@
       - id: ClothingHeadHelmetRaid
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
+      - id: DoubleEmergencyOxygenTankFilled #Reserve raid suit rework
+      - id: DoubleEmergencyNitrogenTankFilled #Reserve raid suit rework
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

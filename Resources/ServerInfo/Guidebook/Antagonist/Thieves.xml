@@ -6,7 +6,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
+<<<<<<< HEAD
   # Воры
+=======
+  # Thieves
+>>>>>>> Goob/master
 
   <Box>
     [color=#999999][italic]"Всё, что плохо лежит - берём; а что хорошо лежит - тоже берём!"[/italic][/color]
@@ -31,8 +35,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="ClothingHandsChameleonThief" Caption="твои воровские перчатки"/>
   </Box>
 
+<<<<<<< HEAD
   ## Инструменты торговли
   У вас есть еще два туза в украденных рукавах: [color=cyan]маячок[/color] и [color=cyan]ящик с инструментами[/color].
+=======
+  ## Tools of the Trade
+  You've got two more aces up your stolen sleeves: your [color=cyan]beacon[/color] and your [color=cyan]satchel.[/color]
+>>>>>>> Goob/master
 
   Ваш [color=cyan]маяк[/color] обеспечивает безопасный путь домой для безделушек, которые, возможно, нелегко унести с собой на эвакуационном шаттле. Просто найдите укромный уголок станции, чтобы развернуть маяк, а затем установите его координаты на свое убежище.
   Все блестяшки, оказавшиеся рядом с ним, будут [bold]телепортированы в ваше хранилище по окончании смены, выполнив ваши задачи.
@@ -43,11 +52,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="ThiefBeacon" Caption="Маяк вора"/>
   </Box>
 
+<<<<<<< HEAD
   Ваш [color=cyan]ящик с инструментами[/color] содержит... ну, все, что вы не забыли упаковать. [bold]Вы можете выбрать два готовых набора[/bold], которые помогут вам совершать более масштабные ограбления.
   Одобрите свой выбор в безопасном месте, так как ящик с инструментами растворится, а снаряжение упадет к вашим ногам.
 
   <Box>
     <GuideEntityEmbed Entity="ToolboxThief" Caption="Ящик воровских инструментов"/>
+=======
+  Your [color=cyan]satchel[/color] contains... well, whatever you remembered to pack. [bold]You can select two pre-made kits[/bold] to help you complete grander heists.
+
+  <Box>
+    <GuideEntityEmbed Entity="SatchelThief"/>
+>>>>>>> Goob/master
   </Box>
   <Box>
     <GuideEntityEmbed Entity="StorageImplanter" Caption="Анатомия"/>
@@ -61,8 +77,15 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="Telecrystal" Caption="Синдикат"/>
   </Box>
 
+<<<<<<< HEAD
   ## Центральная часть коллекции
   Ваша клептомания заведет вас куда угодно. Однажды вам захочется украсть несколько статуэток. В другой день вам захочется украсть промышленный станок.
+=======
+  ## Centerpiece of the Collection
+  Your kleptomania will take you places. One day, you'll feel like stealing a few figurines. Another day, you'll feel like stealing an industrial machine.
+
+  No matter. They'll all be a part of your collection within a matter of time.
+>>>>>>> Goob/master
 
   Неважно. Через некоторое время все они станут частью вашей коллекции.
 
@@ -72,6 +95,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   К числу вещей, которые вы можете пожелать, относятся, в частности, следующие:
 
+<<<<<<< HEAD
+=======
+  Things that you may desire include but are not limited to:
+
+>>>>>>> Goob/master
   <Box>
    <GuideEntityEmbed Entity="ToyFigurineGreytider" Caption="Фигурки"/>
    <GuideEntityEmbed Entity="PassengerIDCard" Caption="ID-карты"/>

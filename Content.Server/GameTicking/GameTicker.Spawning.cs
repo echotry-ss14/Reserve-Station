@@ -94,6 +94,9 @@ using Content.Server.Speech.Components;
 using Content.Server.Station.Components;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
+using Content.Shared.CCVar;
+using Content.Shared.Chat;
+using Content.Shared.Database;
 using Content.Shared.Mind;
 using Content.Shared.Players;
 using Content.Shared.Preferences;
@@ -183,6 +186,9 @@ namespace Content.Server.GameTicking
                 if (job == null)
                 {
                     var playerSession = _playerManager.GetSessionById(netUser);
+                    var evNoJobs = new NoJobsAvailableSpawningEvent(playerSession); // Used by gamerules to wipe their antag slot, if they got one
+                    RaiseLocalEvent(evNoJobs);
+
                     _chatManager.DispatchServerMessage(playerSession, Loc.GetString("job-not-available-wait-in-lobby"));
                 }
                 else
@@ -261,6 +267,22 @@ namespace Content.Server.GameTicking
                 return;
             }
 
+            // Reserve - Respawn begin
+            //Ghost system return to round, check for whether the character isn't the same.
+            if (lateJoin && !_adminManager.IsAdmin(player) && !CheckGhostReturnToRound(player, character, out var checkAvoid))
+            {
+                var message = checkAvoid
+                    ? Loc.GetString("ghost-respawn-same-character-slightly-changed-name")
+                    : Loc.GetString("ghost-respawn-same-character");
+                var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
+
+                _chatManager.ChatMessageToOne(ChatChannel.Server, message, wrappedMessage,
+                    default, false, player.Channel, Color.Red);
+
+                return;
+            }
+            // Reserve - Respawn end
+
             // We raise this event to allow other systems to handle spawning this player themselves. (e.g. late-join wizard, etc)
             var bev = new PlayerBeforeSpawnEvent(player, character, jobId, lateJoin, station);
             RaiseLocalEvent(bev);
@@ -294,6 +316,9 @@ namespace Content.Server.GameTicking
                     JoinAsObserver(player);
                 }
 
+                var evNoJobs = new NoJobsAvailableSpawningEvent(player); // Used by gamerules to wipe their antag slot, if they got one
+                RaiseLocalEvent(evNoJobs);
+
                 _chatManager.DispatchServerMessage(player,
                     Loc.GetString("game-ticker-player-no-jobs-available-when-joining"));
                 return;
@@ -309,8 +334,6 @@ namespace Content.Server.GameTicking
             _mind.SetUserId(newMind, data.UserId);
 
             var jobPrototype = _prototypeManager.Index<JobPrototype>(jobId);
-            _roles.MindAddJobRole(newMind, silent: silent, jobPrototype:jobId);
-            var jobName = _jobs.MindTryGetJobName(newMind);
 
             _playTimeTrackings.PlayerRolesChanged(player);
 
@@ -319,6 +342,10 @@ namespace Content.Server.GameTicking
             var mob = mobMaybe!.Value;
 
             _mind.TransferTo(newMind, mob);
+            _admin.UpdatePlayerList(player);
+
+            _roles.MindAddJobRole(newMind, silent: silent, jobPrototype:jobId);
+            var jobName = _jobs.MindTryGetJobName(newMind);
             _admin.UpdatePlayerList(player);
 
             if (lateJoin && !silent)
@@ -463,6 +490,70 @@ namespace Content.Server.GameTicking
                 $"{player.Name} late joined the round as an Observer with {ToPrettyString(ghost):entity}.");
         }
 
+        // Reserve - Respawn begin
+        private bool CheckGhostReturnToRound(ICommonSession player, HumanoidCharacterProfile character, out bool checkAvoid)
+        {
+            checkAvoid = false;
+
+            var allPlayerMinds = EntityQuery<MindComponent>()
+                .Where(mind => mind.OriginalOwnerUserId == player.UserId);
+
+            foreach (var mind in allPlayerMinds)
+            {
+                if (mind.CharacterName == character.Name)
+                    return false;
+
+                if (mind.CharacterName == null)
+                    continue;
+
+                var similarity = CalculateStringSimilarity(mind.CharacterName, character.Name);
+                switch (similarity)
+                {
+                    case >= 85f:
+                        _chatManager.SendAdminAlert(Loc.GetString("ghost-respawn-log-character-almost-same",
+                            ("player", player.Name), ("try", false), ("oldName", mind.CharacterName),
+                            ("newName", character.Name)));
+                        checkAvoid = true;
+
+                        return false;
+                    case >= 50f:
+                        _chatManager.SendAdminAlert(Loc.GetString("ghost-respawn-log-character-almost-same",
+                            ("player", player.Name), ("try", true), ("oldName", mind.CharacterName),
+                            ("newName", character.Name)));
+
+                        break;
+                }
+            }
+
+            return true;
+        }
+
+        private float CalculateStringSimilarity(string str1, string str2)
+        {
+            var minLength = Math.Min(str1.Length, str2.Length);
+            var matchingCharacters = 0;
+
+            for (var i = 0; i < minLength; i++)
+            {
+                if (str1[i] == str2[i])
+                    matchingCharacters++;
+            }
+
+            float maxLength = Math.Max(str1.Length, str2.Length);
+            var similarityPercentage = (matchingCharacters / maxLength) * 100;
+
+            return similarityPercentage;
+        }
+        // Reserve - Respawn end
+
+        #region Mob Spawning Helpers
+        private EntityUid SpawnObserverMob()
+        {
+            var coordinates = GetObserverSpawnPoint();
+            return EntityManager.SpawnEntity(ObserverPrototypeName, coordinates);
+        }
+        #endregion
+
         #region Spawn Points
 
         public EntityCoordinates GetObserverSpawnPoint()
@@ -505,7 +596,7 @@ namespace Content.Server.GameTicking
                 // Ideally engine would just spawn them on grid directly I guess? Right now grid traversal is handling it during
                 // update which means we need to add a hack somewhere around it.
                 var spawn = _robustRandom.Pick(_possiblePositions);
-                var toMap = spawn.ToMap(EntityManager, _transform);
+                var toMap = _transform.ToMapCoordinates(spawn);
 
                 if (_mapManager.TryFindGridAt(toMap, out var gridUid, out _))
                 {

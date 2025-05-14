@@ -11,6 +11,46 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
+using Content.Server.Access.Systems;
+using Content.Server.Cargo.Components;
+using Content.Server.Cargo.Systems;
+using Content.Server.Chat.Systems;
+using Content.Server.Damage.Components;
+using Content.Server._DV.Cargo.Components;
+using Content.Server._DV.Cargo.Systems;
+using Content.Server.Mail.Components;
+using Content.Server.Destructible.Thresholds.Behaviors;
+using Content.Server.Destructible.Thresholds.Triggers;
+using Content.Server.Destructible.Thresholds;
+using Content.Server.Destructible;
+using Content.Server.Mind;
+using Content.Server.Popups;
+using Content.Server.Power.Components;
+using Content.Server.Radio.EntitySystems; // ImpStation - for radio notifications of new mail
+using Content.Server.Spawners.EntitySystems;
+using Content.Server.Station.Systems;
+using Content.Shared.Access.Components;
+using Content.Shared.Access.Systems;
+using Content.Shared.Access;
+using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Damage;
+using Content.Shared.Mail;
+using Content.Shared.Destructible;
+using Content.Shared.Emag.Components;
+using Content.Shared.Emag.Systems;
+using Content.Shared.Examine;
+using Content.Shared.Fluids.Components;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Interaction.Events;
+using Content.Shared.Interaction;
+using Content.Shared.Nutrition.Components;
+using Content.Shared.Nutrition.EntitySystems;
+using Content.Shared.PDA;
+using Content.Shared.Radio; // ImpStation - for radio notifications of new mail
+using Content.Shared.Roles;
+using Content.Shared.Storage;
+using Content.Shared.Tag;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
@@ -83,8 +123,8 @@ namespace Content.Server.Mail
         [Dependency] private readonly MetaDataSystem _metaDataSystem = default!;
         [Dependency] private readonly EmagSystem _emag = default!;
 
-        // DeltaV - system that keeps track of mail and cargo stats
         [Dependency] private readonly LogisticStatsSystem _logisticsStatsSystem = default!;
+        [Dependency] private readonly RadioSystem _radioSystem = default!; // ImpStation - for radio notifications of new mail
 
         private ISawmill _sawmill = default!;
 
@@ -116,12 +156,12 @@ namespace Content.Server.Mail
 
                 mailTeleporter.Accumulator += frameTime;
 
-                if (mailTeleporter.Accumulator < mailTeleporter.TeleportInterval.TotalSeconds)
-                    continue;
-
-                mailTeleporter.Accumulator -= (float) mailTeleporter.TeleportInterval.TotalSeconds;
-
-                SpawnMail(mailTeleporter.Owner, mailTeleporter);
+                if (mailTeleporter.Accumulator >= mailTeleporter.TeleportInterval.TotalSeconds)
+                {
+                    mailTeleporter.Accumulator -= (float)mailTeleporter.TeleportInterval.TotalSeconds;
+                    var timeUntilNextMail = TimeSpan.FromSeconds(double.Round(mailTeleporter.TeleportInterval.TotalSeconds - mailTeleporter.Accumulator));
+                    SpawnMail(mailTeleporter.Owner, timeUntilNextMail, mailTeleporter);
+                }
             }
         }
 
@@ -132,7 +172,7 @@ namespace Content.Server.Mail
         {
             if (args.SpawnResult == null ||
                 args.Job == null ||
-                args.Station is not {} station)
+                args.Station is not { } station)
             {
                 return;
             }
@@ -174,20 +214,19 @@ namespace Content.Server.Mail
             component.IsLocked = false;
             UpdateAntiTamperVisuals(uid, false);
 
-            if (component.IsPriority)
-            {
-                // This is a successful delivery. Keep the failure timer from triggering.
-                if (component.priorityCancelToken != null)
-                    component.priorityCancelToken.Cancel();
+            if (!component.IsPriority)
+                return;
 
-                // The priority tape is visually considered to be a part of the
-                // anti-tamper lock, so remove that too.
-                _appearanceSystem.SetData(uid, MailVisuals.IsPriority, false);
+            // This is a successful delivery. Keep the failure timer from triggering.
+            component.priorityCancelToken?.Cancel();
 
-                // The examination code depends on this being false to not show
-                // the priority tape description anymore.
-                component.IsPriority = false;
-            }
+            // The priority tape is visually considered to be a part of the
+            // anti-tamper lock, so remove that too.
+            _appearanceSystem.SetData(uid, MailVisuals.IsPriority, false);
+
+            // The examination code depends on this being false to not show
+            // the priority tape description anymore.
+            component.IsPriority = false;
         }
 
         /// <summary>
@@ -207,7 +246,7 @@ namespace Content.Server.Mail
             {
                 _idCardSystem.TryGetIdCard(args.Used, out var pdaID);
                 idCard = pdaID;
-            }   
+            }
 
             if (HasComp<IdCardComponent>(args.Used)) /// Or are they using an id card directly?
                 idCard = Comp<IdCardComponent>(args.Used);
@@ -255,7 +294,7 @@ namespace Content.Server.Mail
                 if (_stationSystem.GetOwningStation(uid) != station)
                     continue;
 
-                _cargoSystem.UpdateBankAccount(station, account, component.Bounty);
+                _cargoSystem.UpdateBankAccount((station, account), component.Bounty);
             }
         }
 
@@ -313,7 +352,7 @@ namespace Content.Server.Mail
                 if (_stationSystem.GetOwningStation(uid) != station)
                     continue;
 
-                _cargoSystem.UpdateBankAccount(station, account, component.Penalty);
+                _cargoSystem.UpdateBankAccount((station, account), component.Penalty);
                 return;
             }
         }
@@ -536,7 +575,7 @@ namespace Content.Server.Mail
 
                 mailComp.priorityCancelToken = new CancellationTokenSource();
 
-                Timer.Spawn((int) component.priorityDuration.TotalMilliseconds,
+                Timer.Spawn((int)component.PriorityDuration.TotalMilliseconds,
                     () =>
                     {
                         // DeltaV - Expired mail recorded to logistic stats
@@ -665,7 +704,7 @@ namespace Content.Server.Mail
         /// <summary>
         /// Handle the spawning of all the mail for a mail teleporter.
         /// </summary>
-        public void SpawnMail(EntityUid uid, MailTeleporterComponent? component = null)
+        private void SpawnMail(EntityUid uid, TimeSpan timeUntilNextMail, MailTeleporterComponent? component = null)
         {
             if (!Resolve(uid, ref component))
             {
@@ -742,6 +781,18 @@ namespace Content.Server.Mail
                 _containerSystem.EmptyContainer(queued);
 
             _audioSystem.PlayPvs(component.TeleportSound, uid);
+            if (component.RadioNotification) // ImpStation - for radio notifications of new mail
+                Report(uid, component.RadioChannel, component.ShipmentReceivedMessage, ("timeLeft", timeUntilNextMail));
+        }
+
+        /// <summary>
+        /// ImpStation
+        /// Send a radio notification about new mail
+        /// </summary>
+        private void Report(EntityUid source, ProtoId<RadioChannelPrototype> channel, string messageKey, params (string, object)[] args)
+        {
+            var message = args.Length == 0 ? Loc.GetString(messageKey) : Loc.GetString(messageKey, args);
+            _radioSystem.SendRadioMessage(source, message, channel, source);
         }
 
         public void OpenMail(EntityUid uid, MailComponent? component = null, EntityUid? user = null)
@@ -752,7 +803,7 @@ namespace Content.Server.Mail
             _audioSystem.PlayPvs(component.OpenSound, uid);
 
             if (user != null)
-                _handsSystem.TryDrop((EntityUid) user);
+                _handsSystem.TryDrop((EntityUid)user);
 
             if (!_containerSystem.TryGetContainer(uid, "contents", out var contents))
             {

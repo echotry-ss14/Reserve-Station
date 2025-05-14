@@ -1,1 +1,1 @@
-species-name-tajaran = Tajaran
+species-name-tajaran = Таяран

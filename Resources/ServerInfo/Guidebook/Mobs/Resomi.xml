@@ -15,6 +15,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Резоми - небольшой птицеподобный вид, родом из ледяного мира.
 
+<<<<<<< HEAD
   Хотя их крылья не дают им возможности полноценно летать, они могут использовать их для лучшего маневрирования в условиях невесомости.
 
   Как и большинство других нечеловеческих видов, резоми способны переваривать сырое мясо и другие непроваренные животные белки.
@@ -26,6 +27,16 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Благодаря своим небольшим размерам они могут помещаться в вещмещках.
 
-  Их безоружная атака наносит косой урон.
+  Их безоружная атака наносит режущий урон.
+=======
+  Like most other non-human species, Resomi are capable of digesting raw meat and other uncooked animal proteins.
+
+  As a result of the conditions of their home planet and ammonia-based blood, Resomi are immune to any cold damage and other effects.
+  Consequently, they find temperatures that most other species find comfortable to be unbearably hot, finding themselves suffering starting at just 30°C.
+
+  Along with their temperature tolerances, they take 30% more heat and brute damage.
+
+  Due to their small size, they can fit in duffelbags. They also weigh less, making it harder for them to pull other species. Their unarmed attack deals Slash damage.
+>>>>>>> Goob/master
 
 </Document>

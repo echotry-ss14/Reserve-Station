@@ -79,6 +79,8 @@
     slots:
     - HEAD
     quickEquip: false
+    equipDelay: 3
+    unequipDelay: 6
   - type: OnUseTimerTrigger
     delay: 10
     delayOptions: [10, 30, 60, 120, 300]
@@ -108,6 +110,8 @@
     name: ghost-role-information-c4-name
     description: ghost-role-information-c4-description
     rules: ghost-role-information-familiar-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
   - type: GhostTakeoverAvailable
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter

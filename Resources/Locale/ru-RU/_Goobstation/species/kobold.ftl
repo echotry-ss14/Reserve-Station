@@ -1,1 +1,1 @@
-species-name-kobold = Kobold
+species-name-kobold = Кобольд

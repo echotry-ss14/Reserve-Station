@@ -115,6 +115,7 @@
   frequency: 1213
   color: "#8f4a4b"
   longRange: true
+  stealthChannel: true #Reserve stealth syndie key
 
 - type: radioChannel
   id: Handheld

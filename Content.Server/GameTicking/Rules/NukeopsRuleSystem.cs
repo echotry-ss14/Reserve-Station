@@ -242,6 +242,8 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
             _roundEndSystem.EndRound();
         }
+
+        _roundEndSystem.EndRound(); // DeltaV - end the round regardless of game rules
     }
 
     private void OnRunLevelChanged(GameRunLevelChangedEvent ev)

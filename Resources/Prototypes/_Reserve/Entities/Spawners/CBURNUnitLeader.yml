@@ -17,8 +17,8 @@
       prototypes: [ CBURNGear ]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader #Reserve datasets fix
+      - NamesMilitaryLast #Reserve datasets fix
     - type: RandomHumanoidAppearance
       randomizeName: false
 
@@ -30,8 +30,8 @@
       state: cburn
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader #Reserve datasets fix
+      - NamesMilitaryLast #Reserve datasets fix
     - type: RandomHumanoidSpawner
       settings: CBURNUnitLeaderReserve
 

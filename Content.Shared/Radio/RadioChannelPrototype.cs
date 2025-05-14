@@ -14,7 +14,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Radio;
 
-[Prototype("radioChannel")]
+[Prototype]
 public sealed partial class RadioChannelPrototype : IPrototype
 {
     /// <summary>
@@ -47,4 +47,12 @@ public sealed partial class RadioChannelPrototype : IPrototype
     /// </summary>
     [DataField("longRange"), ViewVariables]
     public bool LongRange = false;
+
+    //Reserve stealth syndie key begin
+    /// <summary>
+    /// Determines the visibility of the key in headset presence on inspection
+    /// </summary>
+    [DataField("stealthChannel")]
+    public bool? StealthChannel = false;
+    //Reserve stealth syndie key end
 }

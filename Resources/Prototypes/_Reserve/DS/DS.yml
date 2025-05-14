@@ -40,8 +40,8 @@
       prototypes: [DSSold]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
-      - NamesLastMilitary
+      - NamesMilitaryFirst #Reserve datasets fix
+      - NamesMilitaryLast #Reserve datasets fix
     - type: GhostRole
       makeSentient: true
       name: Солдат Эскадрона Смерти
@@ -76,8 +76,8 @@
       prototypes: [DSLeader]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader #Reserve datasets fix
+      - NamesMilitaryLast #Reserve datasets fix
     - type: CommandStaff
 #КОМАНДИР ГОСТРОЛЬ
 - type: entity

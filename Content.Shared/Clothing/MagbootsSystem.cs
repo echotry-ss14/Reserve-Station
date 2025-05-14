@@ -71,6 +71,8 @@
 // SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -118,7 +120,7 @@ public sealed class SharedMagbootsSystem : EntitySystem
             UpdateMagbootEffects(container.Owner, ent, args.Activated);
         }
 
-        var prefix = args.Activated ? "on" : null;
+        var prefix = args.Activated ? ent.Comp.EnabledPrefix : null; // Goob edit
         _item.SetHeldPrefix(ent, prefix);
         _clothing.SetEquippedPrefix(ent, prefix);
     }
@@ -143,6 +145,10 @@ public sealed class SharedMagbootsSystem : EntitySystem
             _alerts.ShowAlert(user, ent.Comp.MagbootsAlert);
         else
             _alerts.ClearAlert(user, ent.Comp.MagbootsAlert);
+        //Reserve jetpack tweaks begin
+        var ev = new MagbootsUpdateStateEvent(state);
+        RaiseLocalEvent(user, ref ev);
+        //Reserve jetpack tweaks  end
     }
 
     private void OnIsWeightless(Entity<MagbootsComponent> ent, ref IsWeightlessEvent args)
@@ -163,3 +169,11 @@ public sealed class SharedMagbootsSystem : EntitySystem
         OnIsWeightless(ent, ref args.Args);
     }
 }
+//Reserve jetpack tweaks begin
+/// <summary>
+/// The event that rises when the state of MagbootEffects is changes
+/// </summary>
+/// <param name="State"></param>
+[ByRefEvent]
+public record struct MagbootsUpdateStateEvent(bool State);
+//Reserve jetpack tweaks end

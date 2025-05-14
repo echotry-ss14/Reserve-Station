@@ -1,0 +1,15 @@
+- type: customGhost
+  id: ca4tuk-ghost
+  ckey: ca4tuk
+  sprite: /Textures/_Reserve/CustomGhosts/ca4tuk-ghost.rsi
+  alpha: 0.95
+  ghostName: ca4tuk
+  ghostDescription: ДА
+
+- type: customGhost
+  id: svarshik-ghost
+  ckey: Svarshik
+  sprite: /Textures/_Reserve/CustomGhosts/svarshik-ghost.rsi
+  alpha: 0.6
+  ghostName: Svarshik
+  ghostDescription: Вам кажется.

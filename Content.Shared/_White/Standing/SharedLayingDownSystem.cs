@@ -11,6 +11,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using System.Linq;
 using Content.Goobstation.Common.CCVar;
 using Content.Goobstation.Common.Standing;
 using Content.Shared._Goobstation.Wizard.TimeStop;
@@ -26,6 +27,7 @@ using Content.Shared.Standing;
 using Content.Shared.Stunnable;
 using Robust.Shared.Configuration;
 using Robust.Shared.Input.Binding;
+using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Serialization;
 
@@ -33,6 +35,7 @@ namespace Content.Shared._White.Standing;
 
 public abstract class SharedLayingDownSystem : EntitySystem
 {
+    [Dependency] private readonly EntityLookupSystem _lookup = default!; // WWDP
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly StandingStateSystem _standing = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
@@ -160,7 +163,10 @@ public abstract class SharedLayingDownSystem : EntitySystem
             standingState.CurrentState is not StandingState.Standing)
         {
             if (behavior == DropHeldItemsBehavior.AlwaysDrop)
-                RaiseLocalEvent(uid, new DropHandItemsEvent());
+            {
+                var ev = new DropHandItemsEvent();
+                RaiseLocalEvent(uid, ref ev);
+            }
 
             return false;
         }
@@ -175,7 +181,7 @@ public abstract class SharedLayingDownSystem : EntitySystem
         {
             ent.Comp.AutoGetUp = false;
             Dirty(ent);
-           return;
+            return;
         }
 
         if (!TryComp(ent, out ActorComponent? actor))
@@ -186,6 +192,19 @@ public abstract class SharedLayingDownSystem : EntitySystem
     }
 
     public virtual void UpdateSpriteRotation(EntityUid uid) { }
+
+    // WWDP teleporter start
+    public void LieDownInRange(EntityUid uid, EntityCoordinates coords, float range = 0.4f)
+    {
+        var ents = new HashSet<Entity<LayingDownComponent>>();
+
+        _lookup.GetEntitiesInRange(coords, range, ents);
+        foreach (var ent in ents.Where(ent => ent.Owner != uid))
+        {
+            TryLieDown(ent, behavior: DropHeldItemsBehavior.DropIfStanding);
+        }
+    }
+    // WWDP teleporter end
 }
 
 [Serializable, NetSerializable]
