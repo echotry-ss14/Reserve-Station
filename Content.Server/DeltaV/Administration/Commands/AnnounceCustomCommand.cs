@@ -32,7 +32,7 @@ public sealed class AnnounceCustomCommand : IConsoleCommand
         }
 
         var message = args[0];
-        var sender = "Central Command";
+        var sender = "Центральное Командование"; //Reserve edit
         var color = Color.Gold;
         var sound = new SoundPathSpecifier("/Audio/Announcements/announce.ogg");
 
