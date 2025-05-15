@@ -1,6 +1,6 @@
 ﻿
-item-jump-into-pocket = {CAPITALIZE($target)} прыгает в ваш карман!
-item-jump-into-hands = {CAPITALIZE($target)} запрыгиваем вам в руки!
+item-jump-into-pocket = ({CAPITALIZE($target)}) прыгает в ваш карман!
+item-jump-into-hands = ({CAPITALIZE($target)}) запрыгиваем вам в руки!
 
 revenant-animate-item-animate = {CAPITALIZE($target)} становится агрессивным!
 revenant-animate-item-inanimate = {CAPITALIZE($target)} падает, недвижимый.

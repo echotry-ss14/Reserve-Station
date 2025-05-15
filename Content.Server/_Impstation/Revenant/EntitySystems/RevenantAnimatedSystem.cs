@@ -108,7 +108,7 @@ public sealed partial class RevenantAnimatedSystem : EntitySystem
         if (HasComp<GunComponent>(ent))
         {
             // Goals: Magdump into any nearby creatures, and melee hit them if empty
-            if (ent.Comp.Revenant != null && ent.Comp.Revenant.Value.Comp.AnimateCanBoltGuns && TryComp<ChamberMagazineAmmoProviderComponent>(ent, out var bolt))
+            if (TryComp<ChamberMagazineAmmoProviderComponent>(ent, out var bolt)) //Reserve edit. Letting it work via AdminTricks
                 _gunSystem.SetBoltClosed(ent, bolt, true);
             htn.RootTask = new HTNCompoundTask() { Task = "SimpleRangedHostileCompound" };
         }
