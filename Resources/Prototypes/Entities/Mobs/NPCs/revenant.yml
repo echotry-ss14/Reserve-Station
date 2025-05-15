@@ -206,5 +206,7 @@
     shockDamage: 2
     requirePower: false
     ignoreInsulation: true
+  - type: WeakToHoly # Goobstation Shitchap
+    alwaysTakeHoly: true
     #reserve revenant buff end
 
