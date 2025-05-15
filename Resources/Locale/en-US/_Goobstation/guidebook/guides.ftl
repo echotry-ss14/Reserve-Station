@@ -11,6 +11,8 @@
 guide-entry-space-law = Space Law
 guide-entry-medpatches = Medical Patches
 guide-entry-rules-nrp = NRP Ruleset
+guide-entry-sm = Supermatter Engine
+guide-entry-automation = Automation
 
 # Goob SOP
 # - Main Directories
@@ -93,3 +95,9 @@ guide-entry-sop-janitor = Janitor
 guide-entry-sop-librarian = Librarian
 guide-entry-sop-mime = Mime
 guide-entry-sop-reporter = Reporter
+# - Reserve space law
+guide-entry-space-law-table = Codes table
+guide-entry-space-law-violations-minor = 1ХХ codes (minor)
+guide-entry-space-law-violations-average = 2ХХ codes (average)
+guide-entry-space-law-violations-serious = 3ХХ codes (serious)
+

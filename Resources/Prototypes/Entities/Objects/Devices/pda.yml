@@ -416,6 +416,12 @@
     accentVColor: "#A32D26"
   - type: Icon
     state: pda-interncadet
+  - type: CartridgeLoader # DeltaV - Crime Assist
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      # - NewsReadCartridge #Reserve edit
+      - CrimeAssistCartridge
 
 - type: entity
   parent: BasePDA
@@ -783,6 +789,12 @@
     borderColor: "#6f6192"
   - type: Icon
     state: pda-lawyer
+  - type: CartridgeLoader # DeltaV - Crime Assist
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      # - NewsReadCartridge #Reserve edit
+      - CrimeAssistCartridge
 
 - type: entity
   parent: LawyerPDA
@@ -1057,6 +1069,7 @@
     - WantedListCartridge
     - LogProbeCartridge
     - NanoChatCartridge # DeltaV
+    - CrimeAssistCartridge # DeltaV
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1076,6 +1089,12 @@
     accentVColor: "#949137"
   - type: Icon
     state: pda-warden
+  - type: CartridgeLoader # DeltaV - Crime Assist
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      # - NewsReadCartridge #Reserve edit
+      - CrimeAssistCartridge
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1094,6 +1113,12 @@
     borderColor: "#A32D26"
   - type: Icon
     state: pda-security
+  - type: CartridgeLoader # DeltaV - Crime Assist
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      # - NewsReadCartridge #Reserve edit
+      - CrimeAssistCartridge
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1482,6 +1507,7 @@
     - WantedListCartridge
     - LogProbeCartridge
     - NanoChatCartridge # DeltaV
+    - CrimeAssistCartridge # DeltaV
 
 - type: entity
   parent: BaseMedicalPDA
@@ -1616,6 +1642,12 @@
     accentVColor: "#DFDFDF"
   - type: Icon
     state: pda-seniorofficer
+  - type: CartridgeLoader # DeltaV - Crime Assist
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      # - NewsReadCartridge #Reserve edit
+      - CrimeAssistCartridge
 
 - type: entity
   parent: SyndiPDA

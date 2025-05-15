@@ -106,11 +106,6 @@ evolutionmenu-utility-biodegrade-desc =
     Выплевывает едкое вещество на все сковывающие вас предметы, позволяя освободиться.
     При использовании этой способности, когда вас схватили, вы плюнете кислотой в лицо нападающим.
     Затрачивает 30 химикатов.
-evolutionmenu-utility-stims-name = Передозировка эфедрина
-evolutionmenu-utility-stims-desc =
-    Инъекция коктейля стимуляторов в себя, быстро снимает любые оглушения и даёт вам скорость.
-    Продолжительная инъекция ядовита.
-    Затрачивает 30 химикатов.
 evolutionmenu-utility-fleshmend-name = Исцеление плоти
 evolutionmenu-utility-fleshmend-desc =
     Быстро исцеляет все царапины и ожоги.
@@ -143,10 +138,6 @@ evolutionmenu-utility-hivemindaccess-name = Разум улья
 evolutionmenu-utility-hivemindaccess-desc =
     Настраивает химические рецепторы для общения с другими генокрадами, которые также развили эту способность.
     Стандартный радио-ключ: :g
-evolutionmenu-utility-spacesuit-name = Адаптация к космосу
-evolutionmenu-utility-spacesuit-desc =
-    Избавьтесь от бесполезной кожи, чтобы совершать космические путешествия. Для дыхания в космосе требуется источник кислорода.
-    Затрачивает 20 химикатов.
 evolutionmenu-utility-absorbbiomatter-name = Поглощение биомассы
 evolutionmenu-utility-absorbbiomatter-desc =
     Поглощайте органическую пищу и пополняйте свои химикаты, в зависимости от состава пищи.

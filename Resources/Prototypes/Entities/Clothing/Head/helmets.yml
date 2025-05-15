@@ -599,7 +599,6 @@
         Caustic: 0.35
   #Reserve raid suit rework begin
         Radiation: 0.85
-        Caustic: 0.95
   - type: ExplosionResistance
     damageCoefficient: 0.75
   #suit offers best protection against cold and flames with this helmet

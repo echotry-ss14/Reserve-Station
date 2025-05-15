@@ -83,4 +83,3 @@ namespace Content.Goobstation.Shared.Bible // Death to serverside components. Gl
 
     }
 }
-
