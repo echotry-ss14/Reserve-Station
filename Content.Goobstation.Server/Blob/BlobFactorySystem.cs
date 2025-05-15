@@ -51,7 +51,7 @@ public sealed class BlobFactorySystem : EntitySystem
         {
             blobbernautComponent.Factory = null;
         }
-
+        //Reserve edit - blob factory port begin
         foreach (EntityUid blobPod in component.BlobPods)
         {
             if (TryComp<BlobPodComponent>(blobPod, out var blobPodComponent))
@@ -59,6 +59,7 @@ public sealed class BlobFactorySystem : EntitySystem
                 blobPodComponent.Factory = null;
             }
         }
+        //Reserve edit - blob factory port end
     }
 
     private void OnProduceBlobbernaut(EntityUid uid, BlobFactoryComponent component, ProduceBlobbernautEvent args)
@@ -177,7 +178,7 @@ public sealed class BlobFactorySystem : EntitySystem
         component.BlobPods.Add(pod);
         var blobPod = EnsureComp<BlobPodComponent>(pod);
         blobPod.Core = blobTileComponent.Core.Value;
-        blobPod.Factory = uid;
+        blobPod.Factory = uid; //Reserve edit - blob factory port
         FillSmokeGas((pod,blobPod), blobCoreComponent.CurrentChem);
 
         //smokeOnTrigger.SmokeColor = blobCoreComponent.ChemСolors[blobCoreComponent.CurrentChem];
