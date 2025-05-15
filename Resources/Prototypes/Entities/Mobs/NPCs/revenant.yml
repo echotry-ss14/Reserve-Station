@@ -119,6 +119,10 @@
     allowed:
     - Stun
     - Corporeal
+    - EssenceRegen # Imp
+  - type: Hands # Imp
+    showInHands: false
+    disableExplosionRecursion: true
   - type: Damageable
     damageContainer: ManifestedSpirit
     damageModifierSet: ManifestedSpirit
@@ -146,6 +150,9 @@
       time: 18000 #5 hours
   - type: GhostTakeoverAvailable
   - type: Revenant
+    exorcismRequiresBibleUser: true # Imp - Escape hatch, change to false if revenant becomes too OP
+    grindingRequiresSalt: true # Imp - Escape hatch, change to false if revenant becomes too OP
+    # spawnOnDeathPrototype: EctoplasmRevenant # DeltaV - different prototype that contains more ectoplasm reagent for normality crystals, commented out
     malfunctionWhitelist:
       components:
       # emag lockers open
@@ -187,3 +194,26 @@
   - type: Reactive
     groups:
       Acidic: [Touch]
+  #reserve revenant buff start
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: DamageOnAttacked
+    damage:
+      types:
+        Cold: 10
+    ignoreResistances: true
+  - type: DamageContacts
+    damage:
+      types:
+        Cold: 1.5 #may be painful if spammed, but doesnt ignores protection.
+  - type: Electrified #idk this seems lame but it works fine
+    shockTime: 8 #4 seconds of stun
+    shockDamage: 1
+    requirePower: false
+    ignoreInsulation: true
+  - type: WeakToHoly # Goobstation Shitchap
+    alwaysTakeHoly: true
+    #reserve revenant buff end
+

@@ -99,6 +99,7 @@ using Robust.Shared.Random;
 using Content.Shared.Tag;
 using Content.Server.Storage.Components;
 using Content.Server.Light.Components;
+using Content.Server.Light.EntitySystems;
 using Content.Server.Ghost;
 using Robust.Shared.Physics;
 using Content.Shared.Throwing;
@@ -124,6 +125,13 @@ using Robust.Shared.Utility;
 using Robust.Shared.Map.Components;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
+using Content.Shared.Hands.Components; // Begin Imp Changes
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Interaction.Components;
+using Robust.Shared.Player;
+using Content.Shared.StatusEffect;
+using Content.Shared.Flash.Components;
+using Robust.Shared.Audio.Systems; // End Imp Changes
 
 namespace Content.Server.Revenant.EntitySystems;
 
@@ -138,8 +146,17 @@ public sealed partial class RevenantSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
-
+    [Dependency] private readonly PoweredLightSystem _poweredLight = default!; //reserve revenant buff
     private static readonly ProtoId<TagPrototype> WindowTag = "Window";
+    [Dependency] private readonly SharedHandsSystem _handsSystem = default!; // Begin Imp Changes
+    [Dependency] private readonly RevenantAnimatedSystem _revenantAnimated = default!;
+    [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
+
+    [ValidatePrototypeId<StatusEffectPrototype>]
+    private const string RevenantEssenceRegen = "EssenceRegen";
+
+    [ValidatePrototypeId<StatusEffectPrototype>]
+    private const string FlashedId = "Flashed"; // End Imp Changes
 
     private void InitializeAbilities()
     {
@@ -151,6 +168,9 @@ public sealed partial class RevenantSystem
         SubscribeLocalEvent<RevenantComponent, RevenantOverloadLightsActionEvent>(OnOverloadLightsAction);
         SubscribeLocalEvent<RevenantComponent, RevenantBlightActionEvent>(OnBlightAction);
         SubscribeLocalEvent<RevenantComponent, RevenantMalfunctionActionEvent>(OnMalfunctionAction);
+        SubscribeLocalEvent<RevenantComponent, RevenantBloodWritingEvent>(OnBloodWritingAction); // Imp
+        SubscribeLocalEvent<RevenantComponent, RevenantAnimateEvent>(OnAnimateAction); // Imp
+        SubscribeLocalEvent<RevenantComponent, RevenantHauntActionEvent>(OnHauntAction); // Imp
     }
 
     private void OnInteract(EntityUid uid, RevenantComponent component, UserActivateInWorldEvent args)
@@ -307,8 +327,88 @@ public sealed partial class RevenantSystem
         dspec.DamageDict.Add("Cold", damage.Value);
         _damage.TryChangeDamage(args.Args.Target, dspec, true, origin: uid);
 
+        PlayHauntSound(uid, component);
+
         args.Handled = true;
     }
+
+    // Begin Imp Changes
+    private void PlayHauntSound(EntityUid uid, RevenantComponent comp)
+    {
+     // Copy-paste but should i care?
+        var witnessAndRevenantFilter = Filter.Pvs(uid).RemoveWhere(player =>
+        {
+            if (player.AttachedEntity == null)
+                return true;
+
+            var ent = player.AttachedEntity.Value;
+
+            if (!HasComp<MobStateComponent>(ent) || !HasComp<HumanoidAppearanceComponent>(ent) || HasComp<RevenantComponent>(ent))
+                return true;
+
+            return !_interact.InRangeUnobstructed((uid, Transform(uid)), (ent, Transform(ent)), range: 0, collisionMask: CollisionGroup.Impassable);
+        });
+
+        _audioSystem.PlayGlobal(comp.HauntSound, witnessAndRevenantFilter, true);
+    }
+
+    private void OnHauntAction(EntityUid uid, RevenantComponent comp, RevenantHauntActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryUseAbility(uid, comp, 0, comp.HauntDebuffs))
+            return;
+
+        args.Handled = true;
+
+        // This is probably not the right way to do this...
+        var witnessAndRevenantFilter = Filter.Pvs(uid).RemoveWhere(player =>
+        {
+            if (player.AttachedEntity == null)
+                return true;
+
+            var ent = player.AttachedEntity.Value;
+
+            if (!HasComp<MobStateComponent>(ent) || !HasComp<HumanoidAppearanceComponent>(ent) || HasComp<RevenantComponent>(ent))
+                return true;
+
+            return !_interact.InRangeUnobstructed((uid, Transform(uid)), (ent, Transform(ent)), range: 0, collisionMask: CollisionGroup.Impassable);
+        });
+
+        var witnesses = new HashSet<NetEntity>(witnessAndRevenantFilter.RemovePlayerByAttachedEntity(uid).Recipients.Select(ply => GetNetEntity(ply.AttachedEntity!.Value)));
+
+        // Give the witnesses a spook!
+        _audioSystem.PlayGlobal(comp.HauntSound, witnessAndRevenantFilter, true);
+
+        var newHaunts = 0;
+
+        foreach (var witness in witnesses)
+        {
+            _statusEffects.TryAddStatusEffect<FlashedComponent>(GetEntity(witness),
+                FlashedId,
+                comp.HauntFlashDuration,
+                false
+            );
+            if (!EnsureComp<HauntedComponent>(GetEntity(witness), out var haunted))
+                newHaunts += 1;
+        }
+
+        if (newHaunts > 0 && _statusEffects.TryAddStatusEffect(uid,
+            RevenantEssenceRegen,
+            comp.HauntEssenceRegenDuration,
+            true,
+            component: new RevenantRegenModifierComponent(witnesses, newHaunts)
+        ))
+        {
+            if (_mind.TryGetMind(uid, out var _, out var mind) && mind.Session != null)
+                RaiseNetworkEvent(new RevenantHauntWitnessEvent(witnesses), mind.Session);
+
+            _store.TryAddCurrency(new Dictionary<string, FixedPoint2>
+            { {comp.StolenEssenceCurrencyPrototype, comp.HauntStolenEssencePerWitness * newHaunts} }, uid);
+        }
+    }
+    // End Imp Changes
 
     private void OnDefileAction(EntityUid uid, RevenantComponent component, RevenantDefileActionEvent args)
     {
@@ -342,6 +442,7 @@ public sealed partial class RevenantSystem
         }
 
         var lookup = _lookup.GetEntitiesInRange(uid, component.DefileRadius, LookupFlags.Approximate | LookupFlags.Static);
+        var entities = _lookup.GetEntitiesInRange(uid, component.DefileRadius); //reserve revenant buff //new one for lights breaking
         var tags = GetEntityQuery<TagComponent>();
         var entityStorage = GetEntityQuery<EntityStorageComponent>();
         var items = GetEntityQuery<ItemComponent>();
@@ -354,7 +455,7 @@ public sealed partial class RevenantSystem
             {
                 //hardcoded damage specifiers til i die.
                 var dspec = new DamageSpecifier();
-                dspec.DamageDict.Add("Structural", 60);
+                dspec.DamageDict.Add("Structural", 45); //reserve Revenant buff //that isn't buff, but.. Uhh, balance?
                 _damage.TryChangeDamage(ent, dspec, origin: uid);
             }
 
@@ -370,10 +471,26 @@ public sealed partial class RevenantSystem
                 TryComp<PhysicsComponent>(ent, out var phys) && phys.BodyType != BodyType.Static)
                 _throwing.TryThrow(ent, _random.NextAngle().ToWorldVec());
 
+        //reserve Revenant buff start
             //flicker lights
-            if (lights.HasComponent(ent))
-                _ghost.DoGhostBooEvent(ent);
+            //if (lights.HasComponent(ent))
+            //    _ghost.DoGhostBooEvent(ent);
         }
+
+        PlayHauntSound(uid, component);
+
+        //break lights in defile radius
+        foreach (var entity in entities)
+        {
+            if (!_random.Prob(component.DefileEffectChance + 0.3f)) //slightly bigger chance to destroy a light, 80%
+                continue;
+
+            if (!lights.TryGetComponent(entity, out var lightComp))
+                continue;
+
+            _poweredLight.TryDestroyBulb(entity, lightComp);
+        }
+        //reserve Revenant buff end
     }
 
     private void OnOverloadLightsAction(EntityUid uid, RevenantComponent component, RevenantOverloadLightsActionEvent args)
@@ -390,6 +507,7 @@ public sealed partial class RevenantSystem
         var poweredLights = GetEntityQuery<PoweredLightComponent>();
         var mobState = GetEntityQuery<MobStateComponent>();
         var lookup = _lookup.GetEntitiesInRange(uid, component.OverloadRadius);
+        PlayHauntSound(uid, component); //Reserve edit
         //TODO: feels like this might be a sin and a half
         foreach (var ent in lookup)
         {
@@ -424,7 +542,7 @@ public sealed partial class RevenantSystem
 
         if (!TryUseAbility(uid, component, component.BlightCost, component.BlightDebuffs))
             return;
-
+        PlayHauntSound(uid, component); //Reserve edit
         args.Handled = true;
         // TODO: When disease refactor is in.
     }
@@ -439,6 +557,8 @@ public sealed partial class RevenantSystem
 
         args.Handled = true;
 
+        PlayHauntSound(uid, component); //Reserve edit
+
         foreach (var ent in _lookup.GetEntitiesInRange(uid, component.MalfunctionRadius))
         {
             if (_whitelistSystem.IsWhitelistFail(component.MalfunctionWhitelist, ent) ||
@@ -449,4 +569,42 @@ public sealed partial class RevenantSystem
             RaiseLocalEvent(ent, ref ev);
         }
     }
+
+    // Begin Imp Changes
+    private void OnBloodWritingAction(EntityUid uid, RevenantComponent component, RevenantBloodWritingEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryComp<HandsComponent>(uid, out var hands))
+            return;
+
+        if (component.BloodCrayon != null)
+        {
+            // Disable blood writing
+            _handsSystem.RemoveHands(uid);
+            QueueDel(component.BloodCrayon);
+            component.BloodCrayon = null;
+        }
+        else
+        {
+            _handsSystem.AddHand(uid, "crayon", HandLocation.Middle);
+            var crayon = Spawn("CrayonBlood");
+            component.BloodCrayon = crayon;
+            _handsSystem.DoPickup(uid, hands.Hands["crayon"], crayon);
+            EnsureComp<UnremoveableComponent>(crayon);
+        }
+    }
+
+    private void OnAnimateAction(EntityUid uid, RevenantComponent comp, RevenantAnimateEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        PlayHauntSound(uid, comp); //Reserve edit
+
+        if (_revenantAnimated.CanAnimateObject(args.Target) && TryUseAbility(uid, comp, comp.AnimateCost, comp.AnimateDebuffs))
+            _revenantAnimated.TryAnimateObject(args.Target, comp.AnimateTime, (uid, comp));
+    }
+    // End Imp Changes
 }

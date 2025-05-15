@@ -163,7 +163,7 @@
   - type: CombatMode
   - type: Physics
     ignorePaused: true
-    bodyType: Kinematic
+    bodyType: KinematicController #Reserve edit
   - type: Body
     prototype: Aghost
     thermalVisibility: false # WD EDIT
