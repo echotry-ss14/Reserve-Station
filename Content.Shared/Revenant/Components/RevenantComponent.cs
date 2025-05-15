@@ -140,7 +140,7 @@ public sealed partial class RevenantComponent : Component
     public SoundSpecifier? HauntSound = new SoundCollectionSpecifier("RevenantHaunt");
 
     [DataField("hauntFlashDuration"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan HauntFlashDuration = TimeSpan.FromSeconds(2);
+    public TimeSpan HauntFlashDuration = TimeSpan.FromSeconds(3.5); //Reserve edit
 
     #endregion
     // End Imp Changes

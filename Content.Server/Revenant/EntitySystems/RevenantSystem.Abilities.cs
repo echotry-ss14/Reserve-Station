@@ -328,10 +328,31 @@ public sealed partial class RevenantSystem
         dspec.DamageDict.Add("Cold", damage.Value);
         _damage.TryChangeDamage(args.Args.Target, dspec, true, origin: uid);
 
+        PlayHauntSound(uid, component);
+
         args.Handled = true;
     }
 
     // Begin Imp Changes
+    private void PlayHauntSound(EntityUid uid, RevenantComponent comp)
+    {
+     // Copy-paste but should i care?
+        var witnessAndRevenantFilter = Filter.Pvs(uid).RemoveWhere(player =>
+        {
+            if (player.AttachedEntity == null)
+                return true;
+
+            var ent = player.AttachedEntity.Value;
+
+            if (!HasComp<MobStateComponent>(ent) || !HasComp<HumanoidAppearanceComponent>(ent) || HasComp<RevenantComponent>(ent))
+                return true;
+
+            return !_interact.InRangeUnobstructed((uid, Transform(uid)), (ent, Transform(ent)), range: 0, collisionMask: CollisionGroup.Impassable);
+        });
+
+        _audioSystem.PlayGlobal(comp.HauntSound, witnessAndRevenantFilter, true);
+    }
+
     private void OnHauntAction(EntityUid uid, RevenantComponent comp, RevenantHauntActionEvent args)
     {
         if (args.Handled)
@@ -456,6 +477,9 @@ public sealed partial class RevenantSystem
             //if (lights.HasComponent(ent))
             //    _ghost.DoGhostBooEvent(ent);
         }
+
+        PlayHauntSound(uid, component);
+
         //break lights in defile radius
         foreach (var entity in entities)
         {
@@ -484,6 +508,7 @@ public sealed partial class RevenantSystem
         var poweredLights = GetEntityQuery<PoweredLightComponent>();
         var mobState = GetEntityQuery<MobStateComponent>();
         var lookup = _lookup.GetEntitiesInRange(uid, component.OverloadRadius);
+        PlayHauntSound(uid, component); //Reserve edit
         //TODO: feels like this might be a sin and a half
         foreach (var ent in lookup)
         {
@@ -518,7 +543,7 @@ public sealed partial class RevenantSystem
 
         if (!TryUseAbility(uid, component, component.BlightCost, component.BlightDebuffs))
             return;
-
+        PlayHauntSound(uid, component); //Reserve edit
         args.Handled = true;
         // TODO: When disease refactor is in.
     }
@@ -532,6 +557,8 @@ public sealed partial class RevenantSystem
             return;
 
         args.Handled = true;
+
+        PlayHauntSound(uid, component); //Reserve edit
 
         foreach (var ent in _lookup.GetEntitiesInRange(uid, component.MalfunctionRadius))
         {
@@ -574,6 +601,8 @@ public sealed partial class RevenantSystem
     {
         if (args.Handled)
             return;
+
+        PlayHauntSound(uid, comp); //Reserve edit
 
         if (_revenantAnimated.CanAnimateObject(args.Target) && TryUseAbility(uid, comp, comp.AnimateCost, comp.AnimateDebuffs))
             _revenantAnimated.TryAnimateObject(args.Target, comp.AnimateTime, (uid, comp));
