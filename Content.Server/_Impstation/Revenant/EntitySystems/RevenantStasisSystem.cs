@@ -1,5 +1,5 @@
+using Content.Goobstation.Shared.Bible;
 using Content.Server.Bible;
-using Content.Server.Bible.Components;
 using Content.Server.Construction;
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.Ghost.Roles;

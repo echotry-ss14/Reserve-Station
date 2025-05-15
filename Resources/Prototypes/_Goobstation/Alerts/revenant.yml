@@ -7,7 +7,7 @@
     state: icon
 
 - type: alert
-  id: Stasis
+  id: RevenantStasis #Reserve edit
   icons:
   - sprite: Mobs/Ghosts/revenant.rsi
     state: ectoplasm
