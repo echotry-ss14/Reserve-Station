@@ -9222,13 +9222,6 @@ entities:
     - type: Transform
       pos: 2.3795166,5.7391067
       parent: 4
-- proto: DrinkBadTouchGlass
-  entities:
-  - uid: 1044
-    components:
-    - type: Transform
-      pos: 4.1335945,-1.1223056
-      parent: 4
 - proto: DrinkShotGlass
   entities:
   - uid: 1057
