@@ -555,7 +555,7 @@ public sealed partial class ServerApi : IPostInjectInit
                     IsAdmin = adminData != null,
                     IsDeadminned = !adminData?.Active ?? false,
                     PingUser = player.Ping,                 // ADT-Tweak: Передаём пинг пользователя
-                    AdminTitle = adminData?.Title ?? "Null" // ADT-Tweak: Добавляем передачу инфы о Title админа
+                    AdminTitle = adminData?.Title ?? string.Empty // ADT-Tweak: Добавляем передачу инфы о Title админа
                 });
             }
 
