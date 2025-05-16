@@ -15,9 +15,9 @@ petting-failure-rogue-ascended = Форма волны пространства-
 rogue-ascended-dendrite-eaten = Зловещий свет вспыхивает к жизни!
 
 rogue-ascended-infection-fail = Вам нужно ослабить эту цель, чтобы испортить ее!
-rogue-ascended-infection-alreadyinfected = {CAPITALIZE(($target))} уже испорчен!
+rogue-ascended-infection-alreadyinfected = {CAPITALIZE(THE($target))} уже испорчен!
 rogue-ascended-infection-error = Вы не можете сделать это сейчас.
-rogue-ascended-infection-notification = {CAPITALIZE(($user)))} протягивает свои щупальца к {CAPITALIZE(($target))}!
+rogue-ascended-infection-notification = {CAPITALIZE(THE($user))} протягивает свои щупальца к {CAPITALIZE(THE($target))}!
 
 rogue-ascended-infection-briefing =
      Пагубная энергия проникает в вашу психику. Вы были заражены астрально вознесенным!

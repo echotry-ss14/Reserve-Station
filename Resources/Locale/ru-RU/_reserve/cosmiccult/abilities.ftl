@@ -12,7 +12,7 @@ cosmicability-blank-success = Вы отправляете разум {CAPITALIZE
 cosmicability-blank-transfer = Космическая сила изгоняет ваш разум из вашего тела!
 cosmicability-blank-return = Ваш разум возвращается в ваше тело.
 
-cosmicability-lapse-success = Вы теряете материальную форму {CAPITALIZE(($target))}.
+cosmicability-lapse-success = Вы теряете материальную форму {CAPITALIZE(THE($target))}.
 
 cosmicability-monument-move-confirm = ЭТО ДЕЙСТВИЕ МОЖНО ВЫПОЛНИТЬ ТОЛЬКО ОДИН РАЗ! Повторите его для подтверждения.
 cosmicability-monument-spawn-confirm = ЭТО ДЕЙСТВИЕ МОЖНО ВЫПОЛНИТЬ ТОЛЬКО ОДИН РАЗ! Повторите его для подтверждения.
