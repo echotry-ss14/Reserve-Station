@@ -430,7 +430,7 @@ namespace Content.Server.Construction
             if (!_actionBlocker.CanInteract(user, null))
                 return false;
 
-            if (HasComp<MindContainerComponent>(user) 
+            if (HasComp<MindContainerComponent>(user)
                 && !HasComp<HandsComponent>(user)) // goobstation - don't require hands for constructor
                 return false;
 

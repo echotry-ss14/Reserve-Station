@@ -20,6 +20,8 @@
 using System.Numerics;
 using Content.Server.Actions;
 using Content.Server.GameTicking;
+using Content.Server.Mind;
+using Content.Server.Revenant.Components;
 using Content.Server.Store.Components;
 using Content.Server.Mind; // Imp
 using Content.Server.Revenant.Components; // Imp
@@ -45,6 +47,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Server.Revenant.EntitySystems;
 

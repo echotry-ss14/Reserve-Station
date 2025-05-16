@@ -194,10 +194,6 @@
     groups:
       Acidic: [Touch]
   #reserve revenant buff start
-  - type: MobState
-    allowedStates:
-      - Alive
-      - Dead
   - type: DamageOnAttacked
     damage:
       types:
