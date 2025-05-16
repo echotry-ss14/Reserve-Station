@@ -47,7 +47,7 @@ public sealed partial class RevenantComponent : Component
     /// Prototype to spawn when the entity dies.
     /// </summary>
     [DataField("spawnOnDeathPrototype", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string SpawnOnDeathPrototype = "EctoplasmRevenant"; // DeltaV
+    public string SpawnOnDeathPrototype = "Ectoplasm";
 
     [DataField("stasisTime"), ViewVariables(VVAccess.ReadWrite)] // Begin Imp Changes
     public TimeSpan StasisTime = TimeSpan.FromSeconds(60);

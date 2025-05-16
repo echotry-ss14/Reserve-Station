@@ -39,7 +39,7 @@ public sealed partial class RevenantStasisSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
 
     [ValidatePrototypeId<StatusEffectPrototype>]
-    private const string RevenantStasisId = "Stasis";
+    private const string RevenantStasisId = "RevenantStasis";
 
     public override void Initialize()
     {
@@ -94,7 +94,7 @@ public sealed partial class RevenantStasisSystem : EntitySystem
 
     private void OnStatusEnded(EntityUid uid, RevenantStasisComponent component, StatusEffectEndedEvent args)
     {
-        if (args.Key == "Stasis")
+        if (args.Key == "RevenantStasis")
         {
             _transformSystem.SetCoordinates(component.Revenant, Transform(uid).Coordinates);
             _transformSystem.AttachToGridOrMap(component.Revenant);
