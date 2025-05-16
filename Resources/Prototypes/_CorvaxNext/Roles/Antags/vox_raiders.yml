@@ -28,7 +28,7 @@
   id: VoxRaidersOperativeGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool
-    back: ClothingMilitaryBackpack
+    back: ClothingBackpackSyndicate #Reserve edit
     shoes: ClothingShoesBootsMagSyndie
     belt: ClothingBeltMilitaryWebbing
     ears: ClothingHeadsetAltVoxRaiders

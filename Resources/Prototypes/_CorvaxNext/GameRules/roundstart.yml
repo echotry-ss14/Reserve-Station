@@ -38,8 +38,8 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - nukeops-role-commander
-        - SyndicateNamesElite
+        - NamesSyndicateElite
+        nameFormat: name-format-nukie-commander
       - type: NpcFactionMember
         factions: [ Syndicate ]
       mindRoles: [ MindRoleVoxRaiders ]
@@ -54,8 +54,8 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - nukeops-role-operator
-        - SyndicateNamesNormal
+        - NamesSyndicateNormal
+        nameFormat: name-format-nukie-operator
       - type: NpcFactionMember
         factions: [ Syndicate ]
       mindRoles: [ MindRoleVoxRaidersCommander ]

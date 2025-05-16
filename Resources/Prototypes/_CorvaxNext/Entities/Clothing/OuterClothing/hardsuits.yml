@@ -26,7 +26,8 @@
     walkModifier: 1.2
     sprintModifier: 1.2
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitVoxRaidersCombat
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitVoxRaidersCombat
   - type: Tag
     tags:
     - Hardsuit
@@ -61,7 +62,8 @@
     walkModifier: 1.2
     sprintModifier: 1.2
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitVoxRaidersEngineer
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitVoxRaidersEngineer
   - type: Tag
     tags:
     - Hardsuit
@@ -94,7 +96,8 @@
     walkModifier: 1.2
     sprintModifier: 1.2
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitVoxRaidersMedical
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitVoxRaidersMedical
   - type: Tag
     tags:
     - Hardsuit
@@ -125,7 +128,8 @@
     walkModifier: 1.2
     sprintModifier: 1.2
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitVoxRaidersStealth
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitVoxRaidersStealth
   - type: ToggleClothing
     action: ActionToggleStealthHardsuit
     disableOnUnequip: true
