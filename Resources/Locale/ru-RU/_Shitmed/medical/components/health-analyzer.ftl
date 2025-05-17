@@ -1,13 +1,13 @@
 condition-body-trauma-BoneDamage-Normal = • У {$woundable} очень незначительные повреждения костей.
-condition-body-trauma-BoneDamage-Damaged = • У {$ранимого} есть некоторые повреждения костей.
-condition-body-trauma-BoneDamage-Cracked = • Кость {$ранимого} выглядит почти сломанной...
-condition-body-trauma-BoneDamage-Broken = • У {$ранимого} сломана кость!
-condition-body-trauma-OrganDamage = • У {$ранимого} есть некоторые повреждения органов.
-condition-body-trauma-VeinsDamage = • У {$ранимого} есть некоторые повреждения вен.
-condition-body-trauma-NerveDamage = • У {$ранимого} повреждены нервы.
+condition-body-trauma-BoneDamage-Damaged = • У {$woundable} есть некоторые повреждения костей.
+condition-body-trauma-BoneDamage-Cracked = • Кость {$woundable} выглядит почти сломанной...
+condition-body-trauma-BoneDamage-Broken = • У {$woundable} сломана кость!
+condition-body-trauma-OrganDamage = • У {$woundable} есть некоторые повреждения органов.
+condition-body-trauma-VeinsDamage = • У {$woundable} есть некоторые повреждения вен.
+condition-body-trauma-NerveDamage = • У {$woundable} повреждены нервы.
 condition-body-trauma-Dismemberment = • {$targetSymmetry}{$TargetType} был удален...
-condition-body-pain-decreased = • Нервы {$ранимого} онемели.
-condition-body-pain-increased = • Нервы {$ранимого} необычайно чувствительны.
+condition-body-pain-decreased = • Нервы {$woundable} онемели.
+condition-body-pain-increased = • Нервы {$woundable} необычайно чувствительны.
 condition-body-unrevivable = • {$entity} отличается особенно слабым телосложением. Тело не сможет выдержать воздействия дефибриллятора.
 condition-body-bleeding = • {$entity} истекает кровью.
 
