@@ -1,16 +1,34 @@
-ent-PartModsuit = MOD part
-    .desc = A part used in MOD construction.
-ent-ModsuitChestplate = MOD chestplate
-    .desc = { ent-PartModsuit.desc }
-ent-ModsuitBoots = MOD boots
-    .desc = { ent-PartModsuit.desc }
-ent-ModsuitHelmet = MOD helmet
-    .desc = { ent-PartModsuit.desc }
-ent-ModsuitGauntlets = MOD gauntlets
-    .desc = { ent-PartModsuit.desc }
-ent-ModsuitShell = MOD shell
-    .desc = { ent-PartModsuit.desc }
-ent-ModsuitPlatingExternal = MOD standard external plating
-    .desc = A part used in MOD construction.
-ent-ModsuitCoreStandard = MOD standard core
-    .desc = Growing in the most lush, fertile areas of the planet Sprout, there is a crystal known as the Heartbloom. These rare, organic piezoelectric crystals are of incredible cultural significance to the artist castes of the Ethereals, owing to their appearance; which is exactly similar to that of an Ethereal's heart. Which one you have in your suit is unclear, but either way, it's been repurposed to be an internal power source for a Modular Outerwear Device.
+ent-ModsuitChestplate = нагрудник модульного костюма
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitBoots = сапоги модульного костюма
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitGauntlets = перчатки модульного костюма
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitHelmet = шлем модульного костюма
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitShell =  оболочка модульного костюма
+    .desc = Деталь, используемая при создании модульного костюма. Mod
+
+# plating
+
+ent-ModsuitStandartPlating = стандартное внешнее покрытие модульного костюма
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitPlatingParamedic = стандартное покрытие модульного костюма "Санитар"
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitPlatingEngineer = стандартное покрытие модульного костюма "Саппер"
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitPlatingSecurity = стандартное покрытие модульного костюма "Драгун"
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitPlatingHeadOfSecurity = стандартное покрытие модульного костюма "Бульварк"
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitPlatingCaptain = стандартное покрытие модульного костюма "Магнат"
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitPlatingRD = стандартное покрытие модульного костюма "Минерва"
+    .desc = Деталь, используемая при создании модульного костюма.
+ent-ModsuitPlatingAtmostech = стандартное покрытие модульного костюма "Эолус"
+    .desc = Деталь, используемая при создании модульного костюма.
+
+# core
+
+ent-ModsuitCoreStandard = стандартное ядро модульного костюма
+    .desc = В самых пышных и плодородных районах планеты Спраут растет кристалл, известный как Сердечный цветок. Эти редкие органические пьезоэлектрические кристаллы имеют невероятное культурное значение для творческой касты Эфириалов благодаря своему внешнему виду, который в точности повторяет форму сердца Эфириала. Какой из них встроен в ваш костюм, неясно, но в любом случае он был перепрофилирован в качестве внутреннего источника питания для модульного внешнего устройства.
