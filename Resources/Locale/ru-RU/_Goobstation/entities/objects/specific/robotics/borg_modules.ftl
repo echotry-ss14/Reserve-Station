@@ -3,3 +3,7 @@ ent-BorgModuleSyndicateWeaponAdvanced = модуль киборга продви
 ent-BorgModuleOperativeUniversal = оперативный модуль киборга
     .desc = Модуль, в который входят лом, эмаг и пинпоинтер синдиката.
     .suffix = Универсальный пинпоинтер
+ent-BorgModuleLollypop = леденцовый модуль киборга
+    .desc = { ent-BaseBorgModule.desc }
+ent-BorgModulePKA = прото-кинетический модуль киборга
+    .desc = { ent-BaseBorgModule.desc }
