@@ -1,0 +1,14 @@
+ent-CosmicGlyphBase = базовый узор
+    .desc = Странный, потусторонний узор.
+ent-CosmicGlyphTruth = узор истины
+    .desc = { ent-CosmicGlyphBase.desc }
+ent-CosmicGlyphKnowledge = узор знаний
+    .desc = { ent-CosmicGlyphBase.desc }
+ent-CosmicGlyphCessation = узор прекращения
+    .desc = { ent-CosmicGlyphBase.desc }
+ent-CosmicGlyphBlades = узор лезвий
+    .desc = { ent-CosmicGlyphBase.desc }
+ent-CosmicGlyphWarding = узор защиты
+    .desc = { ent-CosmicGlyphBase.desc }
+ent-CosmicGlyphProjection = узор проекции
+    .desc = { ent-CosmicGlyphBase.desc }
