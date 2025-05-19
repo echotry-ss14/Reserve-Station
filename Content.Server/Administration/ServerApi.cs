@@ -804,7 +804,7 @@ public sealed partial class ServerApi : IPostInjectInit
         if (body == null)
             return;
 
-        string discordName = $"{body.NickName}(Discord)";
+        string discordName = $"{body.NickName}";
         string message = body.Message;
         var authorUser = new NetUserId(actor.Guid);
 
