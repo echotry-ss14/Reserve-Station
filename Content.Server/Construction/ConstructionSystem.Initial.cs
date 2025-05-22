@@ -365,6 +365,14 @@ namespace Content.Server.Construction
                 }
             }
 
+            // Begin Impstation Changes
+            // Inform consumed items that they have been consumed
+            foreach (var entity in container.ContainedEntities.ToArray())
+            {
+                RaiseLocalEvent(entity, new ConstructionConsumedObjectEvent(entity, newEntity));
+            }
+            // End Impstation Changes
+
             // We now get rid of all them.
             ShutdownContainers();
 
@@ -422,7 +430,7 @@ namespace Content.Server.Construction
             if (!_actionBlocker.CanInteract(user, null))
                 return false;
 
-            if (HasComp<MindContainerComponent>(user) 
+            if (HasComp<MindContainerComponent>(user)
                 && !HasComp<HandsComponent>(user)) // goobstation - don't require hands for constructor
                 return false;
 

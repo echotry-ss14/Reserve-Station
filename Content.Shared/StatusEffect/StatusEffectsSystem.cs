@@ -194,6 +194,7 @@ namespace Content.Shared.StatusEffect
             return false;
         }
 
+
         /// <summary>
         ///     Tries to add a status effect to an entity with a certain timer.
         /// </summary>
@@ -407,7 +408,7 @@ namespace Content.Shared.StatusEffect
 
             if (!_prototypeManager.TryIndex<StatusEffectPrototype>(key, out var proto))
                 return false;
-            if (!status.AllowedEffects.Contains(key) && !proto.AlwaysAllowed)
+            if (!proto.AlwaysAllowed && !status.AllowedEffects.Contains(key)) // Imp
                 return false;
 
             return true;

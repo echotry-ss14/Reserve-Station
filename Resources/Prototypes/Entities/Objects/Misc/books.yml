@@ -440,7 +440,7 @@
       color: "#f7d61a"
   - type: GuideHelp
     guides:
-    - SpaceLaw
+    - SpaceLawReserve #Reserve edit
 
 - type: entity
   parent: BookBase

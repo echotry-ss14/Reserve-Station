@@ -1,13 +1,17 @@
+ent-PartModsuit = часть М.О.Д.
+    .desc = Деталь, используемая при создании модульного костюма.
 ent-ModsuitChestplate = нагрудник модульного костюма
-    .desc = Деталь, используемая при создании модульного костюма.
+    .desc = { ent-PartModsuit.desc }
 ent-ModsuitBoots = сапоги модульного костюма
-    .desc = Деталь, используемая при создании модульного костюма.
-ent-ModsuitGauntlets = перчатки модульного костюма
-    .desc = Деталь, используемая при создании модульного костюма.
+    .desc = { ent-PartModsuit.desc }
 ent-ModsuitHelmet = шлем модульного костюма
-    .desc = Деталь, используемая при создании модульного костюма.
-ent-ModsuitShell =  оболочка модульного костюма
-    .desc = Деталь, используемая при создании модульного костюма. Mod
+    .desc = { ent-PartModsuit.desc }
+ent-ModsuitGauntlets = перчатки модульного костюма
+    .desc = { ent-PartModsuit.desc }
+ent-ModsuitShell = оболочка модульного костюма
+    .desc = { ent-PartModsuit.desc }
+ent-ModsuitPlatingExternal = стандартное внешнее покрытие модульного костюма
+    .desc = { ent-PartModsuit.desc }
 
 # plating
 
