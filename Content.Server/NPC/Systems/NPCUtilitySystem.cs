@@ -34,8 +34,6 @@ using Content.Server.Nutrition.Components;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Storage.Components;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.Cuffs;
-using Content.Shared.Cuffs.Components;
 using Content.Shared.Damage;
 using Content.Shared.Examine;
 using Content.Shared.Fluids.Components;
@@ -87,7 +85,6 @@ public sealed class NPCUtilitySystem : EntitySystem
     [Dependency] private readonly MobThresholdSystem _thresholdSystem = default!;
     [Dependency] private readonly TurretTargetSettingsSystem _turretTargetSettings = default!;
     [Dependency] private readonly SharedWieldableSystem _wieldable = default!; // Goobstation
-    [Dependency] private readonly SharedCuffableSystem _cuffableSystem = default!;
 
     private EntityQuery<PuddleComponent> _puddleQuery;
     private EntityQuery<TransformComponent> _xformQuery;
@@ -419,16 +416,6 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                     return 0f;
                 }
-            case TargetIsCuffableCon:
-            {
-                if (TryComp<CuffableComponent>(targetUid, out var cuffable))
-                {
-                    if(_cuffableSystem.IsCuffed((targetUid, cuffable), true))
-                        return 0f;
-                    return 1f;
-                }
-                return 0f;
-            }
             default:
                 throw new NotImplementedException();
         }

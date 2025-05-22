@@ -169,7 +169,6 @@
   - type: HealUserOnPray # Goobstation - Heal that holy damage
   - type: Summonable
     specialItem: SpawnPointGhostRemilia
-  - type: RevealRevenantOnCollide # Imp
   - type: ReactionMixer
     mixMessage: "bible-mixing-success"
     reactionTypes:
@@ -197,8 +196,6 @@
   - type: StealTarget
     stealGroup: Bible
   - type: EnchantingTool # Goobstation
-  - type: CollisionWake # DeltaV
-    enabled: false
 
 - type: entity
   parent: [Bible, BaseSyndicateContraband]

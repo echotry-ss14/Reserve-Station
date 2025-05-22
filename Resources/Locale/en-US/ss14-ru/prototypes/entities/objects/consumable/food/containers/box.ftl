@@ -47,6 +47,3 @@ ent-HappyHonkCluwne = woeful cluwne meal
 ent-FoodMealHappyHonkClown = { ent-HappyHonk }
     .suffix = random food spawner meal
     .desc = { ent-HappyHonk.desc }
-ent-FoodBoxPizzaBomb = { ent-FoodBoxPizza }
-    .desc = { ent-FoodBoxPizza.desc }
-    .suffix = Bomb

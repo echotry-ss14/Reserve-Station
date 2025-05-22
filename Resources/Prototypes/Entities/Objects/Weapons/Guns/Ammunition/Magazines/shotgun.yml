@@ -47,7 +47,7 @@
         - ShellShotgun
     capacity: 8
     soundRack:
-      path: /Audio/Corvax/Weapons/Guns/Cock/shotgun_cock.ogg # Corvax-Guns
+      path: /Audio/Weapons/Guns/Cock/smg_cock.ogg
   - type: Item
     size: Small
   - type: ContainerContainer

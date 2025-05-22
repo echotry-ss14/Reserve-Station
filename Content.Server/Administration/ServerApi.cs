@@ -555,7 +555,7 @@ public sealed partial class ServerApi : IPostInjectInit
                     IsAdmin = adminData != null,
                     IsDeadminned = !adminData?.Active ?? false,
                     PingUser = player.Ping,                 // ADT-Tweak: Передаём пинг пользователя
-                    AdminTitle = adminData?.Title ?? string.Empty // ADT-Tweak: Добавляем передачу инфы о Title админа
+                    AdminTitle = adminData?.Title ?? "Null" // ADT-Tweak: Добавляем передачу инфы о Title админа
                 });
             }
 
@@ -804,7 +804,7 @@ public sealed partial class ServerApi : IPostInjectInit
         if (body == null)
             return;
 
-        string discordName = $"{body.NickName}";
+        string discordName = $"{body.NickName}(Discord)";
         string message = body.Message;
         var authorUser = new NetUserId(actor.Guid);
 

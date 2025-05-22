@@ -53,11 +53,7 @@ public sealed partial class SharedRestrictSystem : EntitySystem
 
     private void OnAttemptGunshot(Entity<RestrictGunshotsByUserTagComponent> ent, ref ShotAttemptedEvent args)
     {
-        //Reserve edit start //Checks if user has any tags at all. For case if he doesn't or there's no user at all
-        if (TryComp<TagComponent>(args.User, out var tags) &&
-        (!_tagSystem.HasAllTags(args.User, ent.Comp.Contains) ||
-        _tagSystem.HasAnyTag(args.User, ent.Comp.DoesntContain)))
-         //Reserve edit end
+        if(!_tagSystem.HasAllTags(args.User, ent.Comp.Contains) || _tagSystem.HasAnyTag(args.User, ent.Comp.DoesntContain))
         {
             var time = _timing.CurTime;
 

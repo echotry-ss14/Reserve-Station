@@ -717,18 +717,4 @@ namespace Content.Server.Construction
     {
         public HandleResult? Result;
     }
-
-    // Begin Impstation Changes
-    public sealed class ConstructionConsumedObjectEvent : EntityEventArgs
-    {
-        public EntityUid Old;
-        public EntityUid New;
-
-        public ConstructionConsumedObjectEvent(EntityUid oldEnt, EntityUid newEnt)
-        {
-            Old = oldEnt;
-            New = newEnt;
-        }
-    }
-    // End Impstation Changes
 }

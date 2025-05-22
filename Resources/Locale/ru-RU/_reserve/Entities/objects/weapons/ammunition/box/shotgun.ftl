@@ -1,0 +1,8 @@
+ent-MagazineBoxShotgunHighCaliber = коробка патронов (карповый 8 калибра)
+ent-MagazineBoxShotgunSlugHighCaliber = коробка патронов (пуля 8 калибра)
+ent-MagazineBoxShotgunIncendiaryHighCaliber = коробка патронов (зажигательный 8 калибра)
+ent-MagazineBoxShotgunBeanbagHighCaliber = коробка патронов (картечь 8 калибра)
+ent-MagazineBoxShotgunPracticeHighCaliber = коробка патронов (учебный 8 калибра)
+ent-MagazineBoxShotgunHighCaliberEnsnaring = коробка патронов (ensnaring 8 калибра)
+ent-MagazineBoxShotgunHighCaliberEMP = коробка патронов (ЭМИ 8 калибра)
+ent-MagazineBoxShotgunHighCaliberFlash = коробка патронов (светошумовой 8 калибра)

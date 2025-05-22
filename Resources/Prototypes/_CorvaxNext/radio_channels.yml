@@ -1,7 +1,0 @@
-- type: radioChannel
-  id: VoxRaiders
-  name: chat-radio-vox-raiders
-  keycode: "в"
-  frequency: 1219
-  color: "#6900d8"
-  longRange: true

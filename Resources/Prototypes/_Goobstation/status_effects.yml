@@ -56,7 +56,3 @@
   id: ShadowCloak
   alert: ShadowCloak
   alwaysAllowed: true
-
-- type: statusEffect
-  id: EssenceRegen
-  alert: EssenceRegen

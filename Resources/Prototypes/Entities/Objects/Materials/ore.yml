@@ -463,9 +463,6 @@
   name: salt
   suffix: Full
   components:
-  - type: Tag
-    tags:
-    - Salt
   - type: Stack
     stackType: SaltOre
   # Goobstation - Custom stack splitting dialog
