@@ -1,5 +1,11 @@
 <p align="center"> <img alt="Space Station 14" width="1280" height="300" src="https://i.imgur.com/2nqz4IN.jpeg" /></p>
 
+## Важно
+
+Этот репозиторий является архивным. Актуальную сборку, использующуюся на сервере можно найти по [ссылке](https://github.com/Reserve-Station/Reserve-Station)
+
+## 
+
 Это форк из репозитория Goob Station под названием Reserve Station. Чтобы предотвратить форк RobustToolbox, клиент и сервер загружают пакет «content». Этот контент-пак содержит все необходимое для игры на одном конкретном сервере - это контент-пак для Goob Station.
 
 Если вы хотите разместить или создать контент для SS14, перейдите в репозиторий [Space Station 14](https://github.com/space-wizards/space-station-14), так как он содержит как RobustToolbox, так и контент-пак для разработки новых контент-паков и является базой для вашего форка.
